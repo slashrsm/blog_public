@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="http://janezurevc.name/">
+  <channel>
+    <title>Drupal 8</title>
+    <link>http://janezurevc.name/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>Results of the Drupal 8 media sprint</title>
+  <link>http://janezurevc.name/results-drupal-8-media-sprint</link>
+  <description>
+&lt;span&gt;Results of the Drupal 8 media sprint&lt;/span&gt;
+
+&lt;span&gt;&lt;span lang="" about="http://janezurevc.name/users/slashrsm" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;slashrsm&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Mon, 02.01.2017 - 17:20&lt;/span&gt;
+
+            &lt;div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"&gt;&lt;p&gt;In December media team met in Berlin and sprinted on Drupal core media improvements for a week.&lt;/p&gt;
+
+&lt;blockquote class="twitter-tweet tw-align-center" data-lang="en"&gt;&lt;p lang="en" dir="ltr" xml:lang="en" xml:lang="en"&gt;Today's &lt;a href="https://twitter.com/DrupalMedia"&gt;@drupalmedia&lt;/a&gt; sprinters. Awesome group that is making &lt;a href="https://twitter.com/hashtag/Drupal?src=hash"&gt;#Drupal&lt;/a&gt; the best media management CMS! &lt;a href="https://t.co/G2LqD603pH"&gt;pic.twitter.com/G2LqD603pH&lt;/a&gt;&lt;/p&gt;— Janez Urevc (@slashrsm) &lt;a href="https://twitter.com/slashrsm/status/809396116269703168"&gt;December 15, 2016&lt;/a&gt;&lt;/blockquote&gt;
+
+&lt;script async="" src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;&lt;p&gt;I demonstrated the results of the sprint in a short video.&lt;/p&gt;
+
+&lt;p class="embed-responsive embed-responsive-16by9"&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/4Q9fE043GIM" frameborder="0" allowfullscreen=""&gt;&lt;/iframe&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Demo is based on the &lt;a href="https://www.drupal.org/sandbox/slashrsm/2838118"&gt;sandbox project&lt;/a&gt; that includes the following patches:&lt;/p&gt;
+
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://drupal.org/comment/11833188#comment-11833188" title="Status: Fixed"&gt;#2836381-13: Seven's entity-add-list template omits link attributes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://drupal.org/comment/11825596#comment-11825596" title="Status: Needs work"&gt;#2834777-6: Refactor Drupal\system\Plugin\views\field\BulkForm to support a select form as well&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://drupal.org/comment/11831066#comment-11831066" title="Status: Needs work"&gt;#2834729-12: Create an MVP for adding and re-using Media&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://drupal.org/comment/11835063#comment-11835063" title="Status: Needs work, Assigned to: seanB"&gt;#2831940-8: Create file field widget on top of media entity&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://drupal.org/comment/11829584#comment-11829584" title="Status: Needs work"&gt;#2831944-4: Implement media type plugin for remote video&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://drupal.org/comment/11831210#comment-11831210" title="Status: Needs work, Assigned to: pguillard"&gt;#2831943-6: Re-create image and file field-like formatters on top of media entity&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://drupal.org/comment/11829154#comment-11829154" title="Status: Needs work, Assigned to: mtodor"&gt;#2831937-23: Add "Image" media type plugin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://drupal.org/comment/11827805#comment-11827805" title="Status: Needs work"&gt;#2831936-40: Add "File" media type plugin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://drupal.org/comment/11834970#comment-11834970" title="Status: Needs review, Assigned to: slashrsm"&gt;#2831274-170: Bring Media entity module to core as Media module&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;
+      
+  &lt;div class="field field--name-field-related field--type-entity-reference field--label-above"&gt;
+    &lt;div class="field--label"&gt;Enjoyed this post? There is more!&lt;/div&gt;
+          &lt;div class="field--items"&gt;
+              &lt;div class="field--item"&gt;&lt;a href="http://janezurevc.name/call-for-drupal-8-media-ecosystem-co-maintainers" hreflang="en"&gt;Call for Drupal 8 media ecosystem co-maintainers&lt;/a&gt;&lt;/div&gt;
+          &lt;div class="field--item"&gt;&lt;a href="http://janezurevc.name/releases-of-various-drupal-8-media-modules" hreflang="en"&gt;Releases of various Drupal 8 media modules&lt;/a&gt;&lt;/div&gt;
+          &lt;div class="field--item"&gt;&lt;a href="http://janezurevc.name/a-lot-of-exciting-drupal-8-media-news" hreflang="en"&gt;A lot of exciting Drupal 8 media news!&lt;/a&gt;&lt;/div&gt;
+          &lt;div class="field--item"&gt;&lt;a href="http://janezurevc.name/drupal-dev-environment-on-docker" hreflang="en"&gt;Drupal dev environment on Docker&lt;/a&gt;&lt;/div&gt;
+              &lt;/div&gt;
+      &lt;/div&gt;
+</description>
+  <pubDate>Mon, 02 Jan 2017 16:20:42 +0000</pubDate>
+    <dc:creator>slashrsm</dc:creator>
+    <guid isPermaLink="false">103 at http://janezurevc.name</guid>
+    </item>
+<item>
+  <title>Drupal community, please meet Vijay</title>
+  <link>http://janezurevc.name/drupal-community-please-meet-vijay</link>
+  <description>
+&lt;span&gt;Drupal community, please meet Vijay&lt;/span&gt;
+
+&lt;span&gt;&lt;span lang="" about="http://janezurevc.name/users/slashrsm" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;slashrsm&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Tue, 24.05.2016 - 10:40&lt;/span&gt;
+
+            &lt;div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"&gt;&lt;p&gt;&lt;a href="https://groups.drupal.org/node/510665"&gt;Google summer of code 2016&lt;/a&gt; started with a full swing this week. &lt;a href="https://twitter.com/isthegeek"&gt;Vijay&lt;/a&gt; is one of the students participating in it. He is working on the Media module for Drupal 8.&lt;/p&gt;
+
+&lt;p&gt;He wrote &lt;a href="https://isthegeek.svbtle.com/gsoc-16-with-drupal"&gt;an introduction blog post&lt;/a&gt;. I'd like to invite you to read it, say hi and follow his work as it progresses through the summer.&lt;/p&gt;
+
+&lt;p&gt;Welcome in the Drupal community Vijay!&lt;/p&gt;
+&lt;/div&gt;
+      
+  &lt;div class="field field--name-field-related field--type-entity-reference field--label-above"&gt;
+    &lt;div class="field--label"&gt;Enjoyed this post? There is more!&lt;/div&gt;
+          &lt;div class="field--items"&gt;
+              &lt;div class="field--item"&gt;&lt;a href="http://janezurevc.name/media-entity-reaches-8-x-1-0" hreflang="en"&gt;Media entity reaches 8.x-1.0!&lt;/a&gt;&lt;/div&gt;
+          &lt;div class="field--item"&gt;&lt;a href="http://janezurevc.name/entity-browser-got-configuration-ui" hreflang="en"&gt;Entity browser got configuration UI &lt;/a&gt;&lt;/div&gt;
+          &lt;div class="field--item"&gt;&lt;a href="http://janezurevc.name/image-effects-module-for-drupal-8" hreflang="en"&gt;Image effects module for Drupal 8&lt;/a&gt;&lt;/div&gt;
+              &lt;/div&gt;
+      &lt;/div&gt;
+</description>
+  <pubDate>Tue, 24 May 2016 08:40:41 +0000</pubDate>
+    <dc:creator>slashrsm</dc:creator>
+    <guid isPermaLink="false">91 at http://janezurevc.name</guid>
+    </item>
+<item>
+  <title>Media entity reaches 8.x-1.0!</title>
+  <link>http://janezurevc.name/media-entity-reaches-8-x-1-0</link>
+  <description>
+&lt;span&gt;Media entity reaches 8.x-1.0!&lt;/span&gt;
+
+&lt;span&gt;&lt;span lang="" about="http://janezurevc.name/users/slashrsm" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;slashrsm&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Mon, 02.05.2016 - 10:00&lt;/span&gt;
+
+            &lt;div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"&gt;&lt;p&gt;More than two years ago I gave &lt;a href="https://www.youtube.com/watch?v=4giCe2GNnLQ"&gt;a session about the future of media at DrupalCon Prague&lt;/a&gt;. The outcome of that session was &lt;a href="https://groups.drupal.org/node/327768"&gt;a planning sprint&lt;/a&gt; that happened two days after it. One of the ideas that was born on that sprint was &lt;a href="https://drupal.org/project/media_entity"&gt;Media entity&lt;/a&gt;, storage layer for media-related information built with simplicity and support for remotely hosted media in mind. It's development started shortly after that and got significantly accelerated in the spring of the next year, when the core of the media initiative met at NYC Camp and &lt;a href="https://groups.drupal.org/node/418803"&gt;agreed on the common battle plan for Drupal 8&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Media entity and it's plugins have been pretty stable for the last few months. It seemed to be almost ready for it's first release, but there were few tickets in the issue queue which I wanted to resolve first. In the last few days I found some time to look at those. Together with &lt;a href="https://drupal.org/u/paranojik"&gt;Tadej Baša (@paranojik)&lt;/a&gt; we managed to finish all of the most important patches, which allowed me to tag 8.x-1.0 yesterday. I am thrilled and extremely proud. A lot of individuals and organizations invested many hours to make this possible and I would like to thank every single one of them. Special thanks go to &lt;a href="http://nyccamp.org/"&gt;NYC Camp organizers&lt;/a&gt;, who organized two sprints and have been supporting us from the beginning, &lt;a href="http://examiner.com"&gt;Examiner.com&lt;/a&gt;, my ex employer who allowed me to spend significant amount of my time to work on many media-related modules and &lt;a href="http://www.md-systems.ch/"&gt;MD Systems&lt;/a&gt;, who organized two media sprints and let part of their &lt;a href="http://www.md-systems.ch/en/blog/2016-02/media-management-in-drupal-8"&gt;team to work on Drupal 8 media for 3 months&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Along with the main module I released some of it's plugins too: &lt;a href="https://drupal.org/project/media_entity_image"&gt;Image&lt;/a&gt;, &lt;a href="https://drupal.org/project/media_entity_slideshow"&gt;Slideshow&lt;/a&gt;, &lt;a href="https://drupal.org/project/media_entity_twitter"&gt;Twitter&lt;/a&gt; and &lt;a href="https://drupal.org/project/media_entity_instagram"&gt;Instagram&lt;/a&gt;. There are also plugins that handle &lt;a href="https://drupal.org/project/video_embed_field"&gt;Video&lt;/a&gt;, &lt;a href="https://drupal.org/project/media_entity_audio"&gt;Audio&lt;/a&gt; and &lt;a href="https://drupal.org/project/media_entity_document"&gt;Documents&lt;/a&gt;, which are also quite ready to be used.&lt;/p&gt;
+
+&lt;p&gt;Media entity and it's plugins offer many interesting features:&lt;/p&gt;
+
+&lt;ul&gt;&lt;li&gt;simple and lean storage for local and remote media,&lt;/li&gt;
+&lt;li&gt;out of the box integration with standard Drupal's tools,&lt;/li&gt;
+&lt;li&gt;pluggable architecture that allows easy implementation of additional plugins,&lt;/li&gt;
+&lt;li&gt;100% automatic delivery of thumbnails,&lt;/li&gt;
+&lt;li&gt;delivery of remote metadata and&lt;/li&gt;
+&lt;li&gt;mapping of remote metadata with entity fields.&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;I encourage you to try it and let us know what you think. We are looking for co-maintainers too. If you'd like to spend some time in contrib and have ideas for new features &lt;a href="http://janezurevc.name/contact"&gt;let me know&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In the next few weeks we're planning releases of the other media modules. Stay tuned!&lt;/p&gt;
+&lt;/div&gt;
+      
+  &lt;div class="field field--name-field-related field--type-entity-reference field--label-above"&gt;
+    &lt;div class="field--label"&gt;Enjoyed this post? There is more!&lt;/div&gt;
+          &lt;div class="field--items"&gt;
+              &lt;div class="field--item"&gt;&lt;a href="http://janezurevc.name/goodbye-examiner-hello-md-systems" hreflang="en"&gt;Goodbye Examiner, hello MD Systems&lt;/a&gt;&lt;/div&gt;
+          &lt;div class="field--item"&gt;&lt;a href="http://janezurevc.name/a-lot-of-exciting-drupal-8-media-news" hreflang="en"&gt;A lot of exciting Drupal 8 media news!&lt;/a&gt;&lt;/div&gt;
+          &lt;div class="field--item"&gt;&lt;a href="http://janezurevc.name/when-will-media-be-ready-for-drupal-8" hreflang="und"&gt;When will media be ready for Drupal 8?&lt;/a&gt;&lt;/div&gt;
+              &lt;/div&gt;
+      &lt;/div&gt;
+</description>
+  <pubDate>Mon, 02 May 2016 08:00:00 +0000</pubDate>
+    <dc:creator>slashrsm</dc:creator>
+    <guid isPermaLink="false">90 at http://janezurevc.name</guid>
+    </item>
+<item>
+  <title>Zurich Drupal 8 media sprint was a success!</title>
+  <link>http://janezurevc.name/zurich-drupal-8-media-sprint-was-a-success</link>
+  <description>
+&lt;span&gt;Zurich Drupal 8 media sprint was a success!&lt;/span&gt;
+
+&lt;span&gt;&lt;span lang="" about="http://janezurevc.name/users/slashrsm" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;slashrsm&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Mon, 04.01.2016 - 22:42&lt;/span&gt;
+
+            &lt;div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"&gt;&lt;p&gt;Almost exactly two months ago &lt;a href="http://www.md-systems.ch/en"&gt;MD Systems&lt;/a&gt; announced the &lt;a href="http://www.md-systems.ch/en/blog/2015-10/join-the-drupal-8-media-initiative"&gt;Media initiative program&lt;/a&gt; that they initiated in cooperation with &lt;a href="http://www.ringier.ch/"&gt;Ringier&lt;/a&gt;, &lt;a href="http://gassmann.ch/"&gt;Gassmann media&lt;/a&gt; and &lt;a href="http://www.suedostschweiz.ch/"&gt;Südostschweiz&lt;/a&gt;. Initiative was kicked off with a &lt;a href="http://www.md-systems.ch/en/blog/2015-12/the-media-sprint-week-was-a-big-success"&gt;week long sprint, which happened at first week of December in Zurich&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note nr. 1: &lt;a href="http://www.md-systems.ch/en"&gt;MD Systems&lt;/a&gt; are funding part of my time to work on Drupal 8 media. They are constantly investing in Drupal core and many contrib modules. They are &lt;a href="https://www.drupal.org/drupal-services"&gt;one of the greatest Drupal service providers&lt;/a&gt; and number 1 Drupal organizational contributor taking their size into consideration. You need a site built? You should definitely &lt;a href="http://www.md-systems.ch/en/node/19"&gt;get in touch with them&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note nr. 2: &lt;a href="http://www.examiner.com"&gt;Examiner.com&lt;/a&gt; (my employer and very well know enterprise Drupal 7 site) gives every developer a so-called "Drupal day" every other week. This allows me to work on Drupal 8 media components. We have been &lt;a href="https://2015.drupalcamp.at/session/how-we-built-enterprise-media-publishing-platform-d8"&gt;working on a Drupal 8 project&lt;/a&gt; for a while now, which also allowed me to do a lot of contrib work during my work hours. Thank you! You are great!&lt;/em&gt;&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;
+&lt;img src="https://pbs.twimg.com/media/CVOhXenWcAAAXsg.jpg" title="Photo by Stefanie Gupta" alt="Media sprint attendees" /&gt;&lt;br /&gt;
+Photo by &lt;a href="https://twitter.com/StefanieGupta"&gt;Stefanie Gupta&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Sprint was a success! We pushed forward many parts of the media ecosystem, but I'd like expose few things I am very excited about.&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;
+&lt;strong&gt;Image cropping:&lt;/strong&gt; along with few minor improvements to the &lt;a href="http://drupal.org/project/crop"&gt;Crop API&lt;/a&gt; we did a lot of work on first UI module based on it, &lt;a href="https://www.drupal.org/sandbox/woprrr/2571403"&gt;Image widget crop&lt;/a&gt;.
+&lt;div class="video-wrapper"&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/Ioo_bYnCOOg" frameborder="0" allowfullscreen=""&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Entity embed:&lt;/strong&gt; &lt;a href="http://drupal.org/project/entity_embed"&gt;our embedding component&lt;/a&gt; got many low-level improvements, general consolidation and clean-up. On top of that we finally added integration with the &lt;a href="http://drupal.org/project/entity_browser"&gt;Entity browser&lt;/a&gt;, which significantly improves user experience when selecting an entity for embedding. Instead of just the auto-complete field now we're finally able to use an arbitrary Entity browser for the job.
+&lt;div class="video-wrapper"&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/TnbudkNKdcU" frameborder="0" allowfullscreen=""&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;&lt;a href="http://drupal.org/project/field_formatter"&gt;Field formatter:&lt;/a&gt;&lt;/strong&gt; this module provides formatters for entity reference fields. It allows us to represent a referenced entity with one of it's fields. At the sprint we committed an initial implementation of the module, which is still very rough around the edges. However, we are actively, as part of the announced Media initiative program, working on it. We'd like to encourage everyone to give it a try and let us know what you think.
+&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;File entity:&lt;/strong&gt; very well known module from Drupal 7 world. At the sprint we more or less achieved feature parity with it's D7 version. We also moved it the official &lt;a href="https://github.com/drupal-media/file_entity"&gt;Drupal media group on GitHub&lt;/a&gt; and we hope to bring it back to &lt;a href="http://drupal.org/project/file_entity"&gt;drupal.org&lt;/a&gt; as soon as possible.
+&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Entity browser:&lt;/strong&gt; we finally managed to start working on configuration UI. It is almost there and we are doing our best to finish it as soon as possible. We also improved UX of the default field widget that comes with the module. Additional to the "Remove" operation we added support for editing selected entities.
+&lt;div class="video-wrapper"&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/R3tM7hqAIiQ" frameborder="0" allowfullscreen=""&gt;&lt;/iframe&gt;&lt;/div&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;Media entity and friends:&lt;/strong&gt; entire family of &lt;a href="https://drupal.org/project/media_entity"&gt;Media entity&lt;/a&gt; modules has seen many improvements. We improved test coverage, fixed many bugs and added field formatters for many media types.
+&lt;/li&gt;
+&lt;/ol&gt;&lt;p&gt;There is much more work that was done, but unfortunately I'm unable to mention everything here. We consistently tagged all issues that were touched during that week. We encourage everyone to check the &lt;a href="https://www.drupal.org/project/issues/search?projects=&amp;project_issue_followers=&amp;issue_tags_op=%3D&amp;issue_tags=Zurich+media+sprint+2015"&gt;complete list of issues&lt;/a&gt; or our &lt;a href="https://trello.com/b/EQwsjrbi/drupal-8-media"&gt;public sprint board&lt;/a&gt; to learn more. &lt;/p&gt;
+&lt;p&gt;I'd like to thank to everyone that helped us to make this sprint come true: &lt;a href="http://www.md-systems.ch/en"&gt;MD Systems&lt;/a&gt;, &lt;a href="http://www.ringier.ch"&gt;Ringier&lt;/a&gt;, &lt;a href="http://www.suedostschweiz.ch/"&gt;Südostschweiz&lt;/a&gt;, &lt;a href="http://gassmann.ch/"&gt;Gassmann media&lt;/a&gt;, &lt;a href="http://drupal.org/u/miro_dietiker"&gt;Miro Dietiker (@miro_dietiker)&lt;/a&gt;, &lt;a href="http://twitter.com/J_Zech"&gt;Jerome Zech (@J_Zech)&lt;/a&gt;, &lt;a href="http://drupal.org/u/berdir"&gt;Sascha Grossenbacher (@berdir)&lt;/a&gt;, &lt;a href="http://drupal.org/u/webflo"&gt;Florian Weber (@webflo)&lt;/a&gt;, &lt;a href="http://drupal.org/u/dawehner"&gt;Daniel Wehner (@dawehner)&lt;/a&gt;, &lt;a href="http://drupal.org/u/sanja_m"&gt;Sanja Milanović (@sanja_m)&lt;/a&gt;, &lt;a href="http://drupal.org/u/devlada"&gt;Vladimir Mitrović (@devlada)&lt;/a&gt;, &lt;a href="http://drupal.org/u/denchev"&gt;Miloš Denčev (@denchev)&lt;/a&gt;, &lt;a href="http://drupal.org/u/lukas-von-blarer"&gt;Lukas von Blarer (@lukas-von-blarer)&lt;/a&gt;, &lt;a href="http://drupal.org/u/pheadeaux"&gt;Tassilo Groeper (@pheadeaux)&lt;/a&gt;, &lt;a href="http://drupal.org/u/edurenye"&gt;Eduard Reñé Claramunt (@edurenye)&lt;/a&gt;, &lt;a href="http://drupal.org/u/sasanikolic"&gt;Saša Nikolič (@sasanikolic)&lt;/a&gt;, &lt;a href="http://drupal.org/u/mbovan"&gt;Miloš Bovan (@mbovan)&lt;/a&gt;, &lt;a href="http://drupal.org/u/tdoung"&gt;Tram Anh Duong (@tduong)&lt;/a&gt;, &lt;a href="http://drupal.org/u/WimLeers"&gt;Wim Leers (@WimLeers)&lt;/a&gt;, &lt;a href="http://drupal.org/u/cgalli"&gt;Christophe Galli (@cgalli)&lt;/a&gt;, &lt;a href="http://drupal.org/u/woprrr"&gt;Alexandre Mallet (@woprrr)&lt;/a&gt;. You are awesome!&lt;/p&gt;
+&lt;h3&gt;How to help?&lt;/h3&gt;
+&lt;p&gt;Start contributing. You can write documentation, test modules in the ecosystem and report bugs, fixing bugs or work on new features, design UX, write automated tests, share ideas and much, much more. You have a skill, we have a task for you.&lt;/p&gt;
+&lt;p&gt;We are available on IRC. Join us on &lt;a href="irc://irc.freenode.net/drupal-media"&gt;#drupal-media channel on Freenode.net&lt;/a&gt; and get involved. We always publish general announcements on &lt;a href="http://groups.drupal.org/media"&gt;groups.drupal.org/media&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you prefer more personal communication you can always ping me on &lt;a href="http://twitter.com/slashrsm"&gt;Twitter (@slashrsm)&lt;/a&gt; or use the &lt;a href="http://janezurevc.name/contact"&gt;contact form&lt;/a&gt; on my blog to get in touch.&lt;/p&gt;
+&lt;h3&gt;About me&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;I (&lt;a href="https://www.drupal.org/u/slashrsm"&gt;Janez Urevc - @slashrsm&lt;/a&gt;) am one of the architects of media ecosystem for Drupal 8. If you like what I am doing please consider donating to &lt;a href="https://blockchain.info/address/1Xqe6gYWEbF1iKsy3Mr5SbAyebNyucj5t"&gt;my Bitcoin address: 1Xqe6gYWEbF1iKsy3Mr5SbAyebNyucj5t&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Together with some colleagues I'm &lt;strong&gt;building a small team of professionals that will be providing top-level consulting, training and development related to media in Drupal 8&lt;/strong&gt;. If you're interested or you'd like to work with us please &lt;a href="http://janezurevc.name/contact"&gt;get in touch&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+      
+  &lt;div class="field field--name-field-related field--type-entity-reference field--label-above"&gt;
+    &lt;div class="field--label"&gt;Enjoyed this post? There is more!&lt;/div&gt;
+          &lt;div class="field--items"&gt;
+              &lt;div class="field--item"&gt;&lt;a href="http://janezurevc.name/when-will-media-be-ready-for-drupal-8" hreflang="und"&gt;When will media be ready for Drupal 8?&lt;/a&gt;&lt;/div&gt;
+          &lt;div class="field--item"&gt;&lt;a href="http://janezurevc.name/janezurevc-name-runs-on-drupal-8" hreflang="en"&gt;janezurevc.name runs on Drupal 8!&lt;/a&gt;&lt;/div&gt;
+              &lt;/div&gt;
+      &lt;/div&gt;
+</description>
+  <pubDate>Mon, 04 Jan 2016 21:42:46 +0000</pubDate>
+    <dc:creator>slashrsm</dc:creator>
+    <guid isPermaLink="false">83 at http://janezurevc.name</guid>
+    </item>
+<item>
+  <title>When will media be ready for Drupal 8?</title>
+  <link>http://janezurevc.name/when-will-media-be-ready-for-drupal-8</link>
+  <description>
+&lt;span&gt;When will media be ready for Drupal 8?&lt;/span&gt;
+
+&lt;span&gt;&lt;span lang="" about="http://janezurevc.name/users/slashrsm" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;slashrsm&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Mon, 09.11.2015 - 14:00&lt;/span&gt;
+
+            &lt;div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"&gt;&lt;p&gt;&lt;em&gt;Disclaimer: This post ended up being quite long and I apologize for that. Media is a complex problem and there is a lot to be said. If you have better things to do in your life skip directly to the most important part: &lt;a href="#list-modules"&gt;list of modules in D8 media space and their status&lt;/a&gt;. Would you like to help? &lt;a href="#focus"&gt;See what is our current focus&lt;/a&gt;. Would you like to get in touch? &lt;a href="#help"&gt;We will be happy to talk to you!&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;OK. Now we're ready to start!&lt;/p&gt;
+&lt;p&gt;With Drupal 8 around the corner a lot of people started asking me when will media be ready. It was quite reasonable to expect this to start happening. Unfortunately there is no simple answer to this question. Shortest would be: &lt;em&gt;"It depends.... What exactly do you need?"&lt;/em&gt;. I know what you're thinking now... &lt;em&gt;"Are you joking with me!?"&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;First things first&lt;/h2&gt;
+&lt;div class="video-wrapper"&gt;
+&lt;iframe width="220" height="135" src="https://www.youtube.com/embed/YjGbCVuNE3U" frameborder="0" allowfullscreen=""&gt;&lt;/iframe&gt;&lt;div style="text-align: center;"&gt;&lt;em&gt;Screencast displays WYSIWYG embedding in D8 core.&lt;/em&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Quite some things happened since Drupal 8 release cycle started. Initially we focused on improving core itself. Improvements that were added to core are not many, but some of them are still very nice. Most noticeable for a day to day user are WYSIWYG embedding of images, multi-upload with drag'n drop support and listing of files in the system.&lt;/p&gt;
+&lt;div class="video-wrapper"&gt;
+&lt;iframe width="220" height="135" src="https://www.youtube.com/embed/umthSptaX6E" frameborder="0" allowfullscreen=""&gt;&lt;/iframe&gt;&lt;div style="text-align: center;"&gt;&lt;em&gt;Screencast displays multi upload in Drupal 8.&lt;/em&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Good stuff, you have to admit that. :) I hope that you already feel better... While those won't cover every possible use case are still nice improvements that most of sites will leverage from.&lt;/p&gt;
+&lt;p class="video-wrapper" style="text-align: center;"&gt;
+&lt;a title="Drupal 8 file listing" href="http://drupal-media.github.io/d8-status-update/img/d8-file-listing.png" class="colorbox-load"&gt;&lt;img src="http://drupal-media.github.io/d8-status-update/img/d8-file-listing.png" title="Drupal 8 file listing" alt="Drupal 8 file listing" /&gt;&lt;/a&gt;&lt;br /&gt;&lt;span&gt;&lt;em&gt;Drupal 8 file listing.&lt;/em&gt;&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;At some point during the D8 cycle it became clear that we won't be able to include any more major improvements in core. It was necessary to start thinking about contrib space. &lt;a href="https://groups.drupal.org/node/327768"&gt;Discussions were started&lt;/a&gt;. We tried to identify what went wrong in the past and proposed ideas to make things better.&lt;/p&gt;
+&lt;p&gt;At NYCCamp 2014 we finally met in person and &lt;a href="https://groups.drupal.org/node/418803"&gt;came with an ambitious plan&lt;/a&gt;. A lot of work was invested into it since then. We had two successful Google Summer of code projects, many volunteers invested 100s of hours and many companies invested significant funds to reach our goal.&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;
+&lt;a title="Core media team at NYC Camp 2014" href="https://groups.drupal.org/files/_GEN1706.jpg" class="colorbox-load"&gt;&lt;img title="Core media team at NYC Camp 2014" alt="Core media team at NYC Camp 2014" src="https://groups.drupal.org/files/_GEN1706.jpg" /&gt;&lt;/a&gt;&lt;br /&gt;&lt;span&gt;&lt;em&gt;Core media team at NYC Camp 2014.&lt;/em&gt;&lt;/span&gt;
+&lt;/p&gt;
+&lt;h2&gt;Where are we going?&lt;/h2&gt;
+&lt;p&gt;Most important decision that was made in New York is division of media ecosystem into smaller and independent components. Until now media solutions mostly came as full-featured solutions that were hard to maintain and almost completely unable to integrate and collaborate. This approach comes with many benefits. Let's list just few of them:&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;Smaller pieces are easier to maintain.&lt;/li&gt;
+&lt;li&gt;Independent components with clear focus are useful even outside of media.&lt;/li&gt;
+&lt;li&gt;Components can be shared among many media solutions which simplifies development and maintenance.&lt;/li&gt;
+&lt;li&gt;Media can re-use components that might already exist in the community.&lt;/li&gt;
+&lt;/ol&gt;&lt;p&gt;I often use &lt;a href="https://drupal.org/project/commerce"&gt;Drupal Commerce&lt;/a&gt; ecosystem as an example. Instead of going down the "one big module that does all and even more" its architects decided to divide the problem space into many smaller pieces. As a result of that we have core commerce module that builds foundation and many plugins that build on top of that. Every e-commerce site is different and this approach allows us to adjust each individual site to the client's needs.&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;
+&lt;a title="Ryan and Bojan, two of the masterminds behind Drupal Commerce" href="https://farm8.staticflickr.com/7451/10686725845_4a10d64377_z_d.jpg" class="colorbox-load"&gt;&lt;br /&gt;&lt;img title="Ryan and Bojan, two of the masterminds behind Drupal Commerce" alt="Ryan and Bojan, two of the masterminds behind Drupal Commerce" src="https://farm8.staticflickr.com/7451/10686725845_4a10d64377_z_d.jpg" /&gt;&lt;/a&gt;&lt;br /&gt;&lt;span&gt;&lt;em&gt;Ryan and Bojan, two of the masterminds behind Drupal Commerce.&lt;/em&gt;&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;"But, everything that shines ain't gold..."&lt;/em&gt;, you say. &lt;em&gt;"If you divide the ecosystem into many parts, how will I know where to look for things?"&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;You are right. Fragmentation does indeed come with some level of complexity. But we think that this can be fixed. I'll give commerce example once again. &lt;em&gt;"Ah! Not again!", you say. Well... yes. Those guys did many things right!&lt;/em&gt; Anyone heard about &lt;a href="https://www.drupal.org/project/commerce_kickstart"&gt;Commerce Kickstart&lt;/a&gt;? No? It is a &lt;a href="https://www.drupal.org/project/project_distribution"&gt;Drupal distribution&lt;/a&gt; for e-commerce. It bundles Commerce core and many of it's plugins to build a full-featured solution. It can be used as a plug'n play solution, foundation to start building a project on or as a demonstration of possibilities that Commerce ecosystem has to offer.&lt;/p&gt;
+&lt;p&gt;Our plan is to offer something similar. Either a distribution or a few "full-featured solution" modules that will bundle components and come with some default functionality. Those solutions will serve similar purpose than Kickstart.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Did you really make it this far?! You must be insane! :) Now you really deserve some &lt;strong&gt;really&lt;/strong&gt; useful info...&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id="list-modules"&gt;Where are we?&lt;/h2&gt;
+&lt;p&gt;OK... There will be many components. But is there anything ready at all? There is. Not everything, but there are pieces you can start using today.&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;&lt;a href="http://drupal.org/project/file_entity"&gt;File entity:&lt;/a&gt;&lt;/strong&gt; you might be familiar with this module from Drupal 7. It improves core files, makes them fieldable, lets you configure how they're displayed, etc. There is no official port yet, but you can check the &lt;a href="https://github.com/drupal-media/file_entity"&gt;unofficial one that lives on GitHub&lt;/a&gt;. It will hopefully become official soon (&lt;em&gt;/me looks at maintainers&lt;/em&gt; :)).&lt;/li&gt;
+&lt;li&gt;
+&lt;div class="video-wrapper"&gt;
+&lt;iframe width="220" height="135" src="https://www.youtube.com/embed/c1918uIrCTI" frameborder="0" allowfullscreen=""&gt;&lt;/iframe&gt;&lt;div style="text-align: center;"&gt;&lt;em&gt;Media entity handling Tweets and their metadata.&lt;/em&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="http://drupal.org/project/media_entity"&gt;Media entity:&lt;/a&gt;&lt;/strong&gt; this alternative media storage approach doesn't directly extend core files. Instead of that creates new entity type from scratch. It uses unchanged core files for local media and handles remote media (&lt;a href="http://drupal.org/project/media_entity_embeddable_video"&gt;Youtube&lt;/a&gt;, &lt;a href="http://drupal.org/project/media_entity_twitter"&gt;Twitter&lt;/a&gt;, &lt;a href="http://drupal.org/project/media_entity_instagram"&gt;Instagram&lt;/a&gt;, ...) differently. It knows how to handle each individual type of media and it able to map metadata (tags, captions, credit info, thumbnails, ...) with entity fields.
+&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="http://drupal.org/project/entity_browser"&gt;Entity browser:&lt;/a&gt;&lt;/strong&gt; our browsing and selecting tool. Again, it knows how to work with any entity type. You can use it with entity reference fields, in your custom forms, as a standalone tool and we're planning to integrate it with Entity embed. Entity browser is extremely flexible. It comes with many default plugins and you can write your own. It is still in quite heavy development but some people use it already. There is also &lt;a href="https://drupal-media.gitbooks.io/drupal8-guide/content/modules/entity_browser/intro.html"&gt;some basic documentation in our D8 media guide&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;
+&lt;div class="video-wrapper"&gt;
+&lt;iframe width="220" height="135" src="https://www.youtube.com/embed/p8cF525kEkM" frameborder="0" allowfullscreen=""&gt;&lt;/iframe&gt;&lt;div style="text-align: center;"&gt;&lt;em&gt;Media embed in action.&lt;/em&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="http://drupal.org/project/entity_embed"&gt;Entity embed:&lt;/a&gt;&lt;/strong&gt; embedding solution that can swallow any entity that you throw at it. It is very flexible and powerful. It is able to track embedded entities and can modify appearance on the render time. It integrates with CKEditor which gives users a nice UI to select entities to embed and configure their display. This will create a custom HTML element with data attributes that define all configuration. This configuration is picked by the text filter on the display time and converted to a rendered version of the entity. Very mature and useful. You should really give it a try!&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;div class="video-wrapper"&gt;
+&lt;iframe width="220" height="135" src="https://www.youtube.com/embed/tZer3Gf5d0s" frameborder="0" allowfullscreen=""&gt;&lt;/iframe&gt;&lt;div style="text-align: center;"&gt;&lt;em&gt;Entity browser with DropzoneJS image uploader and image library.&lt;/em&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="http://drupal.org/project/dropzonejs"&gt;DropzoneJS:&lt;/a&gt;&lt;/strong&gt; this module provides Drupal integration for the great multi-upload library. It gives you form element that can be used on custom forms and uses it to provide a widget for Entity browser. File/image field widget is still in development.
+&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="http://drupal.org/project/crop"&gt;Crop API:&lt;/a&gt;&lt;/strong&gt; provides storage for all cropping solution. Is able to handle crops based on region and focal point concepts. Also comes with some very basic image effects.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://www.drupal.org/sandbox/woprrr/2571403"&gt;Image widget crop:&lt;/a&gt;&lt;/strong&gt; first UI module that builds on top of Crop API. Brings nice cropping experience to core image fields.&lt;/li&gt;
+&lt;li&gt;
+&lt;div class="video-wrapper"&gt;
+&lt;iframe width="220" height="135" src="https://www.youtube.com/embed/bPMXM5LJu0U" frameborder="0" allowfullscreen=""&gt;&lt;/iframe&gt;&lt;div style="text-align: center;"&gt;&lt;em&gt;Entity browser and Inline entity form working together.&lt;/em&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="http://drupal.org/project/inline_entity_form"&gt;Inline entity form:&lt;/a&gt;&lt;/strong&gt; born in Drupal Commerce world quickly became standard tool for advanced manipulation of referenced entities. It turns out it works great with media too!
+&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="http://drupal.org/project/fallback_formatter"&gt;Fallback formatter:&lt;/a&gt;&lt;/strong&gt; provides a field formatter that can attempt multiple formatters and the first one that returns output wins.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="http://drupal.org/project/file_browser"&gt;File entity browser:&lt;/a&gt;&lt;/strong&gt; one of the first "example" modules. Uses Entity browser to provide nice multi-upload experience and ability to reuse files from the library. Uses &lt;a href="http://masonry.desandro.com/"&gt;Masonry grid layout library&lt;/a&gt; to make things look nice. Can be used as a starting point if you want to start exploring Entity browser. More features will be added soon.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="http://drupal.org/project/media_pinkeye"&gt;Media pinkeye:&lt;/a&gt;&lt;/strong&gt; another "example" module. Comes with some default configuration that displays what can be done with Media entity and its plugins.&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;As you can see there is a lot of pieces that you can start using today. Are full-featured modules like &lt;a href="http://drupal.org/project/media"&gt;Media&lt;/a&gt;, &lt;a href="http://drupal.org/project/scald"&gt;Scald&lt;/a&gt; and &lt;a href="http://drupal.org/project/mediabox"&gt;MediaBox&lt;/a&gt; ready? No. Are you able to start building good stuff today? Definitely! Those modules will be using same components as I listed above. Can you expect issues and bugs? Yes! &lt;a href="#help"&gt;Get in touch&lt;/a&gt; and we'll fix stuff together.&lt;/p&gt;
+&lt;h2 id="focus"&gt;What remains to be done?&lt;/h2&gt;
+&lt;p&gt;A lot! :) We consistently tag all our issues with "Media Initiative" and "D8Media". Search for this two tags and you'll get &lt;a href="http://bit.ly/d8-media-issues"&gt;the list of issues&lt;/a&gt; we need to solve at some point. Additionally we add "Novice" tag to indicate issues that are &lt;a href="http://bit.ly/d8-media-novice-issues"&gt;suitable for new contributors&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;We also maintain roadmaps for some of the individual modules:&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Media entity: &lt;a href="https://www.drupal.org/node/2577453"&gt;https://www.drupal.org/node/2577453&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Entity browser: &lt;a href="https://www.drupal.org/node/2576683"&gt;https://www.drupal.org/node/2576683&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Inline entity form: &lt;a href="https://www.drupal.org/node/2576445"&gt;https://www.drupal.org/node/2576445&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;Check those for the current focus.&lt;/p&gt;
+&lt;h2 id="help"&gt;How to help?&lt;/h2&gt;
+&lt;p&gt;Start contributing. You can write documentation, test modules in the ecosystem and report bugs, fixing bugs or work on new features, design UX, write automated tests, share ideas and much, much more. You have a skill, we have a task for you.&lt;/p&gt;
+&lt;p&gt;We are available on IRC. Join us on &lt;a href="irc://irc.freenode.net/drupal-media"&gt;#drupal-media channel on Freenode.net&lt;/a&gt; and get involved. We always publish general announcements on &lt;a href="http://groups.drupal.org/media"&gt;groups.drupal.org/media.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;If you prefer more personal communication you can always ping me on &lt;a href="http://twitter.com/slashrsm"&gt;Twitter (@slashrsm)&lt;/a&gt; or use the &lt;a href="http://janezurevc.name/contact"&gt;contact form&lt;/a&gt; on this site to get in touch.&lt;/p&gt;
+&lt;p&gt;We are sprinting too. Join us on one of the sprints in the near future:&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;&lt;a href="https://groups.drupal.org/node/489203"&gt;2nd Drupal 8 media virtual sprint&lt;/a&gt; (13. November 2015)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://2015.drupalcamp.at/"&gt;Sprint at DrupalCamp Vienna&lt;/a&gt; (29. November 2015)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://groups.drupal.org/node/488488"&gt;Week long media sprint in Zurich&lt;/a&gt; - part of the broader &lt;a href="http://www.md-systems.ch/en/blog/2015-10/join-the-drupal-8-media-initiative"&gt;D8 Media initiative program&lt;/a&gt; started by &lt;a href="http://www.md-systems.ch/en"&gt;MD Systems&lt;/a&gt; (30. November - 4. December 2015)&lt;/li&gt;
+&lt;/ol&gt;&lt;h2&gt;I want to start building D8 site and I need media. What to do?&lt;/h2&gt;
+&lt;p&gt;There are several things you can do:&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;Check components that we already have and see if you can use them to build what you want.&lt;/li&gt;
+&lt;li&gt;Encourage your team to get involved with the initiative and help us pushing media forward.&lt;/li&gt;
+&lt;li&gt;Don't start building your own custom solution. Please. Even if it sounds like a good idea it is not. Believe me. This is never a good idea. You will have problems maintaining your custom solution. Invest time in common efforts. You will get what you need and community will help you maintaining it. We don't provide solutions for your problems? &lt;a href="#help"&gt;Talk to us!&lt;/a&gt; We will listen. I promise! Read this paragraph again.&lt;/li&gt;
+&lt;li&gt;You don't have in-house knowledge/skills? You have the team that needs just a bit of guidance? We can provide some level of commercial support, coaching and consulting. &lt;a href="http://janezurevc.name/contact"&gt;Get in touch and we'll see what can be done&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Our goal is to make &lt;strong&gt;Drupal the best media handling solution for the internet&lt;/strong&gt;. As you can see there's still a long way to reach that. However, we have a plan and we're working heavily. Some things are there and you can start using them today.&lt;/p&gt;
+&lt;p&gt;Are you missing something? Join us. Only together we'll make Drupal media shine. Share this post with a co-worker or friend. &lt;a href="#help"&gt;Let us know what you think&lt;/a&gt;. Get involved and help us reach our goal.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;I would like to thank the people who preliminary reviewed this post and suggested improvements (in random order): my wife Nataša, &lt;a href="http://drupal.org/u/chx"&gt;Károly Négyesi (@chx)&lt;/a&gt;, &lt;a href="http://drupal.org/u/primsi"&gt;Primož Hmeljak (@Primsi)&lt;/a&gt;, &lt;a href="http://drupal.org/u/paranojik"&gt;Tadej Baša (@paranojik)&lt;/a&gt;, &lt;a href="https://www.drupal.org/u/miro_dietiker"&gt;Miro Dietiker&lt;/a&gt; and &lt;a href="https://www.drupal.org/u/berdir"&gt;Sascha Grossenbacher (@berdir)&lt;/a&gt;. I would also like to thank everybody that contributed to the initiative in past years.&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+      
+  &lt;div class="field field--name-field-related field--type-entity-reference field--label-above"&gt;
+    &lt;div class="field--label"&gt;Enjoyed this post? There is more!&lt;/div&gt;
+          &lt;div class="field--items"&gt;
+              &lt;div class="field--item"&gt;&lt;a href="http://janezurevc.name/zurich-drupal-8-media-sprint-was-a-success" hreflang="und"&gt;Zurich Drupal 8 media sprint was a success!&lt;/a&gt;&lt;/div&gt;
+          &lt;div class="field--item"&gt;&lt;a href="http://janezurevc.name/janezurevc-name-runs-on-drupal-8" hreflang="en"&gt;janezurevc.name runs on Drupal 8!&lt;/a&gt;&lt;/div&gt;
+              &lt;/div&gt;
+      &lt;/div&gt;
+</description>
+  <pubDate>Mon, 09 Nov 2015 13:00:00 +0000</pubDate>
+    <dc:creator>slashrsm</dc:creator>
+    <guid isPermaLink="false">82 at http://janezurevc.name</guid>
+    </item>
+<item>
+  <title>1st Drupal 8 media virtual sprint was a success!</title>
+  <link>http://janezurevc.name/1st-drupal-8-media-virtual-sprint-was-success</link>
+  <description>
+&lt;span&gt;1st Drupal 8 media virtual sprint was a success!&lt;/span&gt;
+
+&lt;span&gt;&lt;span lang="" about="http://janezurevc.name/users/slashrsm" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;slashrsm&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Sat, 03.10.2015 - 09:51&lt;/span&gt;
+
+            &lt;div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"&gt;&lt;p&gt;On Friday, 2nd Oct 2015, we organized the first virtual media sprint. Four sprinters showed up and worked on D8 media issues.&lt;/p&gt;
+&lt;h2&gt;First a bit of background&lt;/h2&gt;
+&lt;p&gt;&lt;img alt="Examiner.com logo" data-entity-type="file" data-entity-uuid="30e95254-03d7-46ba-8a00-c30126dfbb49" src="http://janezurevc.name/sites/default/files/examiner.png" /&gt;&lt;/p&gt;
+&lt;p&gt;At &lt;a href="http://www.examiner.com"&gt;Examiner.com&lt;/a&gt; we get an entire day to spend (along with contributions that we do as part of our regular work) on community contributions every other week. We call it &lt;strong&gt;"Drupal day"&lt;/strong&gt; and we love it! It is our way of saying "Thank you!" to the community. We understand that we wouldn't be as successful as we are without incredible efforts that are invested in Drupal and other free software projects we use.&lt;/p&gt;
+&lt;p&gt;We are currently working on a very cool D8 project where we heavily use modules from media ecosystem. I might write another post solely about that in the near future. My companies' need for solid media handling solution aligns very nicely with my personal interest in the same field. As a result of that I spend most of my Drupal days on improving media ecosystem and thinking about it. Having a day to focus on things that excite you is great, but what if there would be more people joining?&lt;/p&gt;
+&lt;p&gt;This is when idea for virtual sprint was born. I published &lt;a href="https://groups.drupal.org/node/483588"&gt;the event on our group&lt;/a&gt; and invited everyone to join me.&lt;/p&gt;
+&lt;h2&gt;Results&lt;/h2&gt;
+&lt;p&gt;On the actual date three other sprinters joined me:&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href="http://drupal.org/u/primsi"&gt;@primsi&lt;/a&gt; was converting &lt;a href="http://drupal.org/project/entity_browser"&gt;Entity browser's&lt;/a&gt; modal display &lt;a href="https://www.drupal.org/node/2569569"&gt;to use iFrame internally&lt;/a&gt;. We decided for this step back in July at NYC Camp sprint. It will hopefully make Entity browser much more robust and stable. Pull request is almost ready. We still need to figure out some things in part of the JS code that deals with modal manipulation. We could use some help from people that are better in JS development than we are.&lt;/li&gt;
+&lt;li&gt;&lt;span style="font-size: 13.008px; line-height: 1.538em;"&gt;&lt;a href="http://drupal.org/u/woprrr"&gt;@woprrr&lt;/a&gt; was working on his &lt;a href="https://github.com/woprrr/image_widget_crop"&gt;Image widget crop&lt;/a&gt; module which creates nice image cropping experience on top of &lt;a href="http://drupal.org/project/crop"&gt;Crop API&lt;/a&gt;, which provides common storage for all cropping solutions. Module is already working very well and I'll encourage everyone to give it a look. &lt;a href="http://drupal.org/u/woprrr"&gt;@woprrr&lt;/a&gt; also used this module for his&lt;a href="https://www.drupal.org/node/2573087"&gt; Drupal.org project application&lt;/a&gt;. Helping him with pushing his issue forward would be nice way of thanking him for his work ;).&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style="font-size: 13.008px; line-height: 1.538em;"&gt;&lt;a href="http://drupal.org/u/dragan-eror"&gt;@Dragan Eror&lt;/a&gt; reviewed and tested &lt;a href="https://github.com/woprrr/image_widget_crop"&gt;Image widget crop&lt;/a&gt; module and started working on &lt;a href="https://www.drupal.org/node/2336157"&gt;Media entity metadata mapping configuration UI&lt;/a&gt;.&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style="font-size: 13.008px; line-height: 1.538em;"&gt;I (&lt;a href="http://drupal.org/u/slashrsm"&gt;@slashrsm&lt;/a&gt;) spent most of the day converting &lt;a href="https://www.drupal.org/node/2529178"&gt;Media entity validation UI to constraints&lt;/a&gt; and implementing this change in &lt;a href="https://www.drupal.org/node/2578927"&gt;Media entity Twitter provider module&lt;/a&gt;. I also created follow-ups in all other provider modules (&lt;a href="https://www.drupal.org/node/2578935"&gt;Instagram&lt;/a&gt;, &lt;a href="https://www.drupal.org/node/2578947"&gt;Embeddable video&lt;/a&gt;, &lt;a href="https://www.drupal.org/node/2578941"&gt;Image&lt;/a&gt;, &lt;a href="https://www.drupal.org/node/2578945"&gt;Slideshow&lt;/a&gt;) which are suitable for any new contributors looking for issues to get involved in media initiative.&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;h2&gt;How to contribute?&lt;/h2&gt;
+&lt;p&gt;&lt;span style="font-size: 13.008px; line-height: 1.538em;"&gt;Anyone is invited to contribute also outside of official sprints. We tag all our issues with "D8Media", which helps us maintain &lt;a href="http://bit.ly/d8-media-issues"&gt;list of all issues we need to work on&lt;/a&gt;. We also maintain a list of issues &lt;a href="http://bit.ly/b8-media-novice-issues"&gt;suitable for new contributors&lt;/a&gt;. You can find us on IRC (#drupal-media @ Freenode) and a lot of Drupal events (&lt;a href="http://2015.badcamp.net"&gt;BADCamp&lt;/a&gt; and &lt;a href="https://2015.drupalcamp.at/"&gt;Drupal camp Vienna&lt;/a&gt; in the nearest future).&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 13.008px; line-height: 1.538em;"&gt;In order to get an idea about the focus of individual modules we also invite you to check module-specific roadmap planning meta-issues:&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.drupal.org/node/2576445"&gt;Inline entity form&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.drupal.org/node/2577453"&gt;&lt;span style="font-size: 13.008px; line-height: 1.538em;"&gt;Media entity&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style="font-size: 13.008px; line-height: 1.538em;"&gt;&lt;a href="https://www.drupal.org/node/2576683"&gt;Entity browser&lt;/a&gt;.&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;span style="font-size: 13.008px; line-height: 1.538em;"&gt;We will be adding more of those soon. &lt;/span&gt;&lt;/p&gt;
+&lt;h2&gt;Will there be more?&lt;/h2&gt;
+&lt;p&gt;We'd certainly like to organize more virtual (and non-virtual) sprints in the future if we'll see interest from the community/sprinters. Do you think there should be more events like this? Would you like to join us next time? Let us know in the comments section below. You can also follow &lt;a href="http://groups.drupal.org/media"&gt;our group&lt;/a&gt; as we publish all events and other updates there.&lt;/p&gt;
+&lt;/div&gt;
+      </description>
+  <pubDate>Sat, 03 Oct 2015 07:51:53 +0000</pubDate>
+    <dc:creator>slashrsm</dc:creator>
+    <guid isPermaLink="false">81 at http://janezurevc.name</guid>
+    </item>
+<item>
+  <title>Drupal 8 from my media perspective -  update #2</title>
+  <link>http://janezurevc.name/drupal-8-my-media-perspective-update-2</link>
+  <description>
+&lt;span&gt;Drupal 8 from my media perspective -  update #2&lt;/span&gt;
+
+&lt;span&gt;&lt;span lang="" about="http://janezurevc.name/users/slashrsm" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;slashrsm&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Fri, 10.10.2014 - 12:20&lt;/span&gt;
+
+            &lt;div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"&gt;&lt;p&gt;It's been a while since &lt;a href="http://janezurevc.name/drupal-8-my-media-perspective-update-1"&gt;my last post&lt;/a&gt; and with &lt;a href="http://amsterdam2014.drupal.org"&gt;DrupalCon Amsterdam&lt;/a&gt; behind us it seems a good timing for another update.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: &lt;a href="http://www.examiner.com"&gt;Examiner.com&lt;/a&gt; (my employer and very well know enterprise Drupal 7 site) gives every developer a so-called "Drupal day" every other week. I am writing this blog post as part of it as I do some of my code contributions.&lt;/em&gt;&lt;/p&gt;
+&lt;h2&gt;Core&lt;/h2&gt;
+&lt;p&gt;Since last post we fixed:&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.drupal.org/node/2204325"&gt;[#2204325] The "rendered entity" formatter breaks for entity types with out a ViewBuilder&lt;/a&gt; (thanks to &lt;a href="https://www.drupal.org/u/arla"&gt;@Arla&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.drupal.org/node/2239413"&gt;[#2239413] Split FilterCaption into FilterAlign (for data-align) and FilterCaption (for data-caption)&lt;/a&gt; (thanks to &lt;a href="https://www.drupal.org/u/wim-leers"&gt;@Wim Leers&lt;/a&gt; and &lt;a href="https://www.drupal.org/u/blueminds"&gt;@blueminds&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.drupal.org/node/2271349"&gt;[#2271349] Node and Comment ops links should be display components (which can be disabled)&lt;/a&gt; (thanks to &lt;a href="http://drupal.org/u/Berdir"&gt;@Berdir&lt;/a&gt;, &lt;a href="http://drupal.org/u/arla"&gt;@Arla&lt;/a&gt;, &lt;a href="http://drupal.org/u/blueminds"&gt;@blueminds&lt;/a&gt;, &lt;a href="http://drupal.org/u/larowlan"&gt;@larowlan&lt;/a&gt; and &lt;a href="http://www.drupal.org/u/dave-reid"&gt;@Dave Reid&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;We are currently focusing on few issues:&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.drupal.org/node/2278073"&gt;[#2278073] Files with spaces in URIs fail entity TypedData validation&lt;/a&gt; - this issue turns out to be quite tricky. We had some discussions about possible solutions in Amsterdam.&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.drupal.org/node/2148353"&gt;[#2148353] File access (hook_file_download) does not use an EntityAccessController&lt;/a&gt; - should be almost there; needs just a bit more work&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.drupal.org/node/1308152"&gt;[#1308152] Add module://, theme:// and profile:// stream wrappers to access system files&lt;/a&gt; - RTBC at the moment; it seems to be almost there. Yay! Thank you all that worked on it during Amsterdam and after it.&lt;/li&gt;
+&lt;/ul&gt;&lt;h2&gt;Contrib&lt;/h2&gt;
+&lt;p&gt;We've been chasing HEAD a lot during past months. We can't guarantee that everything works at any given time, but we're trying to follow changes in core as frequently as we can.&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href="http://drupal.org/project/entity_embed"&gt;entity_embed&lt;/a&gt; is practically ready (thanks to our &lt;a href="http://www.google-melange.com/gsoc/homepage/google/gsoc2014"&gt;GSoC&lt;/a&gt; student &lt;a href="https://www.drupal.org/u/cs_shadow"&gt;@cs_shadow&lt;/a&gt;). We are planning to split it's general functionality &lt;a href="https://drupalmedia.hackpad.com/Embed-module-71ubAT132P3"&gt;into embed module&lt;/a&gt; that would allow other modules to embed various types of content (not just Drupal entities). entity_embed will become just one of the modules in this group. &lt;a href="https://www.drupal.org/u/dave-reid"&gt;@Dave Reid&lt;/a&gt;, &lt;a href="https://www.drupal.org/u/cs_shadow"&gt;@cs_shadow&lt;/a&gt; and &lt;a href="https://www.drupal.org/u/eaton"&gt;@eaton&lt;/a&gt; did most work on planning this split.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://drupal.org/project/entity_browser"&gt;entity_browser&lt;/a&gt; is not progressing as fast as we'd like, but it gained some momentum recently. &lt;a href="https://www.drupal.org/u/kmoll"&gt;@kmoll&lt;/a&gt; and myself have been working on base APIs during last two weeks or so. We are hoping to have first working demo in a month or so.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://drupal.org/project/media_entity"&gt;media_entity&lt;/a&gt; is also progressing well. Besides HEAD chasing &lt;a href="https://github.com/drupal-media/media_entity/commit/ecfafc7510ac6d8eb4997bf107060dc05cd57c93"&gt;I implemented media type provider plugins&lt;/a&gt;, which are responsible for business logic behind media (validation and providing additional fields ATM - we will add more responsibilities as we go). There is also sample implementation (not finished at all, but ready to play with) for &lt;a href="http://drupal.org/project/media_entity_youtube"&gt;YouTube videos&lt;/a&gt;. &lt;a href="https://www.drupal.org/u/primsi"&gt;@Primsi&lt;/a&gt; is currently working on &lt;a href="https://www.drupal.org/project/media_entity_twitter"&gt;Twitter implementation&lt;/a&gt; and &lt;a href="https://www.drupal.org/user/854012"&gt;@designesse&lt;/a&gt; on Instagram implementation.&lt;/li&gt;
+&lt;/ul&gt;&lt;h2&gt;Core conversation in Amsterdam&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://drupal.org/u/dave-reid"&gt;@Dave Reid&lt;/a&gt; and myself gave a talk about the current state of media in D8 on DrupalCon Amsterdam. &lt;a href="https://amsterdam2014.drupal.org/session/drupal-8-media"&gt;Recording is available&lt;/a&gt; for all of you that missed our session.&lt;/p&gt;
+&lt;p&gt;
+&lt;/p&gt;&lt;div class="video-wrapper"&gt;
+&lt;iframe allowfullscreen="" frameborder="0" height="360" src="//www.youtube.com/embed/Hd-jPrEcAn8" width="480"&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;p&gt; &lt;/p&gt;
+&lt;h2&gt;Other stuff&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.drupal.org/u/willyk"&gt;@willyk&lt;/a&gt; has been working on initiative funding and organizational efforts.&lt;/p&gt;
+&lt;p&gt;In Amsterdam we decided that we want to organize 4 dedicated media sprints in 2015 (one in each quarter). Sprinting at events is great, but there are too many distractions to really focus on complex problems we're trying to solve. Organizing a dedicated sprint that focuses on media only should help us to focus and achieve some good progress. We will also set quarterly goals and clearly communicate them with the community. This will help us to focus on most important things at any given time.&lt;/p&gt;
+&lt;p&gt;Would you like to help organize, provide funds or attend one of those sprints? Make sure you let us know sooner rather than later!&lt;/p&gt;
+&lt;h2&gt;How to get involved?&lt;/h2&gt;
+&lt;p&gt;We have weekly scrums every Tuesday at 15:30 UTC (we are considering alternate time/date, check g.d.o group for updates). You can also find us on #drupal-media on Freenode or follow our updates on &lt;a href="http://groups.drupal.org/media"&gt;groups.drupal.org/media&lt;/a&gt;. You can find us at &lt;a href="http://drupalcamp.rs/"&gt;DrupalCamp Serbia&lt;/a&gt; and  &lt;a href="http://2014.badcamp.net/"&gt;BADCamp&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt; &lt;/h2&gt;
+&lt;/div&gt;
+      </description>
+  <pubDate>Fri, 10 Oct 2014 10:20:50 +0000</pubDate>
+    <dc:creator>slashrsm</dc:creator>
+    <guid isPermaLink="false">78 at http://janezurevc.name</guid>
+    </item>
+
+  </channel>
+</rss>

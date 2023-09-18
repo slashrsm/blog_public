@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="http://janezurevc.name/">
+  <channel>
+    <title>web</title>
+    <link>http://janezurevc.name/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>Playing with the Sculpin static site generator</title>
+  <link>http://janezurevc.name/playing-sculpin-static-site-generator</link>
+  <description>
+&lt;span&gt;Playing with the Sculpin static site generator&lt;/span&gt;
+
+&lt;span&gt;&lt;span lang="" about="http://janezurevc.name/users/slashrsm" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;slashrsm&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Sun, 29.01.2017 - 22:08&lt;/span&gt;
+
+            &lt;div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"&gt;&lt;p&gt;&lt;img src="http://janezurevc.name/sites/default/files/attached-files/sculpin.jpg" alt="Sculpin generator" /&gt;&lt;/p&gt;
+
+&lt;p&gt;I can hear you asking: "What the hack is that?" Let me quote the &lt;a href="https://sculpin.io/"&gt;Sculpin's authors&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;Sculpin is a static site generator written in PHP. It converts Markdown files, Twig templates and standard HTML into a static HTML site that can be easily deployed. &lt;/blockquote&gt;
+
+&lt;p&gt;Few days ago a need for a very simple website arose which was way too simple to use &lt;a href="https://www.drupal.org/8"&gt;Drupal 8&lt;/a&gt; for it. Even &lt;a href="https://wordpress.org"&gt;Wordpress&lt;/a&gt; would be way over the top. On the other hand I really wanted to try static HTML generators for a while and this seemed a perfect opportunity to do that.&lt;/p&gt;
+
+&lt;p&gt;There are many static HTML generators out there, &lt;a href="http://jekyllrb.com/"&gt;Jekyll&lt;/a&gt; probably being the most popular (it is also supported by &lt;a href="https://pages.github.com/"&gt;GitHub pages&lt;/a&gt;, which makes hosting trivial). I, however, decided to go with Sculpin because it is written in PHP and is using Symfony and Twig. I am already more or less familiar with all these technologies, which made the task a bit easier.&lt;/p&gt;
+
+&lt;p&gt;Result?&lt;/p&gt;
+
+&lt;p&gt;Few hours, very simple &lt;a href="http://getbootstrap.com/"&gt;Bootstrap&lt;/a&gt; based theme, &lt;a href="http://flexslider.woothemes.com/index.html"&gt;FlexSlider&lt;/a&gt;, some &lt;a href="https://en.wikipedia.org/wiki/Markdown"&gt;Markdown&lt;/a&gt; and violà! Site was done and running. It is performant, I can host it literary everywhere, no need to clear caches every time when something behaves strange, no updates, security out of the box, ...&lt;/p&gt;
+
+&lt;p&gt;I could totally use something similar for this blog too. Heresy against The religion of Drupal™ you say? Maybe.... But think about it. I am already using Markdown (not really a WYSIWYG fan) to write my posts. That wouldn't change at all. I use &lt;a href="https://disqus.com/"&gt;Disqus&lt;/a&gt; for comments, which would play perfectly fine with static HTML. I could use &lt;a href="liquidforms.io/"&gt;Liquid Forms&lt;/a&gt; or something similar to run the contact form or simply ask people to reach out via Twitter or IRC. That's it. It could probably be done in a day while it took me 3 or 4 days to &lt;a href="http://janezurevc.name/janezurevc-name-runs-on-drupal-8"&gt;migrate my Drupal 7 blog to Drupal 8&lt;/a&gt;. Not to mention the significantly easier maintenance.&lt;/p&gt;
+
+&lt;p&gt;I might even consider doing that when the migration to Drupal 9 comes around. We'll see what the hip thing at that time will be...&lt;/p&gt;
+
+&lt;h2&gt;All this got me thinking...&lt;/h2&gt;
+
+&lt;p&gt;Solutions like Jekyll and Sculpin are gaining popularity in the lowest end of the web market. By that they are eating into what used to be market of CMSes like Drupal and Wordpress just a few years ago. Benefits are clear (mainly performance and easy maintenance). The user experience and the ease of use is still on the CMS side, but for slightly tech savvy users it is completely doable. And this might very likely change in the next few years (every software tries to improve over time, right). That said, this kind of tools might (together with pure SaaS solutions) dominate the lower-end web market in the future.&lt;/p&gt;
+
+&lt;p&gt;"But Drupal 8 is enterprise-oriented. That's what we care about!" you'll say. OK. Probably true, but...&lt;/p&gt;
+
+&lt;p&gt;It is easier than ever to build custom web projects in PHP. In the times before Composer, Packagist and all other nice stuff that we have today existed it was total PITA to find and bring a bunch of 3rd party libraries together to help you build a custom app. In just a few short years this became much simpler and will become even easier as our tools and ecosystem evolve. And PHP is not alone in this world. There are many new and modern languages/platforms that are all doing similar things from this perspective. All of them have some kind of package manager, dependency resolver, repositories of 3rd party packages, etc. It is to be expected that this will only continue. Tools will become even easier to use, 3rd party libraries/packages will become more powerful and building custom projects based on them even faster.&lt;/p&gt;
+
+&lt;p&gt;Higher-end projects usually have some budget to invest into development. What would you choose if the cost of development using a CMS like Drupal would be similar to the cost of building a custom project? Specially if you don't need all the features and complexity that CMS offers?&lt;/p&gt;
+
+&lt;p&gt;"Are you saying that Drupal is going away?" you ask.&lt;/p&gt;
+
+&lt;p&gt;Of course not. Drupal is a great tool that can efficiently solve many problems. But there are definitely better tools for some others. It also seems that there is strong competition on all sides of the web market, which is eating into the pie that was reserved for traditional CMSes in the past. Drupal will need to think about this and position itself into that segment of the market where it is the strongest. The days of "Drupal for everything" are clearly over.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;What is your opinion about this? What do you think future will bring us? Let's continue the discussion in the comments below!&lt;/em&gt;&lt;/p&gt;
+&lt;/div&gt;
+      
+  &lt;div class="field field--name-field-related field--type-entity-reference field--label-above"&gt;
+    &lt;div class="field--label"&gt;Enjoyed this post? There is more!&lt;/div&gt;
+          &lt;div class="field--items"&gt;
+              &lt;div class="field--item"&gt;&lt;a href="http://janezurevc.name/join-us-next-drupal-media-sprint-mountain-camp-davos" hreflang="en"&gt;Join us at the next Drupal Media sprint at the Mountain camp in Davos!&lt;/a&gt;&lt;/div&gt;
+          &lt;div class="field--item"&gt;&lt;a href="http://janezurevc.name/drupal-dev-environment-on-docker" hreflang="en"&gt;Drupal dev environment on Docker&lt;/a&gt;&lt;/div&gt;
+          &lt;div class="field--item"&gt;&lt;a href="http://janezurevc.name/entity-browser-feature-freeze-will-happen-two-weeks" hreflang="en"&gt;Entity browser feature freeze will happen in two weeks&lt;/a&gt;&lt;/div&gt;
+              &lt;/div&gt;
+      &lt;/div&gt;
+</description>
+  <pubDate>Sun, 29 Jan 2017 21:08:24 +0000</pubDate>
+    <dc:creator>slashrsm</dc:creator>
+    <guid isPermaLink="false">106 at http://janezurevc.name</guid>
+    </item>
+<item>
+  <title>How to get client's IP number to Drupal when using Varnish</title>
+  <link>http://janezurevc.name/how-get-clients-ip-number-drupal-when-using-varnish</link>
+  <description>
+&lt;span&gt;How to get client's IP number to Drupal when using Varnish&lt;/span&gt;
+
+&lt;span&gt;&lt;span lang="" about="http://janezurevc.name/users/slashrsm" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;slashrsm&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Wed, 07.12.2011 - 00:50&lt;/span&gt;
+
+            &lt;div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"&gt;&lt;p&gt;There are a lot of places, where you need client's IP address in &lt;a href="http://drupal.org"&gt;Drupal&lt;/a&gt; (or any other CMS/web app of course). The problem arises, when you use a &lt;a href="http://en.wikipedia.org/wiki/Reverse_proxy"&gt;reverse proxy server&lt;/a&gt; (like &lt;a href="http://varnish-cache.org"&gt;Varnish&lt;/a&gt;), since every request to web server will be done by the latter. We will have every single visitor of our website coming from a single IP (reverse proxy), as a result.&lt;/p&gt;
+&lt;p&gt;Drupal is smart enough to overcome that. Reverse proxy servers can be configured to forward original client IP in a request header (usually &lt;em&gt;X-Forwarded-For&lt;/em&gt;). This value can be used on web server to know where our visitory come from. In Drupal we have function &lt;a href="http://api.drupal.org/api/drupal/includes--bootstrap.inc/function/ip_address/7"&gt;&lt;em&gt;ip_address()&lt;/em&gt;&lt;/a&gt;, which will read and return client's IP. If we take a look at this function's code, we can see that it already has support for situations, where reverse proxy is used. This function will still return Varnish's IP address by default, though.&lt;/p&gt;
+&lt;p&gt;To make things working as we expected, we have to configure at least two variables in &lt;em&gt;settings.php&lt;/em&gt;:&lt;/p&gt;
+&lt;pre&gt;
+// Tell Drupal that we are behind a reverse proxy server
+$conf['reverse_proxy'] = TRUE;
+
+// List of trusted IPs (IP numbers of our reverse proxies)
+$conf['reverse_proxy_addresses'] = array(
+  '127.0.0.1',
+);
+&lt;/pre&gt;&lt;p&gt;That's it. Now &lt;em&gt;ip_address()&lt;/em&gt; returns IP number that was sent via request header. There is also a possibility to use custom header name:&lt;/p&gt;
+&lt;pre&gt;
+// Drupal will look for IP in $_SERVER['HTTP_MY_CUSTOM_HEADER']
+$conf['reverse_proxy_header'] = 'HTTP_MY_CUSTOM_HEADER';
+&lt;/pre&gt;&lt;/div&gt;
+      </description>
+  <pubDate>Tue, 06 Dec 2011 23:50:39 +0000</pubDate>
+    <dc:creator>slashrsm</dc:creator>
+    <guid isPermaLink="false">30 at http://janezurevc.name</guid>
+    </item>
+<item>
+  <title>slovenskenovice.si - biggest Slovenian Drupal site</title>
+  <link>http://janezurevc.name/slovenskenovicesi-biggest-slovenian-drupal-site</link>
+  <description>
+&lt;span&gt;slovenskenovice.si - biggest Slovenian Drupal site&lt;/span&gt;
+
+&lt;span&gt;&lt;span lang="" about="http://janezurevc.name/users/slashrsm" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;slashrsm&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Mon, 05.12.2011 - 23:15&lt;/span&gt;
+
+            &lt;div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"&gt;&lt;p&gt;&lt;img alt="" data-entity-type="file" data-entity-uuid="8503d0db-5bb7-4b29-8c0b-119938f59d5c" src="http://janezurevc.name/sites/default/files/sn-screenshoot.com_.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.slovenskenovice.si"&gt;Slovenske novice&lt;/a&gt; are Slovenian national daily newspaper with largest circulation on national level. Last week we lunched redesign of it's web variant, which is a news portal with about 200.000 unique visitors and 4.5 million impressions per month. This numbers wil definetely become larger soon, as they have monthly growth between 10 and 15%.&lt;/p&gt;
+&lt;p&gt;Site was developed on &lt;a href="http://drupal.org"&gt;Drupal 7&lt;/a&gt;. We extensively used &lt;a href="http://drupal.org/project/panels"&gt;Panels&lt;/a&gt; and &lt;a href="http://drupal.org/project/views"&gt;Views&lt;/a&gt;. Search is based on &lt;a href="http://lucene.apache.org/solr/"&gt;Apache Solr&lt;/a&gt;, driven by &lt;a href="http://drupal.org/project/search_api"&gt;Search API framework&lt;/a&gt;. To achieve performance we used &lt;a href="http://drupal.org/project/memcache"&gt;Memcached&lt;/a&gt;, &lt;a href="http://drupal.org/project/varnish"&gt;Varnish&lt;/a&gt;, &lt;a href="http://drupal.org/project/apc"&gt;APC&lt;/a&gt; and developed some own cache expiration rules. This is how we achieved performance we needed and flexibility requested by editorial team. Everything is hosted on our own HA LAMP stack.&lt;/p&gt;
+&lt;p&gt;Just two days after launch we had national elections in Slovenia, which are also a big media event. Our site broke the record in daily visits and everything was working smooth.&lt;/p&gt;
+&lt;p&gt;Since a custom CMS, which was developed inside company about 10 years ago, was used before, one of the most important aspects of this project was experience for editorial team. They learned how to use Drupal surprisingly fast. There were some minor issues reported, but in general Drupal works really got for them.&lt;/p&gt;
+&lt;p&gt;Site was developed by core development team:&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href="http://drupal.org/user/19501"&gt;Tadej Baša&lt;/a&gt;, &lt;a href="http://twitter.com/paranojik"&gt;@paranojik&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://drupal.org/user/282629"&gt;Primož Hmeljak&lt;/a&gt;, &lt;a href="http://twitter.com/theprimsi"&gt;@theprimsi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Tim Rijavec, &lt;a href="http://twitter.com/timrijavec"&gt;@timrijavec&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://drupal.org/user/744628"&gt;Janez Urevc&lt;/a&gt; (me :)), &lt;a href="http://twitter.com/slashrsm"&gt;@slashrsm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;We also had some themeing help from &lt;a href="http://drupal.org/user/123987"&gt;Iztok Smolič&lt;/a&gt; (&lt;a href="http://twitter.com/Iztok"&gt;@Iztok&lt;/a&gt;). &lt;/p&gt;
+&lt;p&gt;We will publish some more information about project in the following weeks.&lt;/p&gt;
+&lt;/div&gt;
+      </description>
+  <pubDate>Mon, 05 Dec 2011 22:15:27 +0000</pubDate>
+    <dc:creator>slashrsm</dc:creator>
+    <guid isPermaLink="false">29 at http://janezurevc.name</guid>
+    </item>
+<item>
+  <title>Survey about satisfaction with Scrum</title>
+  <link>http://janezurevc.name/survey-about-satisfaction-scrum</link>
+  <description>
+&lt;span&gt;Survey about satisfaction with Scrum&lt;/span&gt;
+
+&lt;span&gt;&lt;span lang="" about="http://janezurevc.name/users/slashrsm" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;slashrsm&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Fri, 18.11.2011 - 23:30&lt;/span&gt;
+
+            &lt;div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"&gt;&lt;p&gt;I am currently working on my bachelor thesis at Faculty of Computer and Information Science in Ljubljana. The topic of my thesis is implementation of Scrum methodology in a webdev department of the biggest national daily newspaper company, &lt;a href="http://www.delo.si"&gt;Delo&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;I would like to compare my conclusions about it's strengths, weaknesses and challenges in implementing the Scrum methodology in real environment with the opinions of people who faced this method in their professional career. I therefore kindly ask you to &lt;a href="https://www.surveymonkey.com/s/RFFTRML"&gt;participate in the survey&lt;/a&gt;, which will take you about 10 minutes.&lt;/p&gt;
+&lt;p&gt;I will share my conclusions here. Thank you for your time!&lt;/p&gt;
+&lt;/div&gt;
+      </description>
+  <pubDate>Fri, 18 Nov 2011 22:30:00 +0000</pubDate>
+    <dc:creator>slashrsm</dc:creator>
+    <guid isPermaLink="false">28 at http://janezurevc.name</guid>
+    </item>
+
+  </channel>
+</rss>

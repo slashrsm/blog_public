@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="http://janezurevc.name/">
+  <channel>
+    <title>Plupload</title>
+    <link>http://janezurevc.name/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>Drupal's Plupload integration - file_validate()</title>
+  <link>http://janezurevc.name/drupals-plupload-integration-filevalidate</link>
+  <description>
+&lt;span&gt;Drupal's Plupload integration - file_validate()&lt;/span&gt;
+
+&lt;span&gt;&lt;span lang="" about="http://janezurevc.name/users/slashrsm" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;slashrsm&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Mon, 19.11.2012 - 09:39&lt;/span&gt;
+
+            &lt;div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"&gt;&lt;p&gt;&lt;a href="http://drupal.org/user/78090"&gt;Kevin Hankens&lt;/a&gt; posted &lt;a href="http://drupal.org/node/1814744"&gt;an issue&lt;/a&gt; in &lt;a href="http://drupal.org/project/plupload"&gt;Plupload's integration module&lt;/a&gt; a while ago. He complained about the way how module invokes &lt;em&gt;file_validate()&lt;/em&gt; at uploads. After a bit of research I agreed with him. &lt;/p&gt;
+&lt;p&gt;Plupload module invokes &lt;em&gt;file_validate()&lt;/em&gt; with file object that carries nonexistent file uri. Uri, that is passed to validation, is representing a location where file &lt;strong&gt;is supposed to be uploaded&lt;/strong&gt;. At that moment the file is actually located on a completely different (temporary) location. Validation hooks are unable to load file and do various of operations as a result of this.&lt;/p&gt;
+&lt;p&gt;We propose a patch that fixes this. Problem is, that this solution also breaks API compatibility. As this issue definitely needs to be fixed, I'd still not like to commit something, that would make people willing to kill me. :)&lt;/p&gt;
+&lt;p&gt;I invite all developers with interest in Plupload to check &lt;a href="http://drupal.org/node/1814744"&gt;this issue&lt;/a&gt; and provide feedback. &lt;/p&gt;
+&lt;/div&gt;
+      </description>
+  <pubDate>Mon, 19 Nov 2012 08:39:36 +0000</pubDate>
+    <dc:creator>slashrsm</dc:creator>
+    <guid isPermaLink="false">50 at http://janezurevc.name</guid>
+    </item>
+
+  </channel>
+</rss>

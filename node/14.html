@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head>
+    <meta charset="utf-8" />
+<meta name="description" content="This year&#039;s Summer of code has come to it&#039;s midterm evaluation, and this could also be a great opportunity to write some words about my project. As I&#039;ve written before, I work on Derivatives API for Media ecosystem in Drupal 7. " />
+<meta name="Generator" content="Drupal 9 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="https://janezurevc.name/themes/custom/janezurevc_name/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="canonical" href="14.html" />
+<link rel="shortlink" href="14.html" />
+
+    <title>Derivatives API: midterm status update | Janez Urevc</title>
+    <link rel="stylesheet" media="all" href="https://janezurevc.name/core/modules/system/css/components/align.module.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/core/modules/system/css/components/fieldgroup.module.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/core/modules/system/css/components/container-inline.module.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/core/modules/system/css/components/clearfix.module.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/core/modules/system/css/components/details.module.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/core/modules/system/css/components/hidden.module.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/core/modules/system/css/components/item-list.module.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/core/modules/system/css/components/js.module.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/core/modules/system/css/components/nowrap.module.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/core/modules/system/css/components/position-container.module.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/core/modules/system/css/components/progress.module.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/core/modules/system/css/components/reset-appearance.module.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/core/modules/system/css/components/resize.module.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/core/modules/system/css/components/sticky-header.module.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/core/modules/system/css/components/system-status-counter.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/core/modules/system/css/components/system-status-report-counters.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/core/modules/system/css/components/system-status-report-general-info.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/core/modules/system/css/components/tablesort.module.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/core/modules/system/css/components/tree-child.module.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.css" integrity="sha256-0XAFLBbK7DgQ8t7mRWU5BF2OMm9tjtfH945Z7TTeNIo=" crossorigin="anonymous" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.1/dist/3.4.0/8.x-3.x/drupal-bootstrap.css" integrity="sha512-RUOeVmsTRyTAbl6b8I+bazmSEhlTmS2Dt58NMpOvED7LJ6qy4CnfSoVoHcQw4a1uFYNxzaeDUbD7lQ/7Vo7OTg==" crossorigin="anonymous" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/themes/custom/bootstrap_clean_blog/css/clean-blog.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/themes/custom/bootstrap_clean_blog/css/theme.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+<link rel="stylesheet" media="all" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+<link rel="stylesheet" media="all" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/themes/custom/janezurevc_name/theme.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/androidstudio.min.css" />
+
+    
+    <script async defer data-domain="janezurevc.name" src="https://stat.bitqa.app/js/plausible.js"></script>
+  </head>
+  <body class="path-node node--type-article">
+    <a href="14.html#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+              <a class="navbar-brand" href="https://janezurevc.name/" title="Home">Janez Urevc</a>
+          </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
+            <h2 class="sr-only" id="block-mainnavigation-menu">Main navigation</h2>
+
+      
+              <ul class="nav navbar-nav navbar-right">
+                  <li>
+          <a href="https://janezurevc.name/about" data-drupal-link-system-path="node/2">About</a>
+                  </li>
+              <li>
+          <a href="https://janezurevc.name/get-in-touch" data-drupal-link-system-path="node/116">Get in touch</a>
+                  </li>
+          </ul>
+  
+
+
+  </nav>
+
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+</nav>
+
+<!-- Page Header -->
+<!-- Set your background image for this header on the line below. -->
+<header class="intro-header" style="background-image: url('https://janezurevc.name/themes/custom/janezurevc_name/images/default_bg.jpg')">
+  <div class="container">
+    <div class="row">
+              <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <div class="post-heading">
+            <h1>Derivatives API: midterm status update</h1>
+          </div>
+        </div>
+          </div>
+  </div>
+</header>
+
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        
+
+                          <a id="main-content"></a>
+            <div class="region region-content">
+    <div data-drupal-messages-fallback class="hidden"></div>
+  <article role="article" about="/derivatives-api-midterm-status-update">
+
+  
+    
+
+      <div class="post-meta submitted">
+      <article typeof="schema:Person" about="/users/slashrsm">
+  </article>
+
+      <div class="post-date">
+        
+<span>Mon, 11.07.2011 - 20:57</span>
+
+        
+      </div>
+      <div class="comments-counter"><a href="14.html#disqus_thread" data-disqus-identifier="node/14" hreflang="und">Comments</a></div>
+    </div>
+  
+  <div class="content">
+    
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"><p>This year's <a href="http://code.google.com/soc/">Summer of code</a> has come to it's midterm evaluation, and this could also be a great opportunity to write some words <a href="http://groups.drupal.org/node/145074">about my project</a>. As I've written before, I work on Derivatives API for <a href="http://drupal.org/project/media">Media</a> ecosystem in <a href="http://drupal.org">Drupal</a> 7. </p>
+<p>I've been committing quite a lot of code to my sandbox and API was getting it's rough form lately, so it should be the right time to share current state of the project and my thoughts about the roadmap with the community. I'd love to get some feedback about it, since this is my first serious API project. Feel free to comment this blog post, <a href="http://groups.drupal.org/node/161419">thread on groups.drupal.org</a> or to contact me directly, if you have any thoughts about the project, you would like to share with me.</p>
+<p>API is absolutely not ready to be used in any type of production environment, but it definitely needs testing. It would be great, if there are engine developers, that would be prepared to implement initial support for Derivatives API. This would help API to become stable enough in a much shorter period of time. API changes are still possible, but most of the basic API should stay at least similar to how it looks now (except <em>Schedulers</em> - see next part). </p>
+<h2>Basic structure</h2>
+<p><a class="colorbox" href="https://janezurevc.name/sites/default/files/derivatives-api.png"><br /><img src="https://janezurevc.name/sites/default/files/derivatives-api.png" data-entity-type="file" data-entity-uuid="c9bdbcb4-f266-43ab-8a00-b066fba04e08" /></a></p>
+<p>Basic API structure is shown on image. Most important parts of API are:</p>
+<ul><li><strong>Engines:</strong> responsible for physical creation of derivatives. Engines are implemented as own modules. API itself does not implement any engine functionalities, it only provides hooks for them.</li>
+<li><strong>Rules:</strong> their responsibility is to decide, if a given file should be derivated with a given preset at a given time. Few basic rules are implemented in API itself. Hooks are provided to allow custom modules to implement own custom rules.</li>
+<li><strong>Triggers:</strong> triggers are executed on events, when a file's derivative should be created. API implements two basic triggers, that are executed when a file is uploaded and when a file was added to a file/media/image field. Hooks are provided, that allow other modules to provide custom triggers.</li>
+<li><strong>Presets:</strong> presets are responsible for configuration, that is used to create a derivative of a given file. Presets are based on <a href="http://drupal.org/project/ctools">CTools</a> export API. There is currently no UI for preset management (a preset can be created in code, though), but it is planned to implement that in a short time (see <a href="14.html#roadmap">Roadmap</a>).</li>
+<li><strong>Schedulers:</strong> scheduler's responsibility is to run derivation of a file at the right time. API currently implements two basic trigger, that are executed when a file is inserted and when a file is added to a field. No hooks, that would allow customization of this behavior, are currently provided. It is, however, planned to do this in next few days (see <a href="14.html#roadmap">Roadmap</a>). This is the only part of basic API, where I plan to do significant API changes.</li>
+</ul><p>Derivative is saved in <em>file_managed</em> table if successfully created.</p>
+<p>You are more than welcome to take a look at the code and experiment with it. It can be found in <strike>project's sandbox</strike> <a href="http://drupal.org/project/media_derivatives">module at d.o.</a>. I will provide more detailed description of each part of API in next sections.</p>
+<h2>Engines</h2>
+<p>Engines are really simple. Module that wants to be an engine, should first implement a simple info hook, that returns an array containing info about engine's capabilities:</p>
+<pre>
+function hook_media_derivatives_engine_info() {
+  return array(
+    'type' =&gt; 'video',
+    'stream_wrappers' =&gt; array('public://', 'private://'),
+    'mime_types' =&gt; array('video/mp4', 'audio/*'),
+  );
+}</pre><ul><li><strong>type:</strong> type of files, that can be derivated using this engine,</li>
+<li><strong style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; vertical-align: baseline; border-style: initial; border-color: initial; ">stream_wrappers:</strong> array of stream schemas, that this engine know how to deal with (optional),</li>
+<li><strong style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; vertical-align: baseline; ">mime_types:</strong> array of mime types, that this engine know how to deal with (optional), wildcard '*' can be used.</li>
+</ul><p>There is also <em>hook_media_derivatives_engine_info_alter()</em> available. Derivation callback should be implemented, when Drupal knows about the engine:</p>
+<pre>
+function hook_media_derivatives_create_derivative($file, $derivative) {
+  // Create derivative of a $file. Configuration preset is saved in $derivative.
+
+  return $new_file;
+}
+</pre><p>This function is expected to return derivative's URI or a full file object. API will build file object, if only URI is returned.</p>
+<h2>Rules</h2>
+<p>Module that wants to implement a derivatives rule, should implement info hook:</p>
+<pre>
+function hook_media_derivatives_rules_info() {
+  $rules = array();
+  $rules['example_rule'] = array(
+    'name' =&gt; t('Example derivation rule'),
+    'description' =&gt; t('In-depth description of example rule'),
+    'callback' =&gt; 'mymodule_myrule_callback',
+  );
+  return $rules;
+}
+</pre><p>There is also <em>hook_media_derivatives_rules_info_alter()</em> available. Hook should return array of rules implemented by this module, with each element's key being a rule's machine name and value an array with human readable name, description and name of callback function. API will call this function when a rule needs to be tested. Callback function is expected to return TRUE or FALSE. File will only be processed if if all active rules return TRUE. Source file and configuration preset will be passed to callback function. Here is a simple example of a rule callback function:</p>
+<pre>
+function media_derivatives_type_support($file, $preset) {
+  return $file-&gt;type == $preset-&gt;rules_settings['type'];
+}
+</pre><h2>Triggers</h2>
+<p>Info hook should be implemented to inform system about a new trigger:</p>
+<pre>
+function hook_media_derivatives_triggers_info() {
+  $triggers = array();
+  $triggers['file_insert'] = array(
+    'name' =&gt; t('File insert derivative trigger'),
+    'description' =&gt; t('Derivative trigger, that will be executed when a new file is saved.'),
+    'validation_callbacks' =&gt; array(
+      '_media_derivatives_file_insert_validation'
+    ),
+  );
+  return $triggers;
+}
+</pre><p>There is, once again, <em>hook_media_derivatives_triggers_info_alter()</em> available. Info hook is mostly self-explanatory. Only part, that probably needs some more attention, are optional validation functions. Names of validation callbacks should be passed in that array. Callback functions are going to be called before a derivative will be created. Validation function should return TRUE if a file should really be derivated or FALSE, if a derivation process of a given file, triggered by this trigger, should be canceled. Validation callback will get file, configuration preset and context information as arguments. Example of validation callback:</p>
+<pre>
+function _media_derivatives_field_presave_validation($file, $preset, $context) {
+  return in_array(
+    $context['field'], 
+    $preset-&gt;triggers_settings['field_presave_allowed_fields']
+  );
+}
+</pre><p>Module should call <em>media_derivatives_create_all_derivatives()</em> or <em>media_derivatives_create_derivative()</em>, when a trigger should be executed. First function will take a file and try to create derivatives for all active presets in the system, while second will take preset as an argument and create a derivative just for that preset.</p>
+<pre>
+// Some code ...
+media_derivatives_create_all_derivatives($file, $trigger, $context);
+// Or just for a single preset
+media_derivatives_create_derivative($file, $preset, $trigger, $context);
+</pre><ul><li><strong>$file:</strong> source file file object,</li>
+<li><strong>$trigger:</strong> trigger's machine name as passed to info hook,</li>
+<li><strong>$context:</strong> context information, that will be passed to the validation callback,</li>
+<li><strong>$preset:</strong> configuration preset, that is to be used for this derivation process.</li>
+</ul><h2>Presets</h2>
+<p>Presets hold configuration for derivation. There can be more active presets in a system at the same time. To create a preset from code, one should first implement CTools <em>hook_ctools_plugin_api()</em>. This example should work for 95% of use cases:</p>
+<pre>
+function hook_ctools_plugin_api($owner, $api) {
+  if ($owner == 'media_derivatives' &amp;&amp; $api == 'media_derivatives_presets') {
+    return array('version' =&gt; 1);
+  }
+}
+</pre><p><em>hook_media_derivatives_presets()</em> should be implemented to actually create one or more configuration presets. Function should return an array with preset objects as it's items. Here is an example:</p>
+<pre>
+function hook_media_derivatives_presets() {
+  $export = array();
+  
+  $preset = new stdClass;
+  $preset-&gt;api_version = 1;
+  $preset-&gt;machine_name = 'example_preset';
+  $preset-&gt;rules = array('file_type', 'mime_type', 'derivatives_of_derivatives');
+  $preset-&gt;rules_settings = array(
+    'type' =&gt; 'video',
+    'stream_wrappers' =&gt; array('public://', 'temporary://'),
+  );
+  $preset-&gt;triggers = array('field_presave');
+  $preset-&gt;triggers_settings = array(
+  	'field_presave_allowed_fields' =&gt; array('field_asdfasdf'),
+  );
+  $preset-&gt;settings = array(
+    'engine' =&gt; 'example_engine',
+    'scheduled_type' =&gt; MEDIA_DERIVATIVE_RUN_IMMEDIATELY,
+    'recursive_delete' =&gt; TRUE,
+  );
+  
+  $export['ffmpeg_ex_preset'] = $preset;  
+  return $export;
+}
+</pre><p>Definition of preset object:</p>
+<ul><li><strong>api_version:</strong> presets api version (currently 1),</li>
+<li><strong>machine_name:</strong> preset's unique machine name,</li>
+<li><strong>rules:</strong> rules, that need to be tested, before a file is going to be derivation using this preset,</li>
+<li><strong>rules_settings:</strong> settings that rules expect for itself,</li>
+<li><strong>triggers:</strong> array of triggers, that this preset should react upon,</li>
+<li><strong>triggers_settings:</strong> settings that trigger validation callbacks expect for itself,</li>
+<li><strong>settings:</strong> global settings, expected by API itself
+<ul><li><strong>engine:</strong> machine name of engine that should be used with this preset,</li>
+<li><strong>scheduled_type:</strong> scheduling policy. Can be MEDIA_DERIVATIVE_RUN_IMMEDIATELY (default) if encoding should be run immediately or MEDIA_DERIVATIVE_SCHEDULE if it should be run sometime in the future,</li>
+<li><strong>scheduled_time:</strong> timestamp - when to run encoding if scheduled in future (required if scheduled_type was set to MEDIA_DERIVATIVE_SCHEDULE).</li>
+<li><strong>recursive_delete:</strong> delete derivative if source file was deleted (defaults to FALSE),</li>
+<li><strong>user:</strong> derivative owner selection policy. Possible values: MEDIA_DERIVATIVE_OWNER_FILE - derivative will have the same owner as original file (default), MEDIA_DERIVATIVE_OWNER_DERIVATIVE - user that triggered creation of derivative will also be it's owner, MEDIA_DERIVATIVE_OWNER_STATIC - owner can be statically chosen,</li>
+<li><strong>user_uid:</strong> owner uid if 'user' was set to MEDIA_DERIVATIVE_OWNER_STATIC.</li>
+</ul></li>
+</ul><h2 id="roadmap">Roadmap</h2>
+<p>Features that are planned to be implemented in near future:</p>
+<ul><li>schedulers,</li>
+<li>live encode status information retrieval, </li>
+<li>non-blocking batch encoding, </li>
+<li>ability to delete source, when a derivative was created, </li>
+<li>presets management UI, </li>
+<li>display derivatives list for a given file, </li>
+<li>unmanaged derivatives,</li>
+<li>features support, </li>
+<li>views support.</li>
+</ul></div>
+      
+  <div class="field field--name-field-tags field--type-entity-reference field--label-inline">
+    <div class="field--label">Tags</div>
+          <div class="field--items">
+              <div class="field--item"><a href="https://janezurevc.name/tags/drupal" hreflang="en">Drupal</a></div>
+          <div class="field--item"><a href="https://janezurevc.name/tags/summer-code-2011" hreflang="en">Summer of code 2011</a></div>
+          <div class="field--item"><a href="https://janezurevc.name/tags/derivates-api" hreflang="en">Derivates API</a></div>
+          <div class="field--item"><a href="https://janezurevc.name/tags/open-source" hreflang="en">Open source</a></div>
+          <div class="field--item"><a href="https://janezurevc.name/tags/programming" hreflang="en">Programming</a></div>
+          <div class="field--item"><a href="https://janezurevc.name/tags/media" hreflang="en">Media</a></div>
+              </div>
+      </div>
+
+            <div class="field field--name-disqus field--type-disqus-comment field--label-hidden field--item"><div id="disqus_thread" class="form-group"><noscript>
+  <p>
+    <a href="http://slashrsm.disqus.com/">View the discussion thread.</a>
+  </p>
+</noscript>
+</div>
+</div>
+      
+  </div>
+
+</article>
+
+
+  </div>
+
+              </div>
+    </div>
+  </div>
+</article>
+
+<hr>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                                <ul class="list-inline text-center">
+                      <li>
+              <a target="_blank" href="https://twitter.com/slashrsm">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+              </a>
+            </li>
+                      <li>
+              <a target="_blank" href="https://github.com/slashrsm">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+              </a>
+            </li>
+                      <li>
+              <a target="_blank" href="https://drupal.org/u/slashrsm">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-drupal fa-stack-1x fa-inverse"></i>
+              </span>
+              </a>
+            </li>
+                      <li>
+              <a target="_blank" href="https://instagram.com/slashrsm">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+              </span>
+              </a>
+            </li>
+                      <li>
+              <a target="_blank" href="https://flickr.com/slashrsm">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-flickr fa-stack-1x fa-inverse"></i>
+              </span>
+              </a>
+            </li>
+                      <li>
+              <a target="_blank" href="https://si.linkedin.com/in/janezurevc">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+              </a>
+            </li>
+                  </ul>
+                
+        
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/14","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click","tooltip_enabled":1,"tooltip_animation":1,"tooltip_container":"body","tooltip_delay":"0","tooltip_html":0,"tooltip_placement":"auto left","tooltip_selector":"","tooltip_trigger":"hover"},"disqusComments":"slashrsm","disqus":{"domain":"slashrsm","url":"https:\/\/janezurevc.name\/derivatives-api-midterm-status-update","title":"Derivatives API: midterm status update","identifier":"node\/14","disable_mobile":false,"callbacks":{"onNewComment":["Drupal.disqus.disqusTrackNewComment"]}},"user":{"uid":0,"permissionsHash":"98faaa155a1d3d1c9a77b0c926183091b94fbfa1c641b6b55a329d0db91cf226"}}</script>
+<script src="https://janezurevc.name/sites/default/files/js/js_AqmDmmXtxeaHVu3xcdG2zyaHEnlZalxy9J6xKDJ1uAI.js"></script>
+
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_5RH3jC1tW_hjk-Nh0Q_ZFhpL-scB_L3h1PfGSh7kitQ.js"></script>
+<![endif]-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+<script src="https://janezurevc.name/sites/default/files/js/js_SBPs4Nz8s8sJ8Fu_02wEGLfwObvZDsPxZOtNkHQNtKc.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
+<script src="https://janezurevc.name/sites/default/files/js/js_CLrOUvRgcfB8zN2pppaMGytUldkT_sN0ZdwfYeRQwwY.js"></script>
+
+  </body>
+</html>

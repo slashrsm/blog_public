@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head>
+    <meta charset="utf-8" />
+<meta name="description" content="More than two years ago I gave a session about the future of media at DrupalCon Prague. The outcome of that session was a planning sprint that happened two days after it. One of the ideas that was born on that sprint was Media entity, storage layer for media-related information built with simplicity and support for remotely hosted media in mind." />
+<meta name="Generator" content="Drupal 9 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="https://janezurevc.name/themes/custom/janezurevc_name/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="canonical" href="90.html" />
+<link rel="shortlink" href="90.html" />
+
+    <title>Media entity reaches 8.x-1.0! | Janez Urevc</title>
+    <link rel="stylesheet" media="all" href="https://janezurevc.name/core/modules/system/css/components/align.module.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/core/modules/system/css/components/fieldgroup.module.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/core/modules/system/css/components/container-inline.module.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/core/modules/system/css/components/clearfix.module.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/core/modules/system/css/components/details.module.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/core/modules/system/css/components/hidden.module.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/core/modules/system/css/components/item-list.module.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/core/modules/system/css/components/js.module.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/core/modules/system/css/components/nowrap.module.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/core/modules/system/css/components/position-container.module.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/core/modules/system/css/components/progress.module.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/core/modules/system/css/components/reset-appearance.module.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/core/modules/system/css/components/resize.module.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/core/modules/system/css/components/sticky-header.module.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/core/modules/system/css/components/system-status-counter.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/core/modules/system/css/components/system-status-report-counters.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/core/modules/system/css/components/system-status-report-general-info.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/core/modules/system/css/components/tablesort.module.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/core/modules/system/css/components/tree-child.module.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.css" integrity="sha256-0XAFLBbK7DgQ8t7mRWU5BF2OMm9tjtfH945Z7TTeNIo=" crossorigin="anonymous" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.1/dist/3.4.0/8.x-3.x/drupal-bootstrap.css" integrity="sha512-RUOeVmsTRyTAbl6b8I+bazmSEhlTmS2Dt58NMpOvED7LJ6qy4CnfSoVoHcQw4a1uFYNxzaeDUbD7lQ/7Vo7OTg==" crossorigin="anonymous" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/themes/custom/bootstrap_clean_blog/css/clean-blog.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/themes/custom/bootstrap_clean_blog/css/theme.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+<link rel="stylesheet" media="all" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+<link rel="stylesheet" media="all" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+<link rel="stylesheet" media="all" href="https://janezurevc.name/themes/custom/janezurevc_name/theme.css?rteuk7" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/androidstudio.min.css" />
+
+    
+    <script async defer data-domain="janezurevc.name" src="https://stat.bitqa.app/js/plausible.js"></script>
+  </head>
+  <body class="path-node node--type-article">
+    <a href="90.html#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+              <a class="navbar-brand" href="https://janezurevc.name/" title="Home">Janez Urevc</a>
+          </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
+            <h2 class="sr-only" id="block-mainnavigation-menu">Main navigation</h2>
+
+      
+              <ul class="nav navbar-nav navbar-right">
+                  <li>
+          <a href="https://janezurevc.name/about" data-drupal-link-system-path="node/2">About</a>
+                  </li>
+              <li>
+          <a href="https://janezurevc.name/get-in-touch" data-drupal-link-system-path="node/116">Get in touch</a>
+                  </li>
+          </ul>
+  
+
+
+  </nav>
+
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+</nav>
+
+<!-- Page Header -->
+<!-- Set your background image for this header on the line below. -->
+<header class="intro-header" style="background-image: url('https://janezurevc.name/themes/custom/janezurevc_name/images/default_bg.jpg')">
+  <div class="container">
+    <div class="row">
+              <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <div class="post-heading">
+            <h1>Media entity reaches 8.x-1.0!</h1>
+          </div>
+        </div>
+          </div>
+  </div>
+</header>
+
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        
+
+                          <a id="main-content"></a>
+            <div class="region region-content">
+    <div data-drupal-messages-fallback class="hidden"></div>
+  <article role="article" about="/media-entity-reaches-8-x-1-0">
+
+  
+    
+
+      <div class="post-meta submitted">
+      <article typeof="schema:Person" about="/users/slashrsm">
+  </article>
+
+      <div class="post-date">
+        
+<span>Mon, 02.05.2016 - 10:00</span>
+
+        
+      </div>
+      <div class="comments-counter"><a href="90.html#disqus_thread" data-disqus-identifier="node/90" hreflang="en">Comments</a></div>
+    </div>
+  
+  <div class="content">
+    
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"><p>More than two years ago I gave <a href="https://www.youtube.com/watch?v=4giCe2GNnLQ">a session about the future of media at DrupalCon Prague</a>. The outcome of that session was <a href="https://groups.drupal.org/node/327768">a planning sprint</a> that happened two days after it. One of the ideas that was born on that sprint was <a href="https://drupal.org/project/media_entity">Media entity</a>, storage layer for media-related information built with simplicity and support for remotely hosted media in mind. It's development started shortly after that and got significantly accelerated in the spring of the next year, when the core of the media initiative met at NYC Camp and <a href="https://groups.drupal.org/node/418803">agreed on the common battle plan for Drupal 8</a>.</p>
+
+<p>Media entity and it's plugins have been pretty stable for the last few months. It seemed to be almost ready for it's first release, but there were few tickets in the issue queue which I wanted to resolve first. In the last few days I found some time to look at those. Together with <a href="https://drupal.org/u/paranojik">Tadej Baša (@paranojik)</a> we managed to finish all of the most important patches, which allowed me to tag 8.x-1.0 yesterday. I am thrilled and extremely proud. A lot of individuals and organizations invested many hours to make this possible and I would like to thank every single one of them. Special thanks go to <a href="http://nyccamp.org/">NYC Camp organizers</a>, who organized two sprints and have been supporting us from the beginning, <a href="http://examiner.com">Examiner.com</a>, my ex employer who allowed me to spend significant amount of my time to work on many media-related modules and <a href="http://www.md-systems.ch/">MD Systems</a>, who organized two media sprints and let part of their <a href="http://www.md-systems.ch/en/blog/2016-02/media-management-in-drupal-8">team to work on Drupal 8 media for 3 months</a>.</p>
+
+<p>Along with the main module I released some of it's plugins too: <a href="https://drupal.org/project/media_entity_image">Image</a>, <a href="https://drupal.org/project/media_entity_slideshow">Slideshow</a>, <a href="https://drupal.org/project/media_entity_twitter">Twitter</a> and <a href="https://drupal.org/project/media_entity_instagram">Instagram</a>. There are also plugins that handle <a href="https://drupal.org/project/video_embed_field">Video</a>, <a href="https://drupal.org/project/media_entity_audio">Audio</a> and <a href="https://drupal.org/project/media_entity_document">Documents</a>, which are also quite ready to be used.</p>
+
+<p>Media entity and it's plugins offer many interesting features:</p>
+
+<ul><li>simple and lean storage for local and remote media,</li>
+<li>out of the box integration with standard Drupal's tools,</li>
+<li>pluggable architecture that allows easy implementation of additional plugins,</li>
+<li>100% automatic delivery of thumbnails,</li>
+<li>delivery of remote metadata and</li>
+<li>mapping of remote metadata with entity fields.</li>
+</ul><p>I encourage you to try it and let us know what you think. We are looking for co-maintainers too. If you'd like to spend some time in contrib and have ideas for new features <a href="https://janezurevc.name/contact">let me know</a>.</p>
+
+<p>In the next few weeks we're planning releases of the other media modules. Stay tuned!</p>
+</div>
+      
+  <div class="field field--name-field-tags field--type-entity-reference field--label-inline">
+    <div class="field--label">Tags</div>
+          <div class="field--items">
+              <div class="field--item"><a href="https://janezurevc.name/tags/drupal" hreflang="en">Drupal</a></div>
+          <div class="field--item"><a href="https://janezurevc.name/tags/drupal-8" hreflang="en">Drupal 8</a></div>
+          <div class="field--item"><a href="https://janezurevc.name/tags/media" hreflang="en">Media</a></div>
+              </div>
+      </div>
+
+  <div class="field field--name-field-related field--type-entity-reference field--label-above">
+    <div class="field--label">Enjoyed this post? There is more!</div>
+          <div class="field--items">
+              <div class="field--item"><a href="89.html" hreflang="en">Goodbye Examiner, hello MD Systems</a></div>
+          <div class="field--item"><a href="https://janezurevc.name/a-lot-of-exciting-drupal-8-media-news" hreflang="en">A lot of exciting Drupal 8 media news!</a></div>
+          <div class="field--item"><a href="https://janezurevc.name/when-will-media-be-ready-for-drupal-8" hreflang="und">When will media be ready for Drupal 8?</a></div>
+              </div>
+      </div>
+
+            <div class="field field--name-disqus field--type-disqus-comment field--label-hidden field--item"><div id="disqus_thread" class="form-group"><noscript>
+  <p>
+    <a href="http://slashrsm.disqus.com/">View the discussion thread.</a>
+  </p>
+</noscript>
+</div>
+</div>
+      
+  </div>
+
+</article>
+
+
+  </div>
+
+              </div>
+    </div>
+  </div>
+</article>
+
+<hr>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                                <ul class="list-inline text-center">
+                      <li>
+              <a target="_blank" href="https://twitter.com/slashrsm">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+              </span>
+              </a>
+            </li>
+                      <li>
+              <a target="_blank" href="https://github.com/slashrsm">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+              </a>
+            </li>
+                      <li>
+              <a target="_blank" href="https://drupal.org/u/slashrsm">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-drupal fa-stack-1x fa-inverse"></i>
+              </span>
+              </a>
+            </li>
+                      <li>
+              <a target="_blank" href="https://instagram.com/slashrsm">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+              </span>
+              </a>
+            </li>
+                      <li>
+              <a target="_blank" href="https://flickr.com/slashrsm">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-flickr fa-stack-1x fa-inverse"></i>
+              </span>
+              </a>
+            </li>
+                      <li>
+              <a target="_blank" href="https://si.linkedin.com/in/janezurevc">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+              </a>
+            </li>
+                  </ul>
+                
+        
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/90","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click","tooltip_enabled":1,"tooltip_animation":1,"tooltip_container":"body","tooltip_delay":"0","tooltip_html":0,"tooltip_placement":"auto left","tooltip_selector":"","tooltip_trigger":"hover"},"disqusComments":"slashrsm","disqus":{"domain":"slashrsm","url":"https:\/\/janezurevc.name\/media-entity-reaches-8-x-1-0","title":"Media entity reaches 8.x-1.0!","identifier":"node\/90","disable_mobile":false,"callbacks":{"onNewComment":["Drupal.disqus.disqusTrackNewComment"]}},"user":{"uid":0,"permissionsHash":"98faaa155a1d3d1c9a77b0c926183091b94fbfa1c641b6b55a329d0db91cf226"}}</script>
+<script src="https://janezurevc.name/sites/default/files/js/js_AqmDmmXtxeaHVu3xcdG2zyaHEnlZalxy9J6xKDJ1uAI.js"></script>
+
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_5RH3jC1tW_hjk-Nh0Q_ZFhpL-scB_L3h1PfGSh7kitQ.js"></script>
+<![endif]-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+<script src="https://janezurevc.name/sites/default/files/js/js_SBPs4Nz8s8sJ8Fu_02wEGLfwObvZDsPxZOtNkHQNtKc.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
+<script src="https://janezurevc.name/sites/default/files/js/js_CLrOUvRgcfB8zN2pppaMGytUldkT_sN0ZdwfYeRQwwY.js"></script>
+
+  </body>
+</html>

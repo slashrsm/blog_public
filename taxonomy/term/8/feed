@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="http://janezurevc.name/">
+  <channel>
+    <title>Programming</title>
+    <link>http://janezurevc.name/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>Multi-file uploads in Drupal 8?</title>
+  <link>http://janezurevc.name/multi-file-uploads-drupal-8</link>
+  <description>
+&lt;span&gt;Multi-file uploads in Drupal 8?&lt;/span&gt;
+
+&lt;span&gt;&lt;span lang="" about="http://janezurevc.name/users/slashrsm" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;slashrsm&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Sun, 03.02.2013 - 19:39&lt;/span&gt;
+
+            &lt;div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"&gt;&lt;p&gt;EDIT (20.4.2013): This &lt;a href="http://drupal.org/node/625958#comment-7323412"&gt;has been committed&lt;/a&gt; and is now part of D8 core.&lt;/p&gt;
+&lt;p&gt;Back at DrupalCon Munich code sprint I started to work&lt;a href="http://drupal.org/node/625958"&gt; on a core issue &lt;/a&gt;that is focused on implementing &lt;a href="http://www.w3.org/TR/html-markup/input.file.html#input.file.attrs.multiple"&gt;HTML5 multiple uploads support&lt;/a&gt; in Drupal. Since I've always been interested in file handling I immediatley found this very attractive. From the other hand I always strugeled when it comes to files in Drupal. There are so many solutions and none of them is really user friendly. I thought that this feature would make Drupal's UX much better. During my travel back home from Munich and the days after I spent some time working on the issue, but then it stuck somwhere in the middle due to my lack of time.&lt;/p&gt;
+&lt;p&gt;In January I started to work for &lt;a href="http://examiner.com"&gt;Examiner.com&lt;/a&gt; where I got so-called Drupal day at the end of every sprint. That helped me to focus on this issue once again (and I am very thankful for that). During last 2 or 3 weeks I managed to finish the patch (in terms of features):&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;file and managed_file FAPI elements have been updated to accept #multiple option. Once this option is enabled element adds "multiple" argument to it's input tag, which enables multi-file uploads in recent versions of all major browsers. Old browsers should gracefully degrade to single-upload without any problems. &lt;/li&gt;
+&lt;li&gt;File &amp; Image field widgets leverage new #multiple option in it's underlaying form elements to improve experience for multi-value fields. Users will no longer upload galleries on file at a time. Everything can be now done in a single step.&lt;/li&gt;
+&lt;li&gt;Existing tests were corrected to pass with newly added features (FAPI element behaviour changed a bit).&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;I've already been testing, but patch still needs a lot of testing and reviews. More information can be found&lt;a href="http://drupal.org/node/625958"&gt; in the issue queue&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+      </description>
+  <pubDate>Sun, 03 Feb 2013 18:39:01 +0000</pubDate>
+    <dc:creator>slashrsm</dc:creator>
+    <guid isPermaLink="false">55 at http://janezurevc.name</guid>
+    </item>
+<item>
+  <title>Drupal's Plupload integration - file_validate()</title>
+  <link>http://janezurevc.name/drupals-plupload-integration-filevalidate</link>
+  <description>
+&lt;span&gt;Drupal's Plupload integration - file_validate()&lt;/span&gt;
+
+&lt;span&gt;&lt;span lang="" about="http://janezurevc.name/users/slashrsm" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;slashrsm&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Mon, 19.11.2012 - 09:39&lt;/span&gt;
+
+            &lt;div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"&gt;&lt;p&gt;&lt;a href="http://drupal.org/user/78090"&gt;Kevin Hankens&lt;/a&gt; posted &lt;a href="http://drupal.org/node/1814744"&gt;an issue&lt;/a&gt; in &lt;a href="http://drupal.org/project/plupload"&gt;Plupload's integration module&lt;/a&gt; a while ago. He complained about the way how module invokes &lt;em&gt;file_validate()&lt;/em&gt; at uploads. After a bit of research I agreed with him. &lt;/p&gt;
+&lt;p&gt;Plupload module invokes &lt;em&gt;file_validate()&lt;/em&gt; with file object that carries nonexistent file uri. Uri, that is passed to validation, is representing a location where file &lt;strong&gt;is supposed to be uploaded&lt;/strong&gt;. At that moment the file is actually located on a completely different (temporary) location. Validation hooks are unable to load file and do various of operations as a result of this.&lt;/p&gt;
+&lt;p&gt;We propose a patch that fixes this. Problem is, that this solution also breaks API compatibility. As this issue definitely needs to be fixed, I'd still not like to commit something, that would make people willing to kill me. :)&lt;/p&gt;
+&lt;p&gt;I invite all developers with interest in Plupload to check &lt;a href="http://drupal.org/node/1814744"&gt;this issue&lt;/a&gt; and provide feedback. &lt;/p&gt;
+&lt;/div&gt;
+      </description>
+  <pubDate>Mon, 19 Nov 2012 08:39:36 +0000</pubDate>
+    <dc:creator>slashrsm</dc:creator>
+    <guid isPermaLink="false">50 at http://janezurevc.name</guid>
+    </item>
+<item>
+  <title>Relation Migrate integration and *reference upgrade path</title>
+  <link>http://janezurevc.name/relation-migrate-integration-and-reference-upgrade-path</link>
+  <description>
+&lt;span&gt;Relation Migrate integration and *reference upgrade path&lt;/span&gt;
+
+&lt;span&gt;&lt;span lang="" about="http://janezurevc.name/users/slashrsm" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;slashrsm&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Mon, 06.08.2012 - 23:35&lt;/span&gt;
+
+            &lt;div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"&gt;&lt;p&gt;There was&lt;a href="http://drupal.org/node/1606404#comment-6305944"&gt; my patch&lt;/a&gt; &lt;a href="http://drupalcode.org/project/relation.git/commit/79571cc"&gt;committed&lt;/a&gt; to &lt;a href="http://drupal.org/project/relation"&gt;Relation module&lt;/a&gt; (which is great - if you have not tried it yet definitely do) today, that adds &lt;a href="http://drupal.org/project/migrate"&gt;Migrate&lt;/a&gt; support to Relation and uses it to provide upgrade path from Term/&lt;a href="http://drupal.org/project/references"&gt;User/Node&lt;/a&gt;/&lt;a href="http://drupal.org/project/entityreference"&gt;Entity&lt;/a&gt; reference fields to Relation. I hope that this feature will be useful to a lot of people. In order to use new functionality you'd need to enable &lt;em&gt;Relation migrate&lt;/em&gt;, which comes together with Relation.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://janezurevc.name/sites/default/files/enable_relation_migrate.png"&gt;&lt;br /&gt;&lt;img src="http://janezurevc.name/sites/default/files/enable_relation_migrate.png" data-entity-type="file" data-entity-uuid="d38843c3-d3a0-4dd5-b705-5f3ef54f74c6" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Migrate integration&lt;/h2&gt;
+&lt;p&gt;Module implements class &lt;a href="http://drupalcode.org/project/relation.git/blob/refs/heads/7.x-1.x:/relation_migrate/relation_migrate.migration.inc#l8"&gt;&lt;em&gt;MigrateDestinationRelation&lt;/em&gt;&lt;/a&gt;, which is a destination plugin for Migrate. You can use this class in your custom migrate scripts in a very similar way as you'd use &lt;a href="http://drupalcode.org/project/migrate.git/blob/refs/heads/7.x-2.x:/plugins/destinations/node.inc#l14"&gt;&lt;em&gt;MigrateDestinationNode&lt;/em&gt;&lt;/a&gt;, which is most likely used when migrating nodes. The only difference will be in mapping, which should be done in&lt;em&gt; &lt;/em&gt;&lt;em&gt;prepare()&lt;/em&gt; or &lt;em&gt;prepareRow().&lt;/em&gt; This is required because of the complexity of &lt;em&gt;relation_endpoint&lt;/em&gt; field, which requires a lot of information in order to properly build a relation. Here is an example of typical mapping definition:&lt;/p&gt;
+&lt;pre&gt;
+public function prepare(stdClass $relation, stdClass $source_row) {
+  $relation-&gt;endpoints[LANGUAGE_NONE] = array(
+    array('entity_type' =&gt; $source_row-&gt;source_type, 'entity_id' =&gt; $source_row-&gt;source_id),
+    array('entity_type' =&gt; $source_row-&gt;destination_type, 'entity_id' =&gt; $source_row-&gt;destination_id),
+  );
+}
+&lt;/pre&gt;&lt;p&gt;This example is taken from &lt;a href="http://drupalcode.org/project/relation.git/blob/refs/heads/7.x-1.x:/relation_migrate/relation_migrate.migration.inc#l49"&gt;actual implementation&lt;/a&gt; of *reference upgrade path in &lt;em&gt;Relation migrate&lt;/em&gt;.&lt;/p&gt;
+&lt;h2&gt;Term/User/Node/Entity reference upgrade path&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://janezurevc.name/sites/default/files/relation_type.png"&gt;&lt;img alt="" data-entity-type="file" data-entity-uuid="bbdfafac-fd54-43a2-8905-5e26f77d9c04" src="http://janezurevc.name/sites/default/files/styles/large/public/relation_type.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A typical request by people thinking about using Relation on their existing sites is upgrade path from *reference modules. Migrate integration now allows us to do this. You shouldn't spend more than a few clicks to have this done. I will demonstrate this feature on a standard Drupal 7 installation. I have generated 50 nodes that are tagged with taxonomy terms. This is done via &lt;em&gt;field_tags&lt;/em&gt; field, which is obviously a &lt;em&gt;Taxonomy reference.&lt;/em&gt; I will first create new Relation type and configure it to allow relations from nodes to terms.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://janezurevc.name/sites/default/files/relation_configuration.png"&gt;&lt;img alt="" data-entity-type="file" data-entity-uuid="32ab0464-4653-48ee-9b00-fa54f608ecbd" src="http://janezurevc.name/sites/default/files/relation_configuration.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Now I have to configure Relation migrate. In order to do that I have to navigate to configuration page (found under &lt;em&gt;Structure -&gt; Relation types -&gt; Migration&lt;/em&gt;). You'll find configuration for every type of reference field here. Currently we support Term (core), Node (References), User (References) and Entity reference. As I already mentioned I use standard installation for this demo, but other supported fields should appear here if there are any. Now I just have to enable upgrade path for &lt;em&gt;field_tags&lt;/em&gt; and select relation type that should be used for this upgrade.&lt;/p&gt;
+&lt;p&gt;If I navigate to &lt;em&gt;Content -&gt; Migrate&lt;/em&gt; (Migrate UI must be enabled) i find four migration classes, each for every supported reference field type. I can see that I have some unmigrated term references, which are obviously tags on my nodes. I select this class and start the migiration process.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://janezurevc.name/sites/default/files/migration_classes.png"&gt;&lt;img alt="" data-entity-type="file" data-entity-uuid="47896efa-e2aa-4714-a209-9df818ac998d" src="http://janezurevc.name/sites/default/files/styles/migration_classes.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;When migrate script completes it's job I end up with a lot of new relation, which are tags on my nodes.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://janezurevc.name/sites/default/files/relations.png"&gt;&lt;img alt="" data-entity-type="file" data-entity-uuid="d764e31e-edcf-4a30-9803-3ddf42e1a4ea" src="http://janezurevc.name/sites/default/files/relations.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Described functionality is currently available in 7.x-1.x-dev release of Relation module. It is relatively new and as such not very well tested. Please report back in the issue queue if you find any bugs or encounter any problems. I'd be glad to help. Hope you will enjoy Relation module and it's Migrate integration.&lt;/p&gt;
+&lt;/div&gt;
+      </description>
+  <pubDate>Mon, 06 Aug 2012 21:35:19 +0000</pubDate>
+    <dc:creator>slashrsm</dc:creator>
+    <guid isPermaLink="false">43 at http://janezurevc.name</guid>
+    </item>
+<item>
+  <title>Strange behaviour (race condition) during node_save()</title>
+  <link>http://janezurevc.name/strange-behaviour-race-condition-during-nodesave</link>
+  <description>
+&lt;span&gt;Strange behaviour (race condition) during node_save()&lt;/span&gt;
+
+&lt;span&gt;&lt;span lang="" about="http://janezurevc.name/users/slashrsm" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;slashrsm&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Tue, 10.07.2012 - 15:33&lt;/span&gt;
+
+            &lt;div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"&gt;&lt;h2&gt;Problem&lt;/h2&gt;
+&lt;p&gt;We have a &lt;a href="http://www.slovenskenovice.si"&gt;bigger media website&lt;/a&gt; on &lt;a href="http://drupal.org"&gt;Drupal&lt;/a&gt; 7 with an editorial team of ~20 members. Lately they started to complain about&lt;strong&gt; strange behavior when updating content on site&lt;/strong&gt;. They said, that &lt;strong&gt;changes were not saved at all&lt;/strong&gt;. If they opened a node form immediately after saving it Drupal served old (outdated) content. I first suspected Varnish, but it turned out that Varnish worked OK. Later I realized that the &lt;strong&gt;problem obviously lies in field cache&lt;/strong&gt;. &lt;/p&gt;
+&lt;h2&gt;Debugging&lt;/h2&gt;
+&lt;p&gt;We use &lt;a href="http://drupal.org/project/memcache"&gt;Memcached&lt;/a&gt; for most of cache bins on the site. When testing further I realized, that &lt;strong&gt;field cache returns outdated data even after the changes were saved&lt;/strong&gt;. The strangest thing was, that everything worked well if I moved &lt;em&gt;cache_field&lt;/em&gt; back to database. I first suspected bugs in Memcached itself or Memcache PHP extension. More testing convinced me that I was wrong. After A LOT of unsuccessful debugging I realized, that something sets field cache for a given node immediately after that node was updated (and field cache cleared). Data that was saved to field cache was unfortunately outdated, &lt;strong&gt;which resulted in a unsynchronized state of field cache&lt;/strong&gt;. We had correct data in DB, but it's cached version was wrong.&lt;/p&gt;
+&lt;p&gt;At the end I realized, that issue happened because of a http call, that we implemented in one of &lt;em&gt;hook_node_update()&lt;/em&gt; implementations. We have an outside service, that needs to know when we update our articles. To achieve this we called their callback, which caused their servers to immediately visit updated content. This generally happened while &lt;em&gt;node_save()&lt;/em&gt; was still in progress. Diagram shows what was happening:&lt;/p&gt;
+&lt;p style="text-align:center; float: none;"&gt;&lt;img alt="" data-entity-type="file" data-entity-uuid="78c5140b-e429-4ae7-8820-32b9eda63b81" src="http://janezurevc.name/sites/default/files/flow1.png" /&gt;&lt;/p&gt;
+&lt;p&gt;API docs for &lt;em&gt;hook_node_update() &lt;/em&gt;states:&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;This hook is invoked from node_save() after the node is updated in the node table in the database, ...&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;That made me believe, that &lt;strong&gt;node was actually saved into DB&lt;/strong&gt;, when my hook was called by Drupal. &lt;strong&gt;But that is not true....&lt;/strong&gt; If we look at the code of &lt;em&gt;node_save()&lt;/em&gt;, we see that it uses &lt;em&gt;db_transaction()&lt;/em&gt; (which is a smart thing to do):&lt;/p&gt;
+&lt;pre&gt;
+function node_save($node) {
+  $transaction = db_transaction();
+  ....
+&lt;/pre&gt;&lt;p&gt;But, what isn't so obvious is a fact, that &lt;strong&gt;every DB query&lt;/strong&gt; called from &lt;em&gt;node_save()&lt;/em&gt; or &lt;strong&gt;any function directly or indirectly called by it&lt;/strong&gt; will not be executed immediately. It will be executed at the very end of &lt;em&gt;node_save()&lt;/em&gt;, though. &lt;a href="http://api.drupal.org/api/drupal/includes%21database%21database.inc/class/DatabaseTransaction/7"&gt;Docs for DatabaseTransaction&lt;/a&gt; confirm that:&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;This class acts as a wrapper for transactions. To begin a transaction, simply instantiate it. When the object goes out of scope and is destroyed it will automatically commit.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Taking this into consideration we have to correct our flow diagram:&lt;/p&gt;
+&lt;p style="text-align:center; float:none;"&gt;&lt;img alt="" data-entity-type="file" data-entity-uuid="a4809cb9-1399-459d-8c03-3b283d2c2dd9" src="http://janezurevc.name/sites/default/files/flow2.png" /&gt;&lt;/p&gt;
+&lt;p style="float: none; text-align: left; "&gt;And here was our problem. &lt;/p&gt;
+&lt;h2 style="float: none; text-align: left; "&gt;Solution&lt;/h2&gt;
+&lt;p&gt;One solution would be to do remote calls at cron. This was unfortunately not possible as our managers strictly requested that there should be no delay between content update and remote service call. Another solution was, to set some flag in form of a static variable and to call remote server in some other hook, that will happen later in a request flow. Not the best option, but it should work for now.&lt;/p&gt;
+&lt;p&gt;I also &lt;a href="http://drupal.org/node/1677830"&gt;submitted a core issue&lt;/a&gt; about this, as I believe we should at least update docs for core hooks, to let people know about this fact.&lt;/p&gt;
+&lt;p&gt;The last mistery I had was about Memcached/DB. Why was this problem not present, when I used DB to store cache? The answer is quite obvious when you think a bit. Cache clear operation will be affected by database transaction, as you use DB to store cache. That means, that clear will be executed when all other queries are commited (at the very end of &lt;em&gt;node_save()&lt;/em&gt;) resulting in outdated cache being deleted.&lt;/p&gt;
+&lt;p&gt;Have this happened to any other? How would/did you fix this at your site? I'd love to hear about other people experience....&lt;/p&gt;
+&lt;/div&gt;
+      </description>
+  <pubDate>Tue, 10 Jul 2012 13:33:40 +0000</pubDate>
+    <dc:creator>slashrsm</dc:creator>
+    <guid isPermaLink="false">41 at http://janezurevc.name</guid>
+    </item>
+<item>
+  <title>JavaScript patterns</title>
+  <link>http://janezurevc.name/javascript-patterns</link>
+  <description>
+&lt;span&gt;JavaScript patterns&lt;/span&gt;
+
+&lt;span&gt;&lt;span lang="" about="http://janezurevc.name/users/slashrsm" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;slashrsm&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Wed, 02.05.2012 - 21:22&lt;/span&gt;
+
+            &lt;div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"&gt;&lt;p&gt;&lt;a href="http://shichuan.github.com/javascript-patterns/"&gt;http://shichuan.github.com/javascript-patterns/&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+      </description>
+  <pubDate>Wed, 02 May 2012 19:22:40 +0000</pubDate>
+    <dc:creator>slashrsm</dc:creator>
+    <guid isPermaLink="false">36 at http://janezurevc.name</guid>
+    </item>
+<item>
+  <title>slovenskenovice.si - biggest Slovenian Drupal site</title>
+  <link>http://janezurevc.name/slovenskenovicesi-biggest-slovenian-drupal-site</link>
+  <description>
+&lt;span&gt;slovenskenovice.si - biggest Slovenian Drupal site&lt;/span&gt;
+
+&lt;span&gt;&lt;span lang="" about="http://janezurevc.name/users/slashrsm" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;slashrsm&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Mon, 05.12.2011 - 23:15&lt;/span&gt;
+
+            &lt;div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"&gt;&lt;p&gt;&lt;img alt="" data-entity-type="file" data-entity-uuid="8503d0db-5bb7-4b29-8c0b-119938f59d5c" src="http://janezurevc.name/sites/default/files/sn-screenshoot.com_.png" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.slovenskenovice.si"&gt;Slovenske novice&lt;/a&gt; are Slovenian national daily newspaper with largest circulation on national level. Last week we lunched redesign of it's web variant, which is a news portal with about 200.000 unique visitors and 4.5 million impressions per month. This numbers wil definetely become larger soon, as they have monthly growth between 10 and 15%.&lt;/p&gt;
+&lt;p&gt;Site was developed on &lt;a href="http://drupal.org"&gt;Drupal 7&lt;/a&gt;. We extensively used &lt;a href="http://drupal.org/project/panels"&gt;Panels&lt;/a&gt; and &lt;a href="http://drupal.org/project/views"&gt;Views&lt;/a&gt;. Search is based on &lt;a href="http://lucene.apache.org/solr/"&gt;Apache Solr&lt;/a&gt;, driven by &lt;a href="http://drupal.org/project/search_api"&gt;Search API framework&lt;/a&gt;. To achieve performance we used &lt;a href="http://drupal.org/project/memcache"&gt;Memcached&lt;/a&gt;, &lt;a href="http://drupal.org/project/varnish"&gt;Varnish&lt;/a&gt;, &lt;a href="http://drupal.org/project/apc"&gt;APC&lt;/a&gt; and developed some own cache expiration rules. This is how we achieved performance we needed and flexibility requested by editorial team. Everything is hosted on our own HA LAMP stack.&lt;/p&gt;
+&lt;p&gt;Just two days after launch we had national elections in Slovenia, which are also a big media event. Our site broke the record in daily visits and everything was working smooth.&lt;/p&gt;
+&lt;p&gt;Since a custom CMS, which was developed inside company about 10 years ago, was used before, one of the most important aspects of this project was experience for editorial team. They learned how to use Drupal surprisingly fast. There were some minor issues reported, but in general Drupal works really got for them.&lt;/p&gt;
+&lt;p&gt;Site was developed by core development team:&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;a href="http://drupal.org/user/19501"&gt;Tadej Baša&lt;/a&gt;, &lt;a href="http://twitter.com/paranojik"&gt;@paranojik&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://drupal.org/user/282629"&gt;Primož Hmeljak&lt;/a&gt;, &lt;a href="http://twitter.com/theprimsi"&gt;@theprimsi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Tim Rijavec, &lt;a href="http://twitter.com/timrijavec"&gt;@timrijavec&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://drupal.org/user/744628"&gt;Janez Urevc&lt;/a&gt; (me :)), &lt;a href="http://twitter.com/slashrsm"&gt;@slashrsm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;We also had some themeing help from &lt;a href="http://drupal.org/user/123987"&gt;Iztok Smolič&lt;/a&gt; (&lt;a href="http://twitter.com/Iztok"&gt;@Iztok&lt;/a&gt;). &lt;/p&gt;
+&lt;p&gt;We will publish some more information about project in the following weeks.&lt;/p&gt;
+&lt;/div&gt;
+      </description>
+  <pubDate>Mon, 05 Dec 2011 22:15:27 +0000</pubDate>
+    <dc:creator>slashrsm</dc:creator>
+    <guid isPermaLink="false">29 at http://janezurevc.name</guid>
+    </item>
+<item>
+  <title>Survey about satisfaction with Scrum</title>
+  <link>http://janezurevc.name/survey-about-satisfaction-scrum</link>
+  <description>
+&lt;span&gt;Survey about satisfaction with Scrum&lt;/span&gt;
+
+&lt;span&gt;&lt;span lang="" about="http://janezurevc.name/users/slashrsm" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;slashrsm&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Fri, 18.11.2011 - 23:30&lt;/span&gt;
+
+            &lt;div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"&gt;&lt;p&gt;I am currently working on my bachelor thesis at Faculty of Computer and Information Science in Ljubljana. The topic of my thesis is implementation of Scrum methodology in a webdev department of the biggest national daily newspaper company, &lt;a href="http://www.delo.si"&gt;Delo&lt;/a&gt;. &lt;/p&gt;
+&lt;p&gt;I would like to compare my conclusions about it's strengths, weaknesses and challenges in implementing the Scrum methodology in real environment with the opinions of people who faced this method in their professional career. I therefore kindly ask you to &lt;a href="https://www.surveymonkey.com/s/RFFTRML"&gt;participate in the survey&lt;/a&gt;, which will take you about 10 minutes.&lt;/p&gt;
+&lt;p&gt;I will share my conclusions here. Thank you for your time!&lt;/p&gt;
+&lt;/div&gt;
+      </description>
+  <pubDate>Fri, 18 Nov 2011 22:30:00 +0000</pubDate>
+    <dc:creator>slashrsm</dc:creator>
+    <guid isPermaLink="false">28 at http://janezurevc.name</guid>
+    </item>
+<item>
+  <title>DrupalCon Denver 2011 - Media derivatives: take control over your files</title>
+  <link>http://janezurevc.name/drupalcon-denver-2011-media-derivatives-take-control-over-your-files</link>
+  <description>
+&lt;span&gt;DrupalCon Denver 2011 - Media derivatives: take control over your files&lt;/span&gt;
+
+&lt;span&gt;&lt;span lang="" about="http://janezurevc.name/users/slashrsm" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;slashrsm&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Mon, 07.11.2011 - 22:45&lt;/span&gt;
+
+            &lt;div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"&gt;&lt;p&gt;&lt;a href="http://drupal.org/project/media_derivatives"&gt;Derivatives API&lt;/a&gt; is a Drupal project I developed during this year's Summer of Code. It is a framework, that tries to implement a simple, reliable and powerfull framework for asset derivation in Drupal. It can cover a lot of different use cases. We are in the times of emerging new technologies of HTML5, mobile publishing, responsive web, ... I believe that Derivatives API has it's piece in a puzzle of support of this new technologies on Drupal. &lt;/p&gt;
+&lt;p&gt;In cooperation with my mentor, &lt;a href="http://drupal.org/user/48877"&gt;Kevin Reynen&lt;/a&gt;, I proposed&lt;a href="http://denver2012.drupal.org/program/sessions/media-derivatives-take-control-over-your-files"&gt; a session at DrupalCon Denver&lt;/a&gt;, where we'd like to present this project to the wider public. Session will cover basic functionalities of the project, some possible use cases and it's extension with your own plugins. &lt;/p&gt;
+&lt;p&gt;Would you like to hear about this project on DrupalCon? Please &lt;a href="http://denver2012.drupal.org/program/sessions/media-derivatives-take-control-over-your-files"&gt;vote for our session&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Do you have any suggestions or questions? Feel free to comment here or on session proposal.&lt;/p&gt;
+&lt;p&gt;Hope to see you in Denver!&lt;/p&gt;
+&lt;/div&gt;
+      </description>
+  <pubDate>Mon, 07 Nov 2011 21:45:07 +0000</pubDate>
+    <dc:creator>slashrsm</dc:creator>
+    <guid isPermaLink="false">26 at http://janezurevc.name</guid>
+    </item>
+<item>
+  <title>How to add custom contextual links to views?</title>
+  <link>http://janezurevc.name/how-add-custom-contextual-links-views</link>
+  <description>
+&lt;span&gt;How to add custom contextual links to views?&lt;/span&gt;
+
+&lt;span&gt;&lt;span lang="" about="http://janezurevc.name/users/slashrsm" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;slashrsm&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Tue, 20.09.2011 - 18:23&lt;/span&gt;
+
+            &lt;div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"&gt;&lt;p&gt;Today I had a task to add nodequeue manipulation contextual links to some view. First I found &lt;a href="http://deglos.com/comment/63"&gt;this blog post&lt;/a&gt;, which explains, how to make desired menu items contextual links ready. As Marcus states in his post, I first needed to alter nodequeue menu items:&lt;/p&gt;
+&lt;pre&gt;
+function MYMODULE_menu_alter(&amp;$items) {
+  $items['admin/structure/nodequeue/%nodequeue/edit']['context'] = MENU_CONTEXT_PAGE | MENU_CONTEXT_INLINE;
+  $items['admin/structure/nodequeue/%nodequeue/view']['context'] = MENU_CONTEXT_PAGE | MENU_CONTEXT_INLINE;
+}
+&lt;/pre&gt;&lt;p&gt;Nodequeue admin pages were now ready to be added to any contextual links on site. Since Marcus explains how to alter contextual links on blocks, I had to figure out how to do it with views. Solution turned out to be very simple. Contextual links are added to view in &lt;em&gt;views-view.tpl.php&lt;/em&gt;, where &lt;em&gt;$title_suffix&lt;/em&gt; is displayed. I just needed to add nodequeue contextual links to that variable (which is a render array in fact).&lt;/p&gt;
+&lt;pre&gt;
+function MYTHEME_preprocess_views_view(&amp;$vars) { 
+  $vars['title_suffix']['contextual_links']['#contextual_links']['sn_fpmain_news'] = array(
+    // 3 is queue id in my case; it could be any other page argument 
+    'admin/structure/nodequeue', array(3) 
+  ); 
+} 
+&lt;/pre&gt;&lt;p&gt;And here is the result:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="" data-entity-type="file" data-entity-uuid="c71fff4b-596e-4714-b005-5aa2a391a65d" src="http://janezurevc.name/sites/default/files/zaslonska_slika.png" /&gt;&lt;/p&gt;
+&lt;p style="clear: both;"&gt;Is there any better way to do this?&lt;/p&gt;
+&lt;/div&gt;
+      </description>
+  <pubDate>Tue, 20 Sep 2011 16:23:09 +0000</pubDate>
+    <dc:creator>slashrsm</dc:creator>
+    <guid isPermaLink="false">20 at http://janezurevc.name</guid>
+    </item>
+<item>
+  <title>5 day challenge (i'm in!:)</title>
+  <link>http://janezurevc.name/5-day-challenge-im</link>
+  <description>
+&lt;span&gt;5 day challenge (i'm in!:)&lt;/span&gt;
+
+&lt;span&gt;&lt;span lang="" about="http://janezurevc.name/users/slashrsm" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;slashrsm&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Sat, 17.09.2011 - 23:09&lt;/span&gt;
+
+            &lt;div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"&gt;&lt;p&gt;Today &lt;a href="http://acquia.com/blog/5-days-5-challenges-drupal"&gt;Jakub Suchy proposed a really cool thing&lt;/a&gt; on his blog. Idea is about spending 30 minutes each day in the next week to contribute something to Drupal. He proves, that only 63 people doing this, can do as much work as an individual could do in a month.&lt;/p&gt;
+&lt;p&gt;Since I immediately loved this idea, I decided to join. Here is my plan for &lt;a href="https://twitter.com/#!/search/realtime/d5dchallenge"&gt;#d5dChallenge&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;b&gt;Day 1:&lt;/b&gt; improve &lt;a href="http://drupal.org/project/media_derivatives"&gt;Media derivatives API&lt;/a&gt; views support,&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Day 2:&lt;/strong&gt; write some docs for Media derivatives API,&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;Day 3:&lt;/b&gt; work on YouTube uploader engine for Media derivatives API,&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Day 4:&lt;/strong&gt; spend some time in Media issue queue; find some issue to review or submit a simple patch; find some issues I could help with &lt;a href="http://groups.drupal.org/node/173749"&gt;during Media code sprint&lt;/a&gt;,&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Day 5:&lt;/strong&gt; do some research about Rules integration development and plan Rules integration for Media derivatives API.&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;What do you think about this list? You can also propose something else, if you think I should rather work on some other tasks during this week.&lt;/p&gt;
+&lt;p&gt;Will you join too? I hope there will be even more than 63 of us!&lt;/p&gt;
+&lt;/div&gt;
+      </description>
+  <pubDate>Sat, 17 Sep 2011 21:09:01 +0000</pubDate>
+    <dc:creator>slashrsm</dc:creator>
+    <guid isPermaLink="false">19 at http://janezurevc.name</guid>
+    </item>
+
+  </channel>
+</rss>

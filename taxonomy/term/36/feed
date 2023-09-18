@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="http://janezurevc.name/">
+  <channel>
+    <title>DrupalCon</title>
+    <link>http://janezurevc.name/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>Why do we complain about Drupal media solutions? (AKA LFFAMHOAFA pt. 2)</title>
+  <link>http://janezurevc.name/why-do-we-complain-about-drupal-media-solutions-aka-lffamhoafa-pt-2</link>
+  <description>
+&lt;span&gt;Why do we complain about Drupal media solutions? (AKA LFFAMHOAFA pt. 2)&lt;/span&gt;
+
+&lt;span&gt;&lt;span lang="" about="http://janezurevc.name/users/slashrsm" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;slashrsm&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Thu, 12.09.2013 - 16:33&lt;/span&gt;
+
+            &lt;div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"&gt;&lt;p&gt;&lt;em&gt;This is second post in a series of blog posts related to my &lt;a href="http://prague2013.drupal.org"&gt;DrupalCon Prague&lt;/a&gt; session called "&lt;a href="https://prague2013.drupal.org/session/let%E2%80%99s-fix-file-and-media-handling-once-and-all"&gt;Let's fix file and media handling once and for all&lt;/a&gt;". In the first article I invited community&lt;a href="http://janezurevc.name/lets-fix-file-and-media-handling-once-and-all-pt-1"&gt; to complete a survey&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In my first post I asked you to complete the survey about Drupal media. Response was great, as more than 200 members of our great community responded. One thing I was most interested in were most desired features and how successfully we handle those in various media solutions. Importance of each feature was between 1 (not important at all) to 5 (I can't live without it). I calculated average score and sorted them based on it. This are 10 most important ones (complete results can be downloaded below):&lt;span style="line-height: 1.538em;"&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;&lt;span style="line-height: 1.538em;"&gt;Embed media in WYSIWYG - &lt;/span&gt;&lt;span style="line-height: 1.538em;"&gt;&lt;strong&gt;4.24&lt;/strong&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style="line-height: 1.538em;"&gt;Re-use of media - &lt;/span&gt;&lt;span style="line-height: 1.538em;"&gt;&lt;strong&gt;4.23&lt;/strong&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style="line-height: 1.538em;"&gt;Site-wide media library - &lt;/span&gt;&lt;span style="line-height: 1.538em;"&gt;&lt;strong&gt;3.98&lt;/strong&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style="line-height: 1.538em;"&gt;Ensuring accessibility (alt/title tags, captions, subtitles, transcriptions, ...) - &lt;/span&gt;&lt;span style="line-height: 1.538em;"&gt;&lt;strong&gt;3.96&lt;/strong&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span style="line-height: 1.538em;"&gt;Organize media in folders/categories - &lt;/span&gt;&lt;strong&gt;&lt;span style="line-height: 1.538em;"&gt;3.85&lt;/span&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Seamless integration with remote media (FTP, HTTP, YouTube, Flickr, ...) - &lt;strong&gt;3.73&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Search in media (in context of library and/or attach/usage workflow)&lt;span class="Apple-tab-span" style="white-space:pre"&gt; &lt;/span&gt;- &lt;strong&gt;3.71&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Advanced formatting options/abilities (view modes, advanced file formatters, ...) - &lt;strong&gt;3.67&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Add/edit metadata on file level (fieldable files) - &lt;strong&gt;3.66&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Upload multiple files in one step - &lt;strong&gt;3.65&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;&lt;p&gt;The list didn't surprise me at all. I expected a bit different order, but the selection was in accordance with my expectations. There is, however, something that I find very interesting; at least 80% of this features are successfully implemented in &lt;a href="http://dgo.to/media"&gt;Media/File entity&lt;/a&gt;, &lt;a href="http://dgo.to/scald"&gt;Scald&lt;/a&gt; and &lt;a href="http://dgo.to/asset"&gt;Asset&lt;/a&gt;. It seems like we have pretty powerful solutions, but we still complain about media handling being broken in Drupal. I am wondering why....&lt;/p&gt;
+&lt;p&gt;I am perfectly aware that features are not the single important thing. There is documentation, ease of use, content creator experience, development momentum etc. I certainly have my opinion about that, but I'd like to hear yours. Please leave comment below or &lt;a href="http://twitter.com/slashrsm"&gt;tweet me&lt;/a&gt;...&lt;/p&gt;
+&lt;/div&gt;
+      </description>
+  <pubDate>Thu, 12 Sep 2013 14:33:31 +0000</pubDate>
+    <dc:creator>slashrsm</dc:creator>
+    <guid isPermaLink="false">63 at http://janezurevc.name</guid>
+    </item>
+<item>
+  <title>DrupalCon Denver 2011 - Media derivatives: take control over your files</title>
+  <link>http://janezurevc.name/drupalcon-denver-2011-media-derivatives-take-control-over-your-files</link>
+  <description>
+&lt;span&gt;DrupalCon Denver 2011 - Media derivatives: take control over your files&lt;/span&gt;
+
+&lt;span&gt;&lt;span lang="" about="http://janezurevc.name/users/slashrsm" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;slashrsm&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Mon, 07.11.2011 - 22:45&lt;/span&gt;
+
+            &lt;div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"&gt;&lt;p&gt;&lt;a href="http://drupal.org/project/media_derivatives"&gt;Derivatives API&lt;/a&gt; is a Drupal project I developed during this year's Summer of Code. It is a framework, that tries to implement a simple, reliable and powerfull framework for asset derivation in Drupal. It can cover a lot of different use cases. We are in the times of emerging new technologies of HTML5, mobile publishing, responsive web, ... I believe that Derivatives API has it's piece in a puzzle of support of this new technologies on Drupal. &lt;/p&gt;
+&lt;p&gt;In cooperation with my mentor, &lt;a href="http://drupal.org/user/48877"&gt;Kevin Reynen&lt;/a&gt;, I proposed&lt;a href="http://denver2012.drupal.org/program/sessions/media-derivatives-take-control-over-your-files"&gt; a session at DrupalCon Denver&lt;/a&gt;, where we'd like to present this project to the wider public. Session will cover basic functionalities of the project, some possible use cases and it's extension with your own plugins. &lt;/p&gt;
+&lt;p&gt;Would you like to hear about this project on DrupalCon? Please &lt;a href="http://denver2012.drupal.org/program/sessions/media-derivatives-take-control-over-your-files"&gt;vote for our session&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Do you have any suggestions or questions? Feel free to comment here or on session proposal.&lt;/p&gt;
+&lt;p&gt;Hope to see you in Denver!&lt;/p&gt;
+&lt;/div&gt;
+      </description>
+  <pubDate>Mon, 07 Nov 2011 21:45:07 +0000</pubDate>
+    <dc:creator>slashrsm</dc:creator>
+    <guid isPermaLink="false">26 at http://janezurevc.name</guid>
+    </item>
+
+  </channel>
+</rss>
