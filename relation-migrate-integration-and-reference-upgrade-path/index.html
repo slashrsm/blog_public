@@ -62,7 +62,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-              <a class="navbar-brand" href="../index/index.html" title="Home">Janez Urevc</a>
+              <a class="navbar-brand" href="../index/" title="Home">Janez Urevc</a>
           </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -73,10 +73,10 @@
       
               <ul class="nav navbar-nav navbar-right">
                   <li>
-          <a href="../about/index.html" data-drupal-link-system-path="node/2">About</a>
+          <a href="../about/" data-drupal-link-system-path="node/2">About</a>
                   </li>
               <li>
-          <a href="../get-in-touch/index.html" data-drupal-link-system-path="node/116">Get in touch</a>
+          <a href="../get-in-touch/" data-drupal-link-system-path="node/116">Get in touch</a>
                   </li>
           </ul>
   
@@ -151,7 +151,7 @@ public function prepare(stdClass $relation, stdClass $source_row) {
 <p><a href="../sites/default/files/relation_configuration/index.png"><img alt="" data-entity-type="file" data-entity-uuid="32ab0464-4653-48ee-9b00-fa54f608ecbd" src="../sites/default/files/relation_configuration/index.png" /></a></p>
 <p>Now I have to configure Relation migrate. In order to do that I have to navigate to configuration page (found under <em>Structure -&gt; Relation types -&gt; Migration</em>). You'll find configuration for every type of reference field here. Currently we support Term (core), Node (References), User (References) and Entity reference. As I already mentioned I use standard installation for this demo, but other supported fields should appear here if there are any. Now I just have to enable upgrade path for <em>field_tags</em> and select relation type that should be used for this upgrade.</p>
 <p>If I navigate to <em>Content -&gt; Migrate</em> (Migrate UI must be enabled) i find four migration classes, each for every supported reference field type. I can see that I have some unmigrated term references, which are obviously tags on my nodes. I select this class and start the migiration process.</p>
-<p><a href="../sites/default/files/migration_classes/index.png"><img alt="" data-entity-type="file" data-entity-uuid="47896efa-e2aa-4714-a209-9df818ac998d" src="../sites/default/files/styles/migration_classes/index.html" /></a></p>
+<p><a href="../sites/default/files/migration_classes/index.png"><img alt="" data-entity-type="file" data-entity-uuid="47896efa-e2aa-4714-a209-9df818ac998d" src="../sites/default/files/styles/migration_classes/" /></a></p>
 <p>When migrate script completes it's job I end up with a lot of new relation, which are tags on my nodes.</p>
 <p><a href="../sites/default/files/relations/index.png"><img alt="" data-entity-type="file" data-entity-uuid="d764e31e-edcf-4a30-9803-3ddf42e1a4ea" src="../sites/default/files/relations/index.png" /></a></p>
 <p>Described functionality is currently available in 7.x-1.x-dev release of Relation module. It is relatively new and as such not very well tested. Please report back in the issue queue if you find any bugs or encounter any problems. I'd be glad to help. Hope you will enjoy Relation module and it's Migrate integration.</p>
@@ -160,10 +160,10 @@ public function prepare(stdClass $relation, stdClass $source_row) {
   <div class="field field--name-field-tags field--type-entity-reference field--label-inline">
     <div class="field--label">Tags</div>
           <div class="field--items">
-              <div class="field--item"><a href="../tags/drupal/index.html" hreflang="en">Drupal</a></div>
-          <div class="field--item"><a href="../tags/relation/index.html" hreflang="en">Relation</a></div>
-          <div class="field--item"><a href="../tags/programming/index.html" hreflang="en">Programming</a></div>
-          <div class="field--item"><a href="../tags/references/index.html" hreflang="en">references</a></div>
+              <div class="field--item"><a href="../tags/drupal/" hreflang="en">Drupal</a></div>
+          <div class="field--item"><a href="../tags/relation/" hreflang="en">Relation</a></div>
+          <div class="field--item"><a href="../tags/programming/" hreflang="en">Programming</a></div>
+          <div class="field--item"><a href="../tags/references/" hreflang="en">references</a></div>
               </div>
       </div>
 

@@ -63,7 +63,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-              <a class="navbar-brand" href="../index/index.html" title="Home">Janez Urevc</a>
+              <a class="navbar-brand" href="../index/" title="Home">Janez Urevc</a>
           </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -74,10 +74,10 @@
       
               <ul class="nav navbar-nav navbar-right">
                   <li>
-          <a href="../about/index.html" data-drupal-link-system-path="node/2">About</a>
+          <a href="../about/" data-drupal-link-system-path="node/2">About</a>
                   </li>
               <li>
-          <a href="../get-in-touch/index.html" data-drupal-link-system-path="node/116">Get in touch</a>
+          <a href="../get-in-touch/" data-drupal-link-system-path="node/116">Get in touch</a>
                   </li>
           </ul>
   
@@ -134,7 +134,7 @@
   
   <div class="content">
     
-            <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"><p><a href="https://drupal.org/">Drupal</a> 8 was officially released last November. Since then I have planning to try to migrate <a href="../index/index.html">my blog</a> from previous version of this great CMS. <a href="https://www.drupal.org/8">Drupal 8 comes with many improvements</a> and I definitely wanted to leverage those on my site as well.</p>
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"><p><a href="https://drupal.org/">Drupal</a> 8 was officially released last November. Since then I have planning to try to migrate <a href="../index/">my blog</a> from previous version of this great CMS. <a href="https://www.drupal.org/8">Drupal 8 comes with many improvements</a> and I definitely wanted to leverage those on my site as well.</p>
 
 <p>Besides that, I always used my personal site as an experimental sandbox where I tested new Drupal modules, themes and technologies. Even if <a href="https://drupal.org/u/slashrsm">I am very active contributor</a> to Drupal core and contributed modules and I've been working on <a href="http://examiner.github.io/pubtool_session">an enterprise Drupal 8 project</a> at my work, I've never actually migrated a site to Drupal 8 to this date. It was definitely something I wanted to try.</p>
 
@@ -164,7 +164,7 @@
 
 <h3>Disqus</h3>
 
-<p>The Disqus module has been ported as part of the <a href="../progress-entity-embed-module-gsoc-2014/index.html">Google summer of code project</a>, which I mentored in 2014. The module itself works very well. We changed the architecture a bit; instead of having a custom database table, we instead used a dedicated field type. This approach comes with many benefits. By doing this we're not limited to nodes anymore. Disqus can be used on any entity type now.</p>
+<p>The Disqus module has been ported as part of the <a href="../progress-entity-embed-module-gsoc-2014/">Google summer of code project</a>, which I mentored in 2014. The module itself works very well. We changed the architecture a bit; instead of having a custom database table, we instead used a dedicated field type. This approach comes with many benefits. By doing this we're not limited to nodes anymore. Disqus can be used on any entity type now.</p>
 
 <figure role="group"><img src="../sites/default/files/attached-files/disqus/index.png" title="Disqus on 'Manage fields' page" /><figcaption>Disqus on 'Manage fields' page</figcaption></figure><p>Even if the port was there, migration was not. I used this opportunity to dig into this part of Drupal a bit more. I wrote a 7 to 8 migration support for everything Disqus needs. This includes general configuration, fields on entities, statuses and identifiers. My code is <a href="http://cgit.drupalcode.org/disqus/commit/?id=be0beb18637c1fbc6d7a246b385ef2ab8f586c8b">already committed</a> and you can give it a try.</p>
 
@@ -204,7 +204,7 @@
 
 <p>I also used this migration to move my blog to a new hosting solution. The old blog was hosted on a VPS that I had used in the past and am slowly moving away from. Most of my sites and services are currently hosted on a dedicated server at <a href="http://www.hetzner.com/">Hetzner</a> (they provide excellent value for the price, so I'd definitely recommend them).</p>
 
-<p>Recently I started using <a href="http://www.docker.com/">Docker</a> for my development environments and I wanted to try it in production too (I mentioned I am (ab)using my personal site for experimenting, right? :)). As a result of that I'm hosting <a href="../index/index.html">janezurevc.name</a> in a Dockerized environment managed via <a href="https://docs.docker.com/compose/">Docker compose</a>. Compose is super nice as it allows you to describe your infrastructure stack in a single YAML file. This allows you to commit it to a VCS repository and replicate infrastructure anywhere you want. <em>But this is already a topic planned for some of my future posts.</em></p>
+<p>Recently I started using <a href="http://www.docker.com/">Docker</a> for my development environments and I wanted to try it in production too (I mentioned I am (ab)using my personal site for experimenting, right? :)). As a result of that I'm hosting <a href="../index/">janezurevc.name</a> in a Dockerized environment managed via <a href="https://docs.docker.com/compose/">Docker compose</a>. Compose is super nice as it allows you to describe your infrastructure stack in a single YAML file. This allows you to commit it to a VCS repository and replicate infrastructure anywhere you want. <em>But this is already a topic planned for some of my future posts.</em></p>
 
 <p><em>Did you try to migrate your Drupal 6 or 7 sites to 8? How did it go? Which contributed modules are you using?</em></p>
 </div>
@@ -212,16 +212,16 @@
   <div class="field field--name-field-tags field--type-entity-reference field--label-inline">
     <div class="field--label">Tags</div>
           <div class="field--items">
-              <div class="field--item"><a href="../tags/drupal/index.html" hreflang="en">Drupal</a></div>
+              <div class="field--item"><a href="../tags/drupal/" hreflang="en">Drupal</a></div>
               </div>
       </div>
 
   <div class="field field--name-field-related field--type-entity-reference field--label-above">
     <div class="field--label">Enjoyed this post? There is more!</div>
           <div class="field--items">
-              <div class="field--item"><a href="../a-lot-of-exciting-drupal-8-media-news/index.html" hreflang="en">A lot of exciting Drupal 8 media news!</a></div>
-          <div class="field--item"><a href="../zurich-drupal-8-media-sprint-was-a-success/index.html" hreflang="und">Zurich Drupal 8 media sprint was a success!</a></div>
-          <div class="field--item"><a href="../when-will-media-be-ready-for-drupal-8/index.html" hreflang="und">When will media be ready for Drupal 8?</a></div>
+              <div class="field--item"><a href="../a-lot-of-exciting-drupal-8-media-news/" hreflang="en">A lot of exciting Drupal 8 media news!</a></div>
+          <div class="field--item"><a href="../zurich-drupal-8-media-sprint-was-a-success/" hreflang="und">Zurich Drupal 8 media sprint was a success!</a></div>
+          <div class="field--item"><a href="../when-will-media-be-ready-for-drupal-8/" hreflang="und">When will media be ready for Drupal 8?</a></div>
               </div>
       </div>
 
