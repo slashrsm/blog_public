@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="I&#039;ve been following HHVM (HipHop Virtual machine) for some time now. Project got a bit more of my attention about a year ago, after session at FOSDEM 2013 by Sara Golemon. PHP has been criticized for quite a lot of it&#039;s characteristics, performance definitely being one of those. HHVM seemed to be very promising about fixing it and that&#039;s why it got my attention in the first place." />
+<meta name="Generator" content="Drupal 9 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="../themes/custom/janezurevc_name/favicon/index.ico" type="image/vnd.microsoft.icon" />
+<link rel="canonical" href="index.html" />
+<link rel="shortlink" href="index.html" />
+
+    <title>HHVM and Drupal (i.e. Drupal drinks some RedBull) | Janez Urevc</title>
+    <link rel="stylesheet" media="all" href="../core/modules/system/css/components/align.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/fieldgroup.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/container-inline.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/clearfix.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/details.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/hidden.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/item-list.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/js.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/nowrap.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/position-container.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/progress.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/reset-appearance.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/resize.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/sticky-header.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/system-status-counter/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/system-status-report-counters/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/system-status-report-general-info/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/tablesort.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/tree-child.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.css" integrity="sha256-0XAFLBbK7DgQ8t7mRWU5BF2OMm9tjtfH945Z7TTeNIo=" crossorigin="anonymous" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.css" integrity="sha512-j4mdyNbQqqp+6Q/HtootpbGoc2ZX0C/ktbXnauPFEz7A457PB6le79qasOBVcrSrOBtGAm0aVU2SOKFzBl6RhA==" crossorigin="anonymous" />
+<link rel="stylesheet" media="all" href="../themes/custom/bootstrap_clean_blog/css/clean-blog/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../themes/custom/bootstrap_clean_blog/css/theme/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+<link rel="stylesheet" media="all" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+<link rel="stylesheet" media="all" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+<link rel="stylesheet" media="all" href="../themes/custom/janezurevc_name/theme/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="http://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/androidstudio.min.css" />
+
+    
+    <script async defer data-domain="janezurevc.name" src="https://stat.bitqa.app/js/plausible.js"></script>
+  </head>
+  <body class="path-node node--type-article">
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+              <a class="navbar-brand" href="../index/index.html" title="Home">Janez Urevc</a>
+          </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
+            <h2 class="sr-only" id="block-mainnavigation-menu">Main navigation</h2>
+
+      
+              <ul class="nav navbar-nav navbar-right">
+                  <li>
+          <a href="../about/index.html" data-drupal-link-system-path="node/2">About</a>
+                  </li>
+              <li>
+          <a href="../get-in-touch/index.html" data-drupal-link-system-path="node/116">Get in touch</a>
+                  </li>
+          </ul>
+  
+
+
+  </nav>
+
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+</nav>
+
+<!-- Page Header -->
+<!-- Set your background image for this header on the line below. -->
+<header class="intro-header" style="background-image: url('../themes/custom/janezurevc_name/images/default_bg/index.jpg')">
+  <div class="container">
+    <div class="row">
+              <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <div class="post-heading">
+            <h1>HHVM and Drupal (i.e. Drupal drinks some RedBull)</h1>
+          </div>
+        </div>
+          </div>
+  </div>
+</header>
+
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        
+
+                          <a id="main-content"></a>
+            <div class="region region-content">
+    <div data-drupal-messages-fallback class="hidden"></div>
+  <article role="article" about="/hhvm-and-drupal-ie-drupal-drinks-some-redbull">
+
+  
+    
+
+      <div class="post-meta submitted">
+      <article typeof="schema:Person" about="/users/slashrsm">
+  </article>
+
+      <div class="post-date">
+        
+<span>Mon, 30.12.2013 - 12:27</span>
+
+        
+      </div>
+      <!--<div class="comments-counter"><a href="/hhvm-and-drupal-ie-drupal-drinks-some-redbull#disqus_thread" data-disqus-identifier="node/70" hreflang="und">Comments</a></div>-->
+    </div>
+  
+  <div class="content">
+    
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"><p>I've been following <a href="http://en.wikipedia.org/wiki/HipHop_for_PHP">HHVM (HipHop Virtual machine)</a> for some time now. Project got a bit more of my attention about a year ago, after session at <a href="http://en.wikipedia.org/wiki/FOSDEM">FOSDEM</a> 2013 by <a href="https://github.com/sgolemon">Sara Golemon</a>. PHP has been criticized for quite a lot of it's characteristics, performance definitely being one of those. HHVM seemed to be very promising about fixing it and that's why it got my attention in the first place. Immediately after last year's FOSDEM I tried it with <a href="http://drupal.org/">Drupal</a>, but my attempt unfortunately failed miserably. HHVM was simply not yet ready for that. </p>
+<p><img src="../sites/default/files/heart/index.jpg" data-entity-type="file" data-entity-uuid="b34091d4-6d63-49f3-8d00-f2046080139a" /></p>
+<h2>But first a bit of history...</h2>
+<p>HipHop was initially developed by Facebook (and they are still it's main contributor). Facebook was looking for something that would make their PHP code base perform faster while still retaining benefits that PHP brings (primarily ease of use for developers). Initially they created a compiler (HPHPc) that transformed a PHP script into a C++ program, which was then compiled into a binary. This approach showed dramatic increase in performance, but also had some problems. HPHPc did not fully support PHP language and was not a simple drop-in replacement for "standard" (Zend) PHP.</p>
+<p>Facebook decided to deprecate HPHPc, start working on a bit different approach and HHVM was born. HHVM is a <a href="http://en.wikipedia.org/wiki/Just-in-time_compilation">Just-in-time compiler (JIT)</a> for PHP. It behaves very similar to standard interpreter when observed from the outside (which means it can be a drop-in replacement for it), but it works quite different internally. It will run a program as an interpreter at the beginning of execution, collect some statistics for optimization and eventually compile it to byte code on the fly. Compiled program will then run much faster than it's interpreted version. It is quite obvious that we get true performance gains with applications that run for a longer period of time (because of initial interpretation phase and on-the-fly compilation). A standard web (Drupal) application, which is deployed to production servers from time to time, is exactly what we're looking for.</p>
+<h2>Where are we now?</h2>
+<p>HHVM achieved same level of performance as HPHPc about a year ago and it is currently supporting almost entire PHP 5.4 language. Facebook recently stated that supporting main PHP frameworks/projects became one of their top priorities with HHVM and they started to run unit tests of ~20 projects to get an idea about the level of support. Drupal is one of those projects and there are currently <a href="http://www.hhvm.com/blog/2813/we-are-the-98-5-and-the-16">100% of it's unit tests</a> (not functional AFAIK) passing when running on HHVM. That fact encouraged me to test HHVM and Drupal once again and this time it went much better than a year ago. </p>
+<p>I was able to run Drupal, navigate through it structure, add a node, edit it, display it ... To make it short, it looks very promising. I found some problems with files, but initial poking made me think that we're dealing with solvable problems there.</p>
+<h2>How does it perform?</h2>
+<p>I was also interested in performance part (no shi** :). I executed 1000 anonymous requests against Drupal's front page (page cache disabled) using this command:</p>
+<pre>
+ab -c 50 -n 1000 http://localhost/\?q\=node
+</pre><p>I used PHP 5.5.3 (version that ships with Ubuntu 13.10) with zendoptimizer opcode cache enabled and HHVM which I compiled from master (<a href="https://github.com/facebook/hhvm/commit/1b389496b4dcb240fffe9a22e9121d4e82348c7f">1b389496b4dcb240fffe9a22e9121d4e82348c7f</a> more precisely). I repeated same test three times; PHP 5.5.3, HHVM (cold start) and HHVM (after initial warm-up).</p>
+<h3>PHP 5.5.3</h3>
+<pre>
+Requests per second: 103.00 [#/sec] (mean)
+Time per request: 485.420 [ms] (mean)
+Time per request: 9.708 [ms] (mean, across all concurrent requests)
+Transfer rate: 1160.00 [Kbytes/sec] received
+</pre><h3>HHVM (cold-start)</h3>
+<pre>
+Requests per second: 183.08 [#/sec] (mean)
+Time per request: 273.101 [ms] (mean)
+Time per request: 5.462 [ms] (mean, across all concurrent requests)
+Transfer rate: 2008.37 [Kbytes/sec] received
+</pre><h3>HHVM (warmed-up)</h3>
+<pre>
+Requests per second: 308.31 [#/sec] (mean)
+Time per request: 162.173 [ms] (mean)
+Time per request: 3.243 [ms] (mean, across all concurrent requests)
+Transfer rate: 3382.10 [Kbytes/sec] received
+</pre><p>Results are mind-blowing. HHVM is faster than PHP even in it's interpreter phase (which is actually very surprising) and around three times faster after initial warm-up. This improvement is so significant that it would probably result in savings of tens (if not hundreds) of thousands of Euros/dollars in case of a high-traffic enterprise site. Not that Drupal runs any of that sort....</p>
+<h2>Where do we go next?</h2>
+<p>HHVM got quite some attention after their posts lately. It was reported that <a href="http://en.wikipedia.org/wiki/Rasmus_Lerdorf">Rasmus Lerdorf</a> (the founder of PHP) <a href="http://www.infoworld.com/t/php-web/believe-the-hype-php-founder-backs-facebooks-hiphop-technology-231012">publicly supported</a> Facebook's efforts. There were also some other well-known members of PHP community that <a href="http://pooteeweet.org/blog/2259">discussed HHVM</a> and some <a href="http://www.doctrine-project.org/blog/our-hhvm-roadmap.html">projects already started with their efforts</a> to officially support HHVM in the future.</p>
+<p>How about Drupal? Do we want to be on this wave and start thinking more seriously about this? Who knows how much progress will HHVM achieve by the time Drupal 8 achieves <a href="http://buytaert.net/the-gartner-hype-cycle-and-drupal">plateau of productivity</a>. Do we want to make sure that D8 runs on HHVM by default? Do we want to check how much effort would take to make D7 run on it? Drupal likes to present itself as a solution for high-end projects and I think that we should at least start discussing this question. High-end projects would benefit the most out of Drupal and HHVM loving each other and that makes me think that there should be some level of interest for pushing this forward.</p>
+<h2>Want to know more?</h2>
+<p><a href="http://www.hhvm.com/">HHVM team writes a blog</a> where they post news about it. It's <a href="https://github.com/facebook/hhvm/">code is hosted on GitHub</a>, where you'll also find <a href="https://github.com/facebook/hhvm/wiki">more information</a> if you want to build, install or contribute to HHVM. There are also <a href="https://github.com/facebook/hhvm/wiki#installing-pre-built-packages-for-hhvm">pre-built packages</a> available for most popular GNU/Linux distributions.</p>
+</div>
+      
+  <div class="field field--name-field-tags field--type-entity-reference field--label-inline">
+    <div class="field--label">Tags</div>
+          <div class="field--items">
+              <div class="field--item"><a href="../tags/drupal/index.html" hreflang="en">Drupal</a></div>
+          <div class="field--item"><a href="../tags/hhvm/index.html" hreflang="en">HHVM</a></div>
+          <div class="field--item"><a href="../tags/php/index.html" hreflang="en">PHP</a></div>
+          <div class="field--item"><a href="../tags/facebook/index.html" hreflang="en">Facebook</a></div>
+              </div>
+      </div>
+
+  </div>
+
+</article>
+
+
+  </div>
+
+              </div>
+    </div>
+  </div>
+</article>
+
+<hr>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                                <ul class="list-inline text-center">
+                      <li>
+              <a target="_blank" href="https://github.com/slashrsm">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+              </a>
+            </li>
+                      <li>
+              <a target="_blank" href="https://drupal.org/u/slashrsm">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-drupal fa-stack-1x fa-inverse"></i>
+              </span>
+              </a>
+            </li>
+                      <li>
+              <a target="_blank" href="https://si.linkedin.com/in/janezurevc">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+              </a>
+            </li>
+                  </ul>
+                
+        
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/70","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click","tooltip_enabled":1,"tooltip_animation":1,"tooltip_container":"body","tooltip_delay":"0","tooltip_html":0,"tooltip_placement":"auto left","tooltip_selector":"","tooltip_trigger":"hover"},"disqusComments":"slashrsm","user":{"uid":0,"permissionsHash":"98faaa155a1d3d1c9a77b0c926183091b94fbfa1c641b6b55a329d0db91cf226"}}</script>
+<script src="../sites/default/files/js/js_AqmDmmXtxeaHVu3xcdG2zyaHEnlZalxy9J6xKDJ1uAI/index.js"></script>
+
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_5RH3jC1tW_hjk-Nh0Q_ZFhpL-scB_L3h1PfGSh7kitQ.js"></script>
+<![endif]-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+<script src="../sites/default/files/js/js_SBPs4Nz8s8sJ8Fu_02wEGLfwObvZDsPxZOtNkHQNtKc/index.js"></script>
+<script src="http://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
+<script src="../sites/default/files/js/js_BpR0uWPRfXSLglxmI-MLiWRwWtbnsxDCDenNoWjaMiQ/index.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="Agilo for Scrum is a project management tool for Scrum. Agilo is open source software, but you can also buy Pro extension. It is a web application, based on Trac, which is a great lightweight, flexible and extensible ticketing software." />
+<meta name="Generator" content="Drupal 9 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="../themes/custom/janezurevc_name/favicon/index.ico" type="image/vnd.microsoft.icon" />
+<link rel="canonical" href="index.html" />
+<link rel="shortlink" href="index.html" />
+
+    <title>How to install Trac, Agilo for Scrum and Git browser on Ubuntu 11.04 | Janez Urevc</title>
+    <link rel="stylesheet" media="all" href="../core/modules/system/css/components/align.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/fieldgroup.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/container-inline.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/clearfix.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/details.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/hidden.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/item-list.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/js.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/nowrap.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/position-container.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/progress.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/reset-appearance.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/resize.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/sticky-header.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/system-status-counter/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/system-status-report-counters/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/system-status-report-general-info/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/tablesort.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/tree-child.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.css" integrity="sha256-0XAFLBbK7DgQ8t7mRWU5BF2OMm9tjtfH945Z7TTeNIo=" crossorigin="anonymous" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.css" integrity="sha512-j4mdyNbQqqp+6Q/HtootpbGoc2ZX0C/ktbXnauPFEz7A457PB6le79qasOBVcrSrOBtGAm0aVU2SOKFzBl6RhA==" crossorigin="anonymous" />
+<link rel="stylesheet" media="all" href="../themes/custom/bootstrap_clean_blog/css/clean-blog/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../themes/custom/bootstrap_clean_blog/css/theme/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+<link rel="stylesheet" media="all" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+<link rel="stylesheet" media="all" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+<link rel="stylesheet" media="all" href="../themes/custom/janezurevc_name/theme/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="http://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/androidstudio.min.css" />
+
+    
+    <script async defer data-domain="janezurevc.name" src="https://stat.bitqa.app/js/plausible.js"></script>
+  </head>
+  <body class="path-node node--type-article">
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+              <a class="navbar-brand" href="../index/index.html" title="Home">Janez Urevc</a>
+          </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
+            <h2 class="sr-only" id="block-mainnavigation-menu">Main navigation</h2>
+
+      
+              <ul class="nav navbar-nav navbar-right">
+                  <li>
+          <a href="../about/index.html" data-drupal-link-system-path="node/2">About</a>
+                  </li>
+              <li>
+          <a href="../get-in-touch/index.html" data-drupal-link-system-path="node/116">Get in touch</a>
+                  </li>
+          </ul>
+  
+
+
+  </nav>
+
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+</nav>
+
+<!-- Page Header -->
+<!-- Set your background image for this header on the line below. -->
+<header class="intro-header" style="background-image: url('../themes/custom/janezurevc_name/images/default_bg/index.jpg')">
+  <div class="container">
+    <div class="row">
+              <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <div class="post-heading">
+            <h1>How to install Trac, Agilo for Scrum and Git browser on Ubuntu 11.04</h1>
+          </div>
+        </div>
+          </div>
+  </div>
+</header>
+
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        
+
+                          <a id="main-content"></a>
+            <div class="region region-content">
+    <div data-drupal-messages-fallback class="hidden"></div>
+  <article role="article" about="/how-install-trac-agilo-scrum-and-git-browser-ubuntu-1104">
+
+  
+    
+
+      <div class="post-meta submitted">
+      <article typeof="schema:Person" about="/users/slashrsm">
+  </article>
+
+      <div class="post-date">
+        
+<span>Sat, 14.05.2011 - 20:15</span>
+
+        
+      </div>
+      <!--<div class="comments-counter"><a href="/how-install-trac-agilo-scrum-and-git-browser-ubuntu-1104#disqus_thread" data-disqus-identifier="node/8" hreflang="und">Comments</a></div>-->
+    </div>
+  
+  <div class="content">
+    
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"><p><a href="http://www.agile42.com/cms/pages/agilo/">Agilo for Scrum</a> is a project management tool for <a href="http://en.wikipedia.org/wiki/Scrum_(development)">Scrum</a>. <a href="http://www.agile42.com/cms/pages/agilo/">Agilo</a> is <a href="http://en.wikipedia.org/wiki/Open_source">open source software</a>, but you can also buy Pro extension. It is a web application, based on <a href="http://trac.edgewall.org/">Trac</a>, which is a great lightweight, flexible and extensible ticketing software.</p>
+<p>I need <a href="http://www.agile42.com/cms/pages/agilo/">Agilo for Scrum</a> with support for <a href="http://git-scm.com/">Git</a> and user accounts and I will host it on <a href="http://httpd.apache.org/">Apache</a> web server with mod_WSGI. <a href="http://mysql.com/">MySQL</a> is my choice for database. There are a lot of other possibilities for Agilo/Trac installation, but this post should be a good reference even in that case. </p>
+<h2>Get all software we need</h2>
+<p>First we have to get all software that is going to be used. We will need apache web server, WSGI module, mysql server and python setuptools.</p>
+<pre>sudo apt-get update &amp;&amp; sudo apt-get upgrade
+sudo apt-get install apache2 libapache2-mod-wsgi python-setuptools python-genshi mysql-server python-mysqldb subversion git-core
+sudo apt-get install python-pybabel python-docutils python-pygments python-tz
+</pre><p>Now we have to install Trac, AccountManager and GitPlugin. We will do that with setuptools.</p>
+<pre>sudo easy_install Trac==0.12
+sudo easy_install https://trac-hacks.org/svn/accountmanagerplugin/trunk
+sudo easy_install http://github.com/hvr/trac-git-plugin/tarball/master
+</pre><p>We will download Agilo from <a href="http://www.agile42.com/cms/pages/agilo/">their webiste</a>. There are eggs availible for Python 2.4, 2.5 and 2.6 (direct download links for Agilo 1.3.3: <a href="http://www.agile42.com/cms/download/licensed/binary_agilo-1.3.3_PRO-py2.4.egg.zip">2.4</a>, <a href="http://www.agile42.com/cms/download/licensed/binary_agilo-1.3.3_PRO-py2.5.egg.zip">2.5</a>, <a href="http://www.agile42.com/cms/download/licensed/binary_agilo-1.3.3_PRO-py2.6.egg.zip">2.6</a>). Downloaded file must be unziped and installed using setuptools.</p>
+<pre>unzip binary_agilo-//version nr//_PRO-py//your python version//.egg.zip
+sudo easy_install binary_agilo-//version nr//_PRO-py//your python version//.egg
+</pre><h2>Configure MySQL</h2>
+<p>We are going to need one database and user with all privileges for that database. First login:</p>
+<pre>mysql -u root -p
+//type in root password//
+</pre><p>Now create database and user:</p>
+<pre>CREATE DATABASE trac DEFAULT CHARACTER SET utf8 COLLATE utf8_bin;
+GRANT ALL ON trac.* TO trac@localhost IDENTIFIED BY 'yourpassword';
+</pre><p>MySQL connection string for this case would be:</p>
+<pre>mysql://trac:yourpassword@localhost/trac</pre><h2>Create and deploy Trac project</h2>
+<p>We'll need one Trac project for our installation. We can create one using trac-admin tool. We'll be asked for some basic configuration. When installer asks us about database configuration we have to enter MySQL string from previous chapter.</p>
+<pre>sudo trac-admin /path/to/trac/project initenv</pre><p>Now we have to deploy our project (create .wsgi file). We will use trac-admin once again.</p>
+<pre>sudo trac-admin /path/to/trac/project deploy /path/to/trac/project</pre><p>Correct permissions for Apache.</p>
+<pre>sudo chown -R www-data:www-data /path/to/trac/project</pre><h2>Configure Apache for WSGI</h2>
+<p>We create new config file in Apache's <em>conf.d</em> folder.</p>
+<pre>sudo nano /etc/apache2/conf.d/trac.conf</pre><p>Config file should look something like this.</p>
+<pre> WSGIScriptAlias /trac /path/to/trac/project/deploy/cgi-bin/trac.wsgi
+    &lt;directory  /path/to/trac/project/deploy/cgi-bin&gt;
+     WSGIApplicationGroup %{GLOBAL}
+     Order deny,allow
+     Allow from all
+    &lt;/directory&gt;
+</pre><p>Enable Apache's WSGI module.</p>
+<pre>sudo a2enmod wsgi</pre><p>And finnaly restart Apache.</p>
+<pre>sudo /etc/init.d/apache2 restart</pre><p>Basic Trac installation should be now already availible at <em><a href="http://ip-or-domain/trac">http://ip-or-domain/trac</a></em>.</p>
+<h2>Install Agilo for Scrum</h2>
+<p>We have to enable Agilo, when Trac works. We can do that in Trac's config file. Let's open it.</p>
+<pre>sudo nano /path/to/trac/project/conf/trac.ini</pre><p>Search for <em>"Component"</em> part and add following lines.</p>
+<pre>[components] 
+agilo.* = enabled
+# the following lines are only required to use Agilo Pro 
+agilo_common.* = enabled
+agilo_pro.* = enabled
+</pre><p>Upgrade Trac's database.</p>
+<pre>sudo trac-admin /path/to/trac/project upgrade</pre><p>Agilo for Scrum should be enabled now. Visit your Trac installation in web browser to check out.</p>
+<h2>Enable Git repository browsing</h2>
+<p>We use Git at work. Trac also supports other most popular versioning systems if you need something else. Git extension was already installed in first part of this HowTo. Now we just have to enable it. We will open <em>trac.ini</em> once again and add following lines in <em>"trac"</em> and <em>"git"</em> sections.</p>
+<pre>[components]
+tracext.git.* = enabled
+
+[trac]
+# simple single-repository configuration
+repository_dir = /path/to/git/repo
+repository_type = git
+
+## the following settings are only supported for plugin version 0.11 or later
+[git]
+## let Trac cache meta-data via CachedRepository wrapper; default: false
+cached_repository = true
+
+## disable automatic garbage collection for in-memory commit-tree cache; default: false
+persistent_cache = true
+
+## length revision sha-sums should be tried to be abbreviated to (must be &gt;= 4 and &lt;= 40); default: 7
+shortrev_len = 6
+
+## (0.12.0.3+) minimum length for which hex-strings will be interpreted as commit ids in wiki context; default: 40
+wiki_shortrev_len = 7
+
+## executable file name (in case of doubt use absolute path!) of git binary; default: 'git'
+git_bin = /usr/bin/git
+
+## (0.12.0.5+) define charset encoding of paths stored within git repository; default: 'utf-8'
+git_fs_encoding = latin1
+
+## (0.12.0.3+) enable reverse mapping of git email addresses to trac user ids; default: false
+trac_user_rlookup = true
+
+## (0.12.0.3+) use git-committer id instead of git-author id as changeset owner; default: true
+use_committer_id = false
+
+## (0.12.0.3+) use git-committer timestamp instead of git-author timestamp as changeset time; default: true
+use_committer_time = false
+</pre><p>Change this values upon your needs. Put special attention to <em>git_bin</em> and <em>repository_dir</em>. Link to Git browser should appear in Agilo's main menu if everything went fine.</p>
+<h2>Enable AccountManager</h2>
+<p>AccountManager was already installed, so we just have to enable it. Open config file once again and add following lines to <em>"components"</em> section. AccountManager supports various password storing backends. We'll use htpasswd here.</p>
+<pre>[components]
+trac.web.auth.LoginModule = disabled
+acct_mgr.web_ui.LoginModule = enabled
+acct_mgr.web_ui.RegistrationModule = disabled
+trac.web.auth.loginmodule = disabled
+acct_mgr.htfile.HtPasswdStore = enabled
+
+[account-manager]
+account_changes_notify_addresses =
+password_store = HtPasswdStore
+htpasswd_hash_type =
+password_file = /path/to/htpasswd/file
+</pre><p>If we want to login to Agilo, we have to create at least one username in htpasswd file. We can do tis with <em>htpasswd</em> command.</p>
+<pre>htpasswd -c /path/to/htpasswd/file admin</pre><p>We can configure permissions with <em>trac-admin</em>.</p>
+<pre>trac-admin /path/to/projenv permission add admin TRAC_ADMIN</pre><p>TRAC_ADMIN is superuser permission. More info about permissions in Trac can be found in <a href="http://trac.edgewall.org/wiki/TracPermissions">Trac's wiki</a>.</p>
+</div>
+      
+  <div class="field field--name-field-tags field--type-entity-reference field--label-inline">
+    <div class="field--label">Tags</div>
+          <div class="field--items">
+              <div class="field--item"><a href="../tags/linux/index.html" hreflang="en">Linux</a></div>
+          <div class="field--item"><a href="../tags/ubuntu/index.html" hreflang="en">Ubuntu</a></div>
+          <div class="field--item"><a href="../tags/trac/index.html" hreflang="en">Trac</a></div>
+          <div class="field--item"><a href="../tags/agilo/index.html" hreflang="en">Agilo</a></div>
+          <div class="field--item"><a href="../tags/open-source/index.html" hreflang="en">Open source</a></div>
+          <div class="field--item"><a href="../tags/command-line/index.html" hreflang="en">Command line</a></div>
+              </div>
+      </div>
+
+  </div>
+
+</article>
+
+
+  </div>
+
+              </div>
+    </div>
+  </div>
+</article>
+
+<hr>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                                <ul class="list-inline text-center">
+                      <li>
+              <a target="_blank" href="https://github.com/slashrsm">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+              </a>
+            </li>
+                      <li>
+              <a target="_blank" href="https://drupal.org/u/slashrsm">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-drupal fa-stack-1x fa-inverse"></i>
+              </span>
+              </a>
+            </li>
+                      <li>
+              <a target="_blank" href="https://si.linkedin.com/in/janezurevc">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+              </a>
+            </li>
+                  </ul>
+                
+        
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/8","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click","tooltip_enabled":1,"tooltip_animation":1,"tooltip_container":"body","tooltip_delay":"0","tooltip_html":0,"tooltip_placement":"auto left","tooltip_selector":"","tooltip_trigger":"hover"},"disqusComments":"slashrsm","user":{"uid":0,"permissionsHash":"98faaa155a1d3d1c9a77b0c926183091b94fbfa1c641b6b55a329d0db91cf226"}}</script>
+<script src="../sites/default/files/js/js_AqmDmmXtxeaHVu3xcdG2zyaHEnlZalxy9J6xKDJ1uAI/index.js"></script>
+
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_5RH3jC1tW_hjk-Nh0Q_ZFhpL-scB_L3h1PfGSh7kitQ.js"></script>
+<![endif]-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+<script src="../sites/default/files/js/js_SBPs4Nz8s8sJ8Fu_02wEGLfwObvZDsPxZOtNkHQNtKc/index.js"></script>
+<script src="http://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
+<script src="../sites/default/files/js/js_BpR0uWPRfXSLglxmI-MLiWRwWtbnsxDCDenNoWjaMiQ/index.js"></script>
+
+  </body>
+</html>

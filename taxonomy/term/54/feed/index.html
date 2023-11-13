@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://janezurevc.name/">
+  <channel>
+    <title>Drush</title>
+    <link>https://janezurevc.name/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>Debug drush requests in PHPStrom</title>
+  <link>https://janezurevc.name/debug-drush-requests-phpstrom</link>
+  <description>
+&lt;span&gt;Debug drush requests in PHPStrom&lt;/span&gt;
+
+&lt;span&gt;&lt;span lang="" about="https://janezurevc.name/users/slashrsm" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;slashrsm&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Wed, 14.08.2013 - 12:26&lt;/span&gt;
+
+            &lt;div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"&gt;&lt;p&gt;Today I needed to debug &lt;a href="http://drupal.org/project/drush"&gt;Drush&lt;/a&gt; request. Since I've been using &lt;a href="http://www.jetbrains.com/phpstorm/"&gt;PHPStorm&lt;/a&gt; for last few weeks I wanted to use it for that. After a bit of research I found this way to achieve what I needed:&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;Install and configure Xdebug. There are plenty &lt;a href="http://lmgtfy.com/?q=xdebug+installation"&gt;posts about this all over the internet&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Start normal web debug session in PHPStorm. Look for &lt;em&gt;"Waiting for incoming connection with ide key '17862'."&lt;/em&gt; in PHPStorm's debug window. 17862 will be something else in your case. Remember this number as we're going to need it in next steps.&lt;/li&gt;
+&lt;li&gt;Open terminal and set new variable&lt;br /&gt;&lt;pre&gt;
+export XDEBUG_CONFIG="idekey=17862"&lt;/pre&gt;&lt;p&gt;Remember to replace "17862" with the number you remembered in the previous step.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;Run your drush command and PHPStorm should stop on first breakpoint that you've set.&lt;/li&gt;
+&lt;/ol&gt;&lt;p&gt;Tadaaaa! :) That was easy. I'm not sure if there is any even more convenient way to do this. If you're aware about it, please feel free to leave a comment. &lt;/p&gt;
+&lt;/div&gt;
+      </description>
+  <pubDate>Wed, 14 Aug 2013 10:26:29 +0000</pubDate>
+    <dc:creator>slashrsm</dc:creator>
+    <guid isPermaLink="false">61 at https://janezurevc.name</guid>
+    </item>
+
+  </channel>
+</rss>

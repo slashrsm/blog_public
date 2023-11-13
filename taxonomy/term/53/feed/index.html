@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://janezurevc.name/">
+  <channel>
+    <title>YouTube download</title>
+    <link>https://janezurevc.name/</link>
+    <description/>
+    <language>en</language>
+    
+    <item>
+  <title>Download DrupalCon session recordings for offline viewing</title>
+  <link>https://janezurevc.name/download-drupalcon-session-recordings-offline-viewing</link>
+  <description>
+&lt;span&gt;Download DrupalCon session recordings for offline viewing&lt;/span&gt;
+
+&lt;span&gt;&lt;span lang="" about="https://janezurevc.name/users/slashrsm" typeof="schema:Person" property="schema:name" datatype="" xml:lang=""&gt;slashrsm&lt;/span&gt;&lt;/span&gt;
+
+&lt;span&gt;Mon, 27.05.2013 - 20:45&lt;/span&gt;
+
+            &lt;div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"&gt;&lt;p&gt;After great &lt;a href="http://portland2013.drupal.org/"&gt;DrupalCon Portland&lt;/a&gt; I had to fly home. And it was a VERY long (10h+) transatlantic flight, so I decided to download some videos on my laptop and watch them during my flight. I could use a service like &lt;a href="http://www.keepvid.com"&gt;keepvid.com&lt;/a&gt;, but since I selected 20+ videos I needed something smarter. After a quick search I found great python script, called &lt;a href="http://rg3.github.io/youtube-dl/index.html"&gt;youtube-dl&lt;/a&gt;, that can download videos from YouTube and &lt;a href="http://rg3.github.io/youtube-dl/documentation.html#d4"&gt;various other sources&lt;/a&gt;. Install on Ubuntu was straightforward:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo apt-get install youtube-dl &lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Install on other platforms should be almost as easy as this. You just need Python interpreter and script that you &lt;a href="http://rg3.github.io/youtube-dl/download.html"&gt;download&lt;/a&gt; from their site. There is also an executable for Windows.&lt;/p&gt;
+&lt;p&gt;In order to download videos I just needed get video's URL and this command:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;youtube-dl -f 35 -t "http://youtu.be/OAjcIXqM_jQ"&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;&lt;strong&gt;-f 35&lt;/strong&gt; tells I wanted to download 480p flv version (see manpage for other codes)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;-t&lt;/strong&gt; filename of downloaded file should illustrate video's title instead of ID&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;"&lt;a href="http://youtu.be/OAjcIXqM_jQ&amp;quot"&gt;http://youtu.be/OAjcIXqM_jQ&amp;quot&lt;/a&gt;;&lt;/strong&gt; video's URL (script know how to follow redirects, ...)&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;span style="line-height: 1.538em;"&gt;Now I created shell script with an array of all videos that I wanted to download and loop that was running youtube-dl for each of them. Script did it's job during my last night in hotel and I was all set for my flight.&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Sweet :)&lt;/p&gt;
+&lt;/div&gt;
+      </description>
+  <pubDate>Mon, 27 May 2013 18:45:52 +0000</pubDate>
+    <dc:creator>slashrsm</dc:creator>
+    <guid isPermaLink="false">59 at https://janezurevc.name</guid>
+    </item>
+
+  </channel>
+</rss>
