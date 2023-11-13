@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://janezurevc.name/">
+<rss xmlns:dc="https://purl.org/dc/elements/1.1/" xmlns:content="https://purl.org/rss/1.0/modules/content/" xmlns:foaf="https://xmlns.com/foaf/0.1/" xmlns:og="https://ogp.me/ns#" xmlns:rdfs="https://www.w3.org/2000/01/rdf-schema#" xmlns:schema="https://schema.org/" xmlns:sioc="https://rdfs.org/sioc/ns#" xmlns:sioct="https://rdfs.org/sioc/types#" xmlns:skos="https://www.w3.org/2004/02/skos/core#" xmlns:xsd="https://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://janezurevc.name/">
   <channel>
     <title>Docker</title>
     <link>https://janezurevc.name/</link>
@@ -18,7 +18,7 @@
 
             &lt;div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"&gt;&lt;p&gt;Over the weekend I took some time to update this site to the latest and greatest Drupal. Update itself was pretty straightforward and it went without any problems (great work Drupal community!).&lt;/p&gt;
 
-&lt;p&gt;More interesting part was something that I wanted to do for a while. Until now I was using old-school approach repo with all modules and other dependencies committed in it. Most of you probably already heard about the &lt;a href="http://getcomposer.org"&gt;Composer&lt;/a&gt;. Thanks to &lt;a href="https://www.drupal.org/user/254778"&gt;Florian Weber (@webflo)&lt;/a&gt; and other contributors it is now fairly easy to manage your Drupal projects with it. There is a &lt;a href="https://github.com/drupal-composer/drupal-project"&gt;Composer template for Drupal projects&lt;/a&gt; available which will give you everything you need to get started. It took me just a good hour to fully convert my project (I am no Composer expert). I found this approach very nice and convenient and will be using it for all my future projects.&lt;/p&gt;
+&lt;p&gt;More interesting part was something that I wanted to do for a while. Until now I was using old-school approach repo with all modules and other dependencies committed in it. Most of you probably already heard about the &lt;a href="https://getcomposer.org"&gt;Composer&lt;/a&gt;. Thanks to &lt;a href="https://www.drupal.org/user/254778"&gt;Florian Weber (@webflo)&lt;/a&gt; and other contributors it is now fairly easy to manage your Drupal projects with it. There is a &lt;a href="https://github.com/drupal-composer/drupal-project"&gt;Composer template for Drupal projects&lt;/a&gt; available which will give you everything you need to get started. It took me just a good hour to fully convert my project (I am no Composer expert). I found this approach very nice and convenient and will be using it for all my future projects.&lt;/p&gt;
 
 &lt;p&gt;As part of this I also worked on a &lt;a href="https://github.com/drupal-docker/nginx/pull/13"&gt;pull request&lt;/a&gt; for &lt;a href="https://hub.docker.com/u/drupaldocker/"&gt;Drupal docker&lt;/a&gt; project that makes docroot location configurable, which is a requirement for Composer driven projects.&lt;/p&gt;
 &lt;/div&gt;
@@ -52,7 +52,7 @@
 
 &lt;h2&gt;Why would anyone do that?&lt;/h2&gt;
 
-&lt;p&gt;Modern web applications can become very complex. Days when LAMP was enough to run them are a distant past. Nowadays we need much more; &lt;a href="https://lucene.apache.org/solr/"&gt;Apache Solr&lt;/a&gt; for running search, &lt;a href="http://www.memcached.org/"&gt;Memcached&lt;/a&gt; or &lt;a href="http://redis.io"&gt;Redis&lt;/a&gt; as a fast cache storage backend, reverse proxies like &lt;a href="https://www.varnish-cache.org/"&gt;Varnish&lt;/a&gt; and more. In order to make the development as similar as possible to the production environments we need most of those services. Installing all this services to the developer's workstation can be complicated and can eat a lot of resources. Docker solves both problems by allowing you to clearly describe your stack and share this definition among your team members. It also allows you to easily start and stop the entire stack with one command, which means that your services only run when you really need them.&lt;/p&gt;
+&lt;p&gt;Modern web applications can become very complex. Days when LAMP was enough to run them are a distant past. Nowadays we need much more; &lt;a href="https://lucene.apache.org/solr/"&gt;Apache Solr&lt;/a&gt; for running search, &lt;a href="https://www.memcached.org/"&gt;Memcached&lt;/a&gt; or &lt;a href="https://redis.io"&gt;Redis&lt;/a&gt; as a fast cache storage backend, reverse proxies like &lt;a href="https://www.varnish-cache.org/"&gt;Varnish&lt;/a&gt; and more. In order to make the development as similar as possible to the production environments we need most of those services. Installing all this services to the developer's workstation can be complicated and can eat a lot of resources. Docker solves both problems by allowing you to clearly describe your stack and share this definition among your team members. It also allows you to easily start and stop the entire stack with one command, which means that your services only run when you really need them.&lt;/p&gt;
 
 &lt;p&gt;There is more... Ever needed to test your app on a different PHP version and tried to run two different versions of PHP in parallel? With docker you simply download the images that you need and change the one that is being used with a trivial change in your definition file.&lt;/p&gt;
 
@@ -60,10 +60,10 @@
 
 &lt;h2&gt;Images&lt;/h2&gt;
 
-&lt;p&gt;I am mostly relying on &lt;a href="http://www.drupaldocker.org/"&gt;Drupal Docker&lt;/a&gt; images, which are maintained by &lt;a href="https://github.com/zaporylie"&gt;Jakub Piasecki&lt;/a&gt; (big thanks!) with the help of other members of the community. 
+&lt;p&gt;I am mostly relying on &lt;a href="https://www.drupaldocker.org/"&gt;Drupal Docker&lt;/a&gt; images, which are maintained by &lt;a href="https://github.com/zaporylie"&gt;Jakub Piasecki&lt;/a&gt; (big thanks!) with the help of other members of the community. 
 Its goal is to provide Drupal-tailored set of images that will help anyone to get started quickly and save a lot of time building custom ones. There are of course a &lt;a href="https://hub.docker.com/r/drupaldocker/php/"&gt;PHP&lt;/a&gt; and &lt;a href="https://hub.docker.com/r/drupaldocker/drush/"&gt;Drush&lt;/a&gt; images, but there is more. You will find a &lt;a href="https://hub.docker.com/r/drupaldocker/nginx/"&gt;Nginx&lt;/a&gt;, &lt;a href="https://hub.docker.com/r/drupaldocker/mysql/"&gt;MySQL&lt;/a&gt; and &lt;a href="https://hub.docker.com/r/drupaldocker/mariadb/"&gt;MariaDB&lt;/a&gt; images with default configuration suitable for Drupal projects.&lt;/p&gt;
 
-&lt;p&gt;Besides Drupal Docker I use the default &lt;a href="http://redis.io/"&gt;Redis&lt;/a&gt; image and &lt;a href="https://hub.docker.com/r/wernight/phantomjs/"&gt;PhantomJS&lt;/a&gt;, which is needed to run some types of tests.&lt;/p&gt;
+&lt;p&gt;Besides Drupal Docker I use the default &lt;a href="https://redis.io/"&gt;Redis&lt;/a&gt; image and &lt;a href="https://hub.docker.com/r/wernight/phantomjs/"&gt;PhantomJS&lt;/a&gt;, which is needed to run some types of tests.&lt;/p&gt;
 
 &lt;h2&gt;Bringing it all together&lt;/h2&gt;
 
@@ -188,7 +188,7 @@ dcdrd migrate-import users
 
 &lt;p&gt;And to run PHPUnit:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;docker-compose run --rm drush sudo -u www-data MINK_DRIVER_ARGS="[\"http:\/\/phantomjs:8510\"]" SIMPLETEST_DB="mysql://root@maria/drupal" ./vendor/bin/phpunit --verbose -c core  modules/entity_browser
+&lt;pre&gt;&lt;code&gt;docker-compose run --rm drush sudo -u www-data MINK_DRIVER_ARGS="[\"https:\/\/phantomjs:8510\"]" SIMPLETEST_DB="mysql://root@maria/drupal" ./vendor/bin/phpunit --verbose -c core  modules/entity_browser
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;And yes, there are aliases for those too. See the pattern? :)&lt;/p&gt;

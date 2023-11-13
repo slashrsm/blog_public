@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+<html lang="en" dir="ltr" prefix="content: https://purl.org/rss/1.0/modules/content/  dc: https://purl.org/dc/terms/  foaf: https://xmlns.com/foaf/0.1/  og: https://ogp.me/ns#  rdfs: https://www.w3.org/2000/01/rdf-schema#  schema: https://schema.org/  sioc: https://rdfs.org/sioc/ns#  sioct: https://rdfs.org/sioc/types#  skos: https://www.w3.org/2004/02/skos/core#  xsd: https://www.w3.org/2001/XMLSchema# ">
   <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
     <meta charset="utf-8" />
@@ -36,11 +36,11 @@
 <link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.css" integrity="sha512-j4mdyNbQqqp+6Q/HtootpbGoc2ZX0C/ktbXnauPFEz7A457PB6le79qasOBVcrSrOBtGAm0aVU2SOKFzBl6RhA==" crossorigin="anonymous" />
 <link rel="stylesheet" media="all" href="../themes/custom/bootstrap_clean_blog/css/clean-blog/index.css?s16r9a" />
 <link rel="stylesheet" media="all" href="../themes/custom/bootstrap_clean_blog/css/theme/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
-<link rel="stylesheet" media="all" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
-<link rel="stylesheet" media="all" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+<link rel="stylesheet" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+<link rel="stylesheet" media="all" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+<link rel="stylesheet" media="all" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
 <link rel="stylesheet" media="all" href="../themes/custom/janezurevc_name/theme/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="http://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/androidstudio.min.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/androidstudio.min.css" />
 
     
   </head>
@@ -133,9 +133,9 @@
   <div class="content">
     
             <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"><h2>Problem</h2>
-<p>We have a <a href="http://www.slovenskenovice.si/">bigger media website</a> on <a href="http://drupal.org/">Drupal</a> 7 with an editorial team of ~20 members. Lately they started to complain about<strong> strange behavior when updating content on site</strong>. They said, that <strong>changes were not saved at all</strong>. If they opened a node form immediately after saving it Drupal served old (outdated) content. I first suspected Varnish, but it turned out that Varnish worked OK. Later I realized that the <strong>problem obviously lies in field cache</strong>. </p>
+<p>We have a <a href="https://www.slovenskenovice.si/">bigger media website</a> on <a href="https://drupal.org/">Drupal</a> 7 with an editorial team of ~20 members. Lately they started to complain about<strong> strange behavior when updating content on site</strong>. They said, that <strong>changes were not saved at all</strong>. If they opened a node form immediately after saving it Drupal served old (outdated) content. I first suspected Varnish, but it turned out that Varnish worked OK. Later I realized that the <strong>problem obviously lies in field cache</strong>. </p>
 <h2>Debugging</h2>
-<p>We use <a href="http://drupal.org/project/memcache">Memcached</a> for most of cache bins on the site. When testing further I realized, that <strong>field cache returns outdated data even after the changes were saved</strong>. The strangest thing was, that everything worked well if I moved <em>cache_field</em> back to database. I first suspected bugs in Memcached itself or Memcache PHP extension. More testing convinced me that I was wrong. After A LOT of unsuccessful debugging I realized, that something sets field cache for a given node immediately after that node was updated (and field cache cleared). Data that was saved to field cache was unfortunately outdated, <strong>which resulted in a unsynchronized state of field cache</strong>. We had correct data in DB, but it's cached version was wrong.</p>
+<p>We use <a href="https://drupal.org/project/memcache">Memcached</a> for most of cache bins on the site. When testing further I realized, that <strong>field cache returns outdated data even after the changes were saved</strong>. The strangest thing was, that everything worked well if I moved <em>cache_field</em> back to database. I first suspected bugs in Memcached itself or Memcache PHP extension. More testing convinced me that I was wrong. After A LOT of unsuccessful debugging I realized, that something sets field cache for a given node immediately after that node was updated (and field cache cleared). Data that was saved to field cache was unfortunately outdated, <strong>which resulted in a unsynchronized state of field cache</strong>. We had correct data in DB, but it's cached version was wrong.</p>
 <p>At the end I realized, that issue happened because of a http call, that we implemented in one of <em>hook_node_update()</em> implementations. We have an outside service, that needs to know when we update our articles. To achieve this we called their callback, which caused their servers to immediately visit updated content. This generally happened while <em>node_save()</em> was still in progress. Diagram shows what was happening:</p>
 <p style="text-align:center; float: none;"><img alt="" data-entity-type="file" data-entity-uuid="78c5140b-e429-4ae7-8820-32b9eda63b81" src="../sites/default/files/flow1/index.png" /></p>
 <p>API docs for <em>hook_node_update() </em>states:</p>
@@ -145,14 +145,14 @@
 function node_save($node) {
   $transaction = db_transaction();
   ....
-</pre><p>But, what isn't so obvious is a fact, that <strong>every DB query</strong> called from <em>node_save()</em> or <strong>any function directly or indirectly called by it</strong> will not be executed immediately. It will be executed at the very end of <em>node_save()</em>, though. <a href="http://api.drupal.org/api/drupal/includes%21database%21database.inc/class/DatabaseTransaction/7">Docs for DatabaseTransaction</a> confirm that:</p>
+</pre><p>But, what isn't so obvious is a fact, that <strong>every DB query</strong> called from <em>node_save()</em> or <strong>any function directly or indirectly called by it</strong> will not be executed immediately. It will be executed at the very end of <em>node_save()</em>, though. <a href="https://api.drupal.org/api/drupal/includes%21database%21database.inc/class/DatabaseTransaction/7">Docs for DatabaseTransaction</a> confirm that:</p>
 <blockquote><p>This class acts as a wrapper for transactions. To begin a transaction, simply instantiate it. When the object goes out of scope and is destroyed it will automatically commit.</p></blockquote>
 <p>Taking this into consideration we have to correct our flow diagram:</p>
 <p style="text-align:center; float:none;"><img alt="" data-entity-type="file" data-entity-uuid="a4809cb9-1399-459d-8c03-3b283d2c2dd9" src="../sites/default/files/flow2/index.png" /></p>
 <p style="float: none; text-align: left; ">And here was our problem. </p>
 <h2 style="float: none; text-align: left; ">Solution</h2>
 <p>One solution would be to do remote calls at cron. This was unfortunately not possible as our managers strictly requested that there should be no delay between content update and remote service call. Another solution was, to set some flag in form of a static variable and to call remote server in some other hook, that will happen later in a request flow. Not the best option, but it should work for now.</p>
-<p>I also <a href="http://drupal.org/node/1677830">submitted a core issue</a> about this, as I believe we should at least update docs for core hooks, to let people know about this fact.</p>
+<p>I also <a href="https://drupal.org/node/1677830">submitted a core issue</a> about this, as I believe we should at least update docs for core hooks, to let people know about this fact.</p>
 <p>The last mistery I had was about Memcached/DB. Why was this problem not present, when I used DB to store cache? The answer is quite obvious when you think a bit. Cache clear operation will be affected by database transaction, as you use DB to store cache. That means, that clear will be executed when all other queries are commited (at the very end of <em>node_save()</em>) resulting in outdated cache being deleted.</p>
 <p>Have this happened to any other? How would/did you fix this at your site? I'd love to hear about other people experience....</p>
 </div>
@@ -228,7 +228,7 @@ function node_save($node) {
 <![endif]-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
 <script src="../sites/default/files/js/js_SBPs4Nz8s8sJ8Fu_02wEGLfwObvZDsPxZOtNkHQNtKc/index.js"></script>
-<script src="http://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
 <script src="../sites/default/files/js/js_BpR0uWPRfXSLglxmI-MLiWRwWtbnsxDCDenNoWjaMiQ/index.js"></script>
 
   </body>

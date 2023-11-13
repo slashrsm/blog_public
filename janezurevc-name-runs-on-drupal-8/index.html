@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+<html lang="en" dir="ltr" prefix="content: https://purl.org/rss/1.0/modules/content/  dc: https://purl.org/dc/terms/  foaf: https://xmlns.com/foaf/0.1/  og: https://ogp.me/ns#  rdfs: https://www.w3.org/2000/01/rdf-schema#  schema: https://schema.org/  sioc: https://rdfs.org/sioc/ns#  sioct: https://rdfs.org/sioc/types#  skos: https://www.w3.org/2004/02/skos/core#  xsd: https://www.w3.org/2001/XMLSchema# ">
   <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
     <meta charset="utf-8" />
@@ -37,11 +37,11 @@
 <link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.css" integrity="sha512-j4mdyNbQqqp+6Q/HtootpbGoc2ZX0C/ktbXnauPFEz7A457PB6le79qasOBVcrSrOBtGAm0aVU2SOKFzBl6RhA==" crossorigin="anonymous" />
 <link rel="stylesheet" media="all" href="../themes/custom/bootstrap_clean_blog/css/clean-blog/index.css?s16r9a" />
 <link rel="stylesheet" media="all" href="../themes/custom/bootstrap_clean_blog/css/theme/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
-<link rel="stylesheet" media="all" href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
-<link rel="stylesheet" media="all" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+<link rel="stylesheet" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+<link rel="stylesheet" media="all" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+<link rel="stylesheet" media="all" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
 <link rel="stylesheet" media="all" href="../themes/custom/janezurevc_name/theme/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="http://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/androidstudio.min.css" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/androidstudio.min.css" />
 
     
   </head>
@@ -135,7 +135,7 @@
     
             <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"><p><a href="https://drupal.org/">Drupal</a> 8 was officially released last November. Since then I have planning to try to migrate <a href="../">my blog</a> from previous version of this great CMS. <a href="https://www.drupal.org/8">Drupal 8 comes with many improvements</a> and I definitely wanted to leverage those on my site as well.</p>
 
-<p>Besides that, I always used my personal site as an experimental sandbox where I tested new Drupal modules, themes and technologies. Even if <a href="https://drupal.org/u/slashrsm">I am very active contributor</a> to Drupal core and contributed modules and I've been working on <a href="http://examiner.github.io/pubtool_session">an enterprise Drupal 8 project</a> at my work, I've never actually migrated a site to Drupal 8 to this date. It was definitely something I wanted to try.</p>
+<p>Besides that, I always used my personal site as an experimental sandbox where I tested new Drupal modules, themes and technologies. Even if <a href="https://drupal.org/u/slashrsm">I am very active contributor</a> to Drupal core and contributed modules and I've been working on <a href="https://examiner.github.io/pubtool_session">an enterprise Drupal 8 project</a> at my work, I've never actually migrated a site to Drupal 8 to this date. It was definitely something I wanted to try.</p>
 
 <p>A previous version of janezurevc.name was running on Drupal 7. It is important to note migration from 7 to 8 isn't officially supported yet. Drupal 7 won't reach EOL for at least few more years, which makes this migration not critical. However, migrations from Drupal 6 have been fully supported since the day 8 was released. 6 will reach EOL this month, which makes migration from 6 to 8 an absolute priority.</p>
 
@@ -165,7 +165,7 @@
 
 <p>The Disqus module has been ported as part of the <a href="../progress-entity-embed-module-gsoc-2014/">Google summer of code project</a>, which I mentored in 2014. The module itself works very well. We changed the architecture a bit; instead of having a custom database table, we instead used a dedicated field type. This approach comes with many benefits. By doing this we're not limited to nodes anymore. Disqus can be used on any entity type now.</p>
 
-<figure role="group"><img src="../sites/default/files/attached-files/disqus/index.png" title="Disqus on 'Manage fields' page" /><figcaption>Disqus on 'Manage fields' page</figcaption></figure><p>Even if the port was there, migration was not. I used this opportunity to dig into this part of Drupal a bit more. I wrote a 7 to 8 migration support for everything Disqus needs. This includes general configuration, fields on entities, statuses and identifiers. My code is <a href="http://cgit.drupalcode.org/disqus/commit/?id=be0beb18637c1fbc6d7a246b385ef2ab8f586c8b">already committed</a> and you can give it a try.</p>
+<figure role="group"><img src="../sites/default/files/attached-files/disqus/index.png" title="Disqus on 'Manage fields' page" /><figcaption>Disqus on 'Manage fields' page</figcaption></figure><p>Even if the port was there, migration was not. I used this opportunity to dig into this part of Drupal a bit more. I wrote a 7 to 8 migration support for everything Disqus needs. This includes general configuration, fields on entities, statuses and identifiers. My code is <a href="https://cgit.drupalcode.org/disqus/commit/?id=be0beb18637c1fbc6d7a246b385ef2ab8f586c8b">already committed</a> and you can give it a try.</p>
 
 <p><em>Did you try Disqus migration? Let me know how it worked for you.</em></p>
 
@@ -181,7 +181,7 @@
 
 <h2>Markdown filter</h2>
 
-<p>Recently I found out that I prefer <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a> when producing written content. It doesn't interfere with my writing flow nearly as much as WYSIWYG editors do. When using Markdown, I focus on content instead of the appearance (for the same reason I really liked <a href="http://www.latex-project.org/">LaTeX</a> during my university years).</p>
+<p>Recently I found out that I prefer <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a> when producing written content. It doesn't interfere with my writing flow nearly as much as WYSIWYG editors do. When using Markdown, I focus on content instead of the appearance (for the same reason I really liked <a href="https://www.latex-project.org/">LaTeX</a> during my university years).</p>
 
 <figure role="group"><img src="../sites/default/files/attached-files/markdown/index.png" title="This post being produced in Markdown" /><figcaption>This post being produced in Markdown</figcaption></figure><p>Guess what? There is a module for that! The <a href="https://drupal.org/project/markdown">Markdown filter</a> comes with a text filter that will convert Markdown syntax to HTML when displaying it. And it also has a Drupal 8 port. Download, install, configure, use. It was as easy as that!</p>
 
@@ -201,9 +201,9 @@
 
 <h2>Other interesting stuff</h2>
 
-<p>I also used this migration to move my blog to a new hosting solution. The old blog was hosted on a VPS that I had used in the past and am slowly moving away from. Most of my sites and services are currently hosted on a dedicated server at <a href="http://www.hetzner.com/">Hetzner</a> (they provide excellent value for the price, so I'd definitely recommend them).</p>
+<p>I also used this migration to move my blog to a new hosting solution. The old blog was hosted on a VPS that I had used in the past and am slowly moving away from. Most of my sites and services are currently hosted on a dedicated server at <a href="https://www.hetzner.com/">Hetzner</a> (they provide excellent value for the price, so I'd definitely recommend them).</p>
 
-<p>Recently I started using <a href="http://www.docker.com/">Docker</a> for my development environments and I wanted to try it in production too (I mentioned I am (ab)using my personal site for experimenting, right? :)). As a result of that I'm hosting <a href="../">janezurevc.name</a> in a Dockerized environment managed via <a href="https://docs.docker.com/compose/">Docker compose</a>. Compose is super nice as it allows you to describe your infrastructure stack in a single YAML file. This allows you to commit it to a VCS repository and replicate infrastructure anywhere you want. <em>But this is already a topic planned for some of my future posts.</em></p>
+<p>Recently I started using <a href="https://www.docker.com/">Docker</a> for my development environments and I wanted to try it in production too (I mentioned I am (ab)using my personal site for experimenting, right? :)). As a result of that I'm hosting <a href="../">janezurevc.name</a> in a Dockerized environment managed via <a href="https://docs.docker.com/compose/">Docker compose</a>. Compose is super nice as it allows you to describe your infrastructure stack in a single YAML file. This allows you to commit it to a VCS repository and replicate infrastructure anywhere you want. <em>But this is already a topic planned for some of my future posts.</em></p>
 
 <p><em>Did you try to migrate your Drupal 6 or 7 sites to 8? How did it go? Which contributed modules are you using?</em></p>
 </div>
@@ -287,7 +287,7 @@
 <![endif]-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
 <script src="../sites/default/files/js/js_SBPs4Nz8s8sJ8Fu_02wEGLfwObvZDsPxZOtNkHQNtKc/index.js"></script>
-<script src="http://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
 <script src="../sites/default/files/js/js_BpR0uWPRfXSLglxmI-MLiWRwWtbnsxDCDenNoWjaMiQ/index.js"></script>
 
   </body>

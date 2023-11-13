@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:og="http://ogp.me/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:schema="http://schema.org/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://janezurevc.name/">
+<rss xmlns:dc="https://purl.org/dc/elements/1.1/" xmlns:content="https://purl.org/rss/1.0/modules/content/" xmlns:foaf="https://xmlns.com/foaf/0.1/" xmlns:og="https://ogp.me/ns#" xmlns:rdfs="https://www.w3.org/2000/01/rdf-schema#" xmlns:schema="https://schema.org/" xmlns:sioc="https://rdfs.org/sioc/ns#" xmlns:sioct="https://rdfs.org/sioc/types#" xmlns:skos="https://www.w3.org/2004/02/skos/core#" xmlns:xsd="https://www.w3.org/2001/XMLSchema#" version="2.0" xml:base="https://janezurevc.name/">
   <channel>
     <title>Drush</title>
     <link>https://janezurevc.name/</link>
@@ -16,8 +16,8 @@
 
 &lt;span&gt;Wed, 14.08.2013 - 12:26&lt;/span&gt;
 
-            &lt;div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"&gt;&lt;p&gt;Today I needed to debug &lt;a href="http://drupal.org/project/drush"&gt;Drush&lt;/a&gt; request. Since I've been using &lt;a href="http://www.jetbrains.com/phpstorm/"&gt;PHPStorm&lt;/a&gt; for last few weeks I wanted to use it for that. After a bit of research I found this way to achieve what I needed:&lt;/p&gt;
-&lt;ol&gt;&lt;li&gt;Install and configure Xdebug. There are plenty &lt;a href="http://lmgtfy.com/?q=xdebug+installation"&gt;posts about this all over the internet&lt;/a&gt;.&lt;/li&gt;
+            &lt;div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"&gt;&lt;p&gt;Today I needed to debug &lt;a href="https://drupal.org/project/drush"&gt;Drush&lt;/a&gt; request. Since I've been using &lt;a href="https://www.jetbrains.com/phpstorm/"&gt;PHPStorm&lt;/a&gt; for last few weeks I wanted to use it for that. After a bit of research I found this way to achieve what I needed:&lt;/p&gt;
+&lt;ol&gt;&lt;li&gt;Install and configure Xdebug. There are plenty &lt;a href="https://lmgtfy.com/?q=xdebug+installation"&gt;posts about this all over the internet&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;Start normal web debug session in PHPStorm. Look for &lt;em&gt;"Waiting for incoming connection with ide key '17862'."&lt;/em&gt; in PHPStorm's debug window. 17862 will be something else in your case. Remember this number as we're going to need it in next steps.&lt;/li&gt;
 &lt;li&gt;Open terminal and set new variable&lt;br /&gt;&lt;pre&gt;
 export XDEBUG_CONFIG="idekey=17862"&lt;/pre&gt;&lt;p&gt;Remember to replace "17862" with the number you remembered in the previous step.&lt;/p&gt;&lt;/li&gt;
