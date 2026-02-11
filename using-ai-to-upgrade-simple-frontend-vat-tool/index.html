@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: https://purl.org/rss/1.0/modules/content/  dc: https://purl.org/dc/terms/  foaf: https://xmlns.com/foaf/0.1/  og: https://ogp.me/ns#  rdfs: https://www.w3.org/2000/01/rdf-schema#  schema: https://schema.org/  sioc: https://rdfs.org/sioc/ns#  sioct: https://rdfs.org/sioc/types#  skos: https://www.w3.org/2004/02/skos/core#  xsd: https://www.w3.org/2001/XMLSchema# ">
+  <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="Janez uses AI to refactor a VAT web app, upgrading a vanilla JS Excel‑to‑XML tool with TypeScript, Vue, and experiments in Elm." />
+<meta name="Generator" content="Drupal 9 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="../themes/custom/janezurevc_name/favicon/index.ico" type="image/vnd.microsoft.icon" />
+<link rel="canonical" href="https://www.tag1.com/blog/upgrade-simple-frontend-vat-tool/" />
+<link rel="shortlink" href="using-ai-to-upgrade-simple-frontend-vat-tool/" />
+
+    <title>Using AI to Upgrade a Simple Frontend VAT Tool | Janez Urevc</title>
+    <link rel="stylesheet" media="all" href="../core/modules/system/css/components/align.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/fieldgroup.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/container-inline.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/clearfix.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/details.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/hidden.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/item-list.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/js.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/nowrap.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/position-container.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/progress.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/reset-appearance.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/resize.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/sticky-header.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/system-status-counter/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/system-status-report-counters/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/system-status-report-general-info/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/tablesort.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../core/modules/system/css/components/tree-child.module/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.css" integrity="sha256-0XAFLBbK7DgQ8t7mRWU5BF2OMm9tjtfH945Z7TTeNIo=" crossorigin="anonymous" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.css" integrity="sha512-j4mdyNbQqqp+6Q/HtootpbGoc2ZX0C/ktbXnauPFEz7A457PB6le79qasOBVcrSrOBtGAm0aVU2SOKFzBl6RhA==" crossorigin="anonymous" />
+<link rel="stylesheet" media="all" href="../themes/custom/bootstrap_clean_blog/css/clean-blog/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="../themes/custom/bootstrap_clean_blog/css/theme/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+<link rel="stylesheet" media="all" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+<link rel="stylesheet" media="all" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+<link rel="stylesheet" media="all" href="../themes/custom/janezurevc_name/theme/index.css?s16r9a" />
+<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/androidstudio.min.css" />
+
+
+  </head>
+  <body class="path-node node--type-article">
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      Skip to main content
+    </a>
+
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse"
+              data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+              <a class="navbar-brand" href="/index.html" title="Home">Janez Urevc</a>
+          </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
+            <h2 class="sr-only" id="block-mainnavigation-menu">Main navigation</h2>
+
+
+              <ul class="nav navbar-nav navbar-right">
+                  <li>
+          <a href="../about/" data-drupal-link-system-path="node/2">About</a>
+                  </li>
+              <li>
+          <a href="../get-in-touch/" data-drupal-link-system-path="node/116">Get in touch</a>
+                  </li>
+          </ul>
+
+
+
+  </nav>
+
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+</nav>
+
+<!-- Page Header -->
+<!-- Set your background image for this header on the line below. -->
+<header class="intro-header" style="background-image: url('../themes/custom/janezurevc_name/images/default_bg/index.jpg')">
+  <div class="container">
+    <div class="row">
+              <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <div class="post-heading">
+            <h1>Using AI to Upgrade a Simple Frontend VAT Tool</h1>
+          </div>
+        </div>
+          </div>
+  </div>
+</header>
+
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+
+                          <a id="main-content"></a>
+            <div class="region region-content">
+    <div data-drupal-messages-fallback class="hidden"></div>
+  <article role="article" about="/using-ai-to-upgrade-simple-frontend-vat-tool">
+
+
+
+
+      <div class="post-meta submitted">
+      <article typeof="schema:Person" about="/users/slashrsm">
+  </article>
+
+      <div class="post-date">
+
+<span>Wed, 08.01.2026 - 00:00</span>
+
+
+      </div>
+      <!--<div class="comments-counter"><a href="/using-ai-to-upgrade-simple-frontend-vat-tool#disqus_thread" data-disqus-identifier="tag1-vat-tool" hreflang="en">Comments</a></div>-->
+    </div>
+
+  <div class="content">
+
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"><p><em>This post was originally published on <a href="https://www.tag1.com/blog/upgrade-simple-frontend-vat-tool/">Tag1.com</a>.</em></p>
+
+<p>Slovenian tax authorities recently introduced new VAT reporting requirements. Data now needs to be submitted in a specific XML format they defined just for this task, while my accountant keeps everything in Excel. A while ago I wrote a small frontend application that converts data from Excel files into the required XML.</p>
+
+<p>I am not a really good front-end developer, so I used AI to build that first version of the app. I relied on Grok through the web chat interface, which saved me a lot of time and unblocked me whenever my lack of experience with modern JavaScript got in the way. The result was a vanilla JavaScript in-browser application that did what I needed it to do, but it was far from perfect. The code was not optimal, I was not using any frontend framework, and all the logic lived in a single monolithic file. It worked, but it was obviously due for an upgrade.</p>
+
+<h2>Step 1: Modularizing and converting to TypeScript</h2>
+
+<p>As part of this new project, I decided to address those issues. This time I used Claude CLI. After starting it in the project directory and letting it get familiar with the code (<code>/init</code> command), I asked it to suggest improvements I should implement. The list was quite exhaustive and one of the top items was to modularize the JavaScript code and convert it to TypeScript. I agreed and asked AI to help me do that.</p>
+
+<p>The result was a complete refactor of the application code. It was now split into various modules and converted into TypeScript. I started the application and tested it and it was still working for the most part. It had a few minor bugs that were cosmetic in nature. All in all I was happy with the help that AI provided. It quickly completed a tedious and boring task that I would have probably avoided for quite some time.</p>
+
+<p>From a learning point of view, this was useful. I could compare the old version and the new TypeScript version side by side and see what modularization and typing look like in a real project I care about.</p>
+
+<h2>Step 2: Converting the app to VueJS</h2>
+
+<p>I was happy with the result, but the app still did not use any frontend framework. I decided that I should try to solve that as well. For this step I switched back to the original version of the application, before converting it to TypeScript. This time I asked Claude to modularize it and convert it to VueJS.</p>
+
+<p>The result was pretty similar to the TypeScript refactor. I was happy with it, the app still worked for the most part, and there were a few minor bugs that I was happy to fix manually. Given my lack of experience with JS and VueJS, doing this kind of migration on my own would have taken a lot of time. With AI, I could get a working VueJS version and then spend my time on understanding and fixing the remaining issues instead of writing everything from scratch.</p>
+
+<p>At this point, my plan was to use the VueJS version as the base for future improvements.</p>
+
+<h2>Step 3: Trying Elm (and hitting limits)</h2>
+
+<p>I am a big fan of functional programming and I have had Elm on my radar for a long time. This seemed like a great opportunity to try it. Elm is designed for frontend applications, but it is a completely different language than JavaScript. It comes with its own ecosystem and, while it is possible to implement interoperability with JavaScript, npm packages cannot be used by Elm directly.</p>
+
+<p>Similarly to the previous steps, I asked Claude to convert my application to Elm. This time it took significantly longer. I could see how AI often hit a dead end and had to retract and try different things. There was a lot of trial and error.</p>
+
+<p>Eventually it produced a result, but it was clear that it omitted some of the most important features, like uploading and parsing Excel files and downloading the XML file. When I started it I was presented with the UI, but none of the logic seemed to be working, which made sense since Claude had told me it did not implement that part.</p>
+
+<p>OK… a good first starting point. I continued with a second prompt, this time asking it to implement the Excel parsing. It correctly concluded that, in order to achieve that, it would need to implement JS interoperability. It did that and the parsing seemed to be working. I also noticed that it created a separate HTML file that was a demo of the functionality built in this step. Since I did not ask for that I found it interesting and a nice gesture.</p>
+
+<p>Next I asked it to implement uploading of Excel files and to pass uploaded files into the parser. It successfully did that and created a demo HTML file once again. But I also noticed that the application started drifting in the wrong direction. Suddenly it assumed I would be uploading CSV files instead of Excel. The format of the output XML changed to the point that it did not resemble the required structure anymore. At this point I decided that this is a dead end and stopped trying.</p>
+
+<p>It feels that VueJS is a better path forward for this particular app. I am not exactly sure why Elm caused so many problems for Claude. My speculation is that it is because Elm is much less common and has its own ecosystem, so it is harder for AI to follow the same patterns it used for JavaScript and Vue.</p>
+
+<h2>Step 4: Improving styling with AI demos</h2>
+
+<p>During all this I noticed one thing. The demo HTML files that Claude generated were getting increasingly better looking than my app. I never claimed to be a design person.</p>
+
+<p>So I decided to ask Claude to take the styling from the demo files and apply it to the original application. I got great results back. I repeated the same prompt on my VueJS branch and now I have an application that uses a modern web framework, is built in a modular fashion, and looks significantly better than before. I will take this any day. The tool is live at <a href="https://slashrsm.github.io/kr_converter/" target="_blank" rel="noopener noreferrer">https://slashrsm.github.io/kr_converter/.</a></p>
+
+<figure class="wp-block-image size-large">
+<img src="../sites/default/files/attached-files/vat-tool-upload1.png" alt="Screenshot of VAT tool upload portal, with .xlsx form uploaded." />
+<figcaption class="wp-element-caption">Figure 1: Simple Frontend VAT Tool basic information entered after Excel file upload</figcaption>
+</figure>
+
+<figure class="wp-block-image size-large">
+<img src="../sites/default/files/attached-files/vat-tool-upload2.png" alt="Screenshot of VAT tool documented invoices after Excel file upload" />
+<figcaption class="wp-element-caption">Figure 2: Simple Frontend VAT Tool documented invoices after Excel file upload</figcaption>
+</figure>
+
+<h2>What I learned from this experiment</h2>
+
+<p>This entire project was a lot of fun and very educational. It clearly showed that AI can help with repetitive, mundane, and tedious tasks. It helped me achieve a result that is a big improvement over what I had at the beginning, both in terms of structure and in how comfortable I am working with the code.</p>
+
+<p>It also demonstrated that AI is not perfect. It can get stuck and generate results that are not satisfactory or are just plain wrong. The Elm experiment is a good example of that.</p>
+
+<p>For me the answer is balance. A human developer and AI should work together and complement each other. AI is good at refactors, boilerplate, "try this 10 different ways" experiments, and even coming up with nicer looking HTML and CSS. The human still needs to keep an eye on correctness, keep the project focused on the actual requirements, and decide when something is a dead end.</p>
+
+<h2>How this could be useful for clients</h2>
+
+<p>I did this for a small personal utility, but the same pattern could be useful in client projects. It could help take an old, messy JavaScript tool and use AI to modularize it and move it to TypeScript. It could help scaffold a VueJS (or other framework) version of an existing utility, then refine it by hand. It could also help quickly test ideas in less familiar ecosystems or languages and decide early if they are worth the effort.</p>
+
+<p>Anywhere there is repetitive frontend work, legacy browser tools, or small internal apps that nobody really wants to touch, AI can help make improvements less painful and easier to justify.</p>
+</div>
+
+  <div class="field field--name-field-tags field--type-entity-reference field--label-hidden">
+    <div class="field--label">Tags</div>
+          <div class="field--items">
+              <div class="field--item"><a href="../tags/javascript/" hreflang="en">JavaScript</a></div>
+          <div class="field--item"><a href="../tags/vue/" hreflang="en">Vue</a></div>
+          <div class="field--item"><a href="../tags/typescript/" hreflang="en">TypeScript</a></div>
+          <div class="field--item"><a href="../tags/ai/" hreflang="en">AI</a></div>
+              </div>
+      </div>
+
+  </div>
+
+</article>
+
+
+  </div>
+
+              </div>
+    </div>
+  </div>
+</article>
+
+<hr>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                                <ul class="list-inline text-center">
+                      <li>
+              <a target="_blank" href="https://github.com/slashrsm">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+              </a>
+            </li>
+                      <li>
+              <a target="_blank" href="https://drupal.org/u/slashrsm">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-drupal fa-stack-1x fa-inverse"></i>
+              </span>
+              </a>
+            </li>
+                      <li>
+              <a target="_blank" href="https://si.linkedin.com/in/janezurevc">
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+              </a>
+            </li>
+                  </ul>
+
+
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </div>
+
+
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/tag1-vat-tool","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_select_text":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click","tooltip_enabled":1,"tooltip_animation":1,"tooltip_container":"body","tooltip_delay":"0","tooltip_html":0,"tooltip_placement":"auto left","tooltip_selector":"","tooltip_trigger":"hover"},"disqusComments":"slashrsm","user":{"uid":0,"permissionsHash":"98faaa155a1d3d1c9a77b0c926183091b94fbfa1c641b6b55a329d0db91cf226"}}</script>
+<script src="../sites/default/files/js/js_AqmDmmXtxeaHVu3xcdG2zyaHEnlZalxy9J6xKDJ1uAI/index.js"></script>
+
+<!--[if lte IE 8]>
+<script src="/sites/default/files/js/js_5RH3jC1tW_hjk-Nh0Q_ZFhpL-scB_L3h1PfGSh7kitQ.js"></script>
+<![endif]-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
+<script src="../sites/default/files/js/js_SBPs4Nz8s8sJ8Fu_02wEGLfwObvZDsPxZOtNkHQNtKc/index.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
+<script src="../sites/default/files/js/js_BpR0uWPRfXSLglxmI-MLiWRwWtbnsxDCDenNoWjaMiQ/index.js"></script>
+
+  </body>
+</html>
