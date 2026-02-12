@@ -26,6 +26,45 @@
     "published_on_frontpage": true
   },
   {
+    "title": "4 Important Improvements to Drupal Core Performance",
+    "published_date": "01.05.2024",
+    "path": "4-important-improvements-drupal-core-performance",
+    "tags": [
+      "Drupal",
+      "Performance",
+      "Gander",
+      "Testing"
+    ],
+    "teaser": "Performance optimization is vital for Drupal core, especially as the content management system of choice for 1.7 million websites worldwide. This testing framework was instrumental in four important improvements made to Drupal core performance.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Drupal Core Test Suite Improved Runtime By 10% With Gander",
+    "published_date": "03.04.2024",
+    "path": "drupal-core-test-suite-improved-runtime-gander",
+    "tags": [
+      "Drupal",
+      "Performance",
+      "Gander",
+      "Testing"
+    ],
+    "teaser": "The Drupal community has continuously sought ways to enhance the performance and efficiency of Drupal sites. The performance testing framework Gander has been part of Drupal core since version 10.2. Today, we will take a closer look at how Gander played a crucial role in improving the Drupal core test suite runtime by 10%.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Start Your Drupal Automated Performance Testing Today",
+    "published_date": "25.03.2024",
+    "path": "gander-documentation-start-your-drupal-performance-testing-today",
+    "tags": [
+      "Drupal",
+      "Performance",
+      "Gander",
+      "Testing"
+    ],
+    "teaser": "We are thrilled to announce that documentation for Gander, the innovative performance testing framework, is now available. Designed as a collaboration between the Google Chrome team and Tag1 Consulting, Gander allows you to run efficient Drupal performance testing on your websites.",
+    "published_on_frontpage": true
+  },
+  {
     "title": "Real-time auto save with Phoenix LiveView",
     "published_date": "16.03.2020",
     "path": "real-time-auto-save-phoenix-liveview",
