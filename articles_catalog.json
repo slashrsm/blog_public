@@ -1195,21 +1195,5 @@
     ],
     "teaser": null,
     "published_on_frontpage": true
-  },
-  {
-    "title": "About",
-    "published_date": null,
-    "path": "about",
-    "tags": [],
-    "teaser": null,
-    "published_on_frontpage": false
-  },
-  {
-    "title": "Get in touch",
-    "published_date": null,
-    "path": "get-in-touch",
-    "tags": [],
-    "teaser": null,
-    "published_on_frontpage": false
   }
 ]
