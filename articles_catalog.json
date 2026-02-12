@@ -1,0 +1,1231 @@
+[
+  {
+    "title": "Using AI to Upgrade a Simple Frontend VAT Tool",
+    "published_date": "08.01.2026",
+    "path": "using-ai-to-upgrade-simple-frontend-vat-tool",
+    "tags": [
+      "JavaScript",
+      "Vue",
+      "TypeScript",
+      "AI"
+    ],
+    "teaser": "Slovenian tax authorities recently introduced new VAT reporting requirements. Data now needs to be submitted in a specific XML format they defined just for this task, while my accountant keeps everything in Excel. A while ago I wrote a small frontend application that converts data from Excel files into the required XML.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "How AI Tools Helped Me Make My First Home Assistant Contribution",
+    "published_date": "12.11.2025",
+    "path": "how-ai-tools-helped-make-home-assistant-contribution",
+    "tags": [
+      "Home Assistant",
+      "Open Source",
+      "AI",
+      "Python"
+    ],
+    "teaser": "As software developers, we've all been there: you're using an open-source project, you notice a missing feature or improvement, but contributing feels daunting because you're unfamiliar with the codebase. The learning curve can be steep enough that many of us simply move on rather than contribute. But what if AI could lower that barrier?",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Real-time auto save with Phoenix LiveView",
+    "published_date": "16.03.2020",
+    "path": "real-time-auto-save-phoenix-liveview",
+    "tags": [
+      "Elixir",
+      "BitQ&amp;A",
+      "Phoenix",
+      "LiveView"
+    ],
+    "teaser": "In the past weeks I spent quite some time working on <a href=\"https://bitqa.app/\">BitQ&amp;A</a>; my side project that explores possibilities that digital currencies offer. BitQ&amp;A is a Phoenix application that I initially created for the <a href=\"https://hackathon.bitcoinassociation.net/\">2nd Bitcoin SV virtual hackathon</a>. It was also the first project where I had an opportunity to try <a href=\"https://github.com/phoenixframework/phoenix_live_view\">LiveView</a> (brilliant tool that brings rich real-time UX to Phoenix).",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "BitQ&amp;A: hackathon finals presentation",
+    "published_date": "19.11.2019",
+    "path": "bitqa-hackathon-finals-presentation",
+    "tags": [
+      "BitQ&amp;A",
+      "BSV",
+      "Elixir"
+    ],
+    "teaser": "<a href=\"https://bitqa.app/\">https://bitqa.app</a>",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "BitQ&amp;A: interview",
+    "published_date": "19.11.2019",
+    "path": "bitqa-interview",
+    "tags": [
+      "BitQ&amp;A",
+      "BSV",
+      "Elixir"
+    ],
+    "teaser": "<a href=\"https://bitqa.app/\">https://bitqa.app/</a>",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Slovenian Drupal community celebrated the release of Commerce 2.0",
+    "published_date": "25.09.2017",
+    "path": "slovenian-drupal-community-celebrated-release-commerce-20",
+    "tags": [
+      "Drupal"
+    ],
+    "teaser": "As you may already know the <a href=\"https://commerceguys.com/\">Commerce Guys team</a> released the first stable Drupal 8 version of the <a href=\"https://drupal.org/project/commerce\">truly flexible eCommerce suite</a> last week. In order to celebrate this important event <a href=\"https://commerceguys.com/celebrate-drupal-commerce-2\">many parties were held all around the globe</a>. Slovenian Drupal community definitely didn't want to miss that.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Call for help with Media source plugin porting",
+    "published_date": "16.08.2017",
+    "path": "call-help-media-source-plugin-porting",
+    "tags": [
+      "Drupal",
+      "Media"
+    ],
+    "teaser": "As you may already know <a href=\"https://drupal.org/project/media_entity\">Media entity</a> module <a href=\"https://www.drupal.org/node/2831274?page=1#comment-12094327\">entered Drupal 8.4 as <em>Media</em> module earlier this year</a>. This was the result  of years of hard work in contrib and core space. While the module stayed conceptually the same we used this opportunity to clean it up and refactor some things; mostly to make APIs even easier to understand and use.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Time to take some time off the Drupal community",
+    "published_date": "28.03.2017",
+    "path": "time-take-some-time-drupal-community",
+    "tags": [
+      "Drupal"
+    ],
+    "teaser": "When I joined the Drupal community I felt that I arrived in the enthusiastic, welcoming and positive environment. I felt that all contributions are appreciated and that we're all following more or less the same goal. This belief was also mostly the source of motivation for my extensive contributions to the Drupal 8 Media initiative in the past 4 years or so. This has dramatically changed in the last year or so and seems to be getting worse all the time.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Get ready for the Media workshop at Drupal dev days Seville",
+    "published_date": "22.03.2017",
+    "path": "get-ready-media-workshop-drupal-dev-days-seville",
+    "tags": [
+      "Drupal",
+      "Media"
+    ],
+    "teaser": "If you are planning to attend the workshop and want to be fully productive I'd ask you to take some time and prepare your development environment. We will need Drupal 8 checkout with the following modules:",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Want to learn Entity browser?",
+    "published_date": "15.02.2017",
+    "path": "want-learn-entity-browser",
+    "tags": [
+      "Drupal",
+      "Media"
+    ],
+    "teaser": "One way to start is to check <a href=\"https://milan2016.drupaldays.org/node/129\">the session that gave at the Drupal dev days Milano</a> in June 2016. I went through the architecture of the module and most common use cases.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Possible solution for knowledge sharing in the Drupal 8 media domain",
+    "published_date": "06.02.2017",
+    "path": "possible-solution-knowledge-sharing-drupal-8-media-domain",
+    "tags": [
+      "Drupal",
+      "Media",
+      "Book"
+    ],
+    "teaser": null,
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Playing with the Sculpin static site generator",
+    "published_date": "29.01.2017",
+    "path": "playing-sculpin-static-site-generator",
+    "tags": [
+      "Drupal",
+      "web"
+    ],
+    "teaser": "I can hear you asking: \"What the hack is that?\" Let me quote the <a href=\"https://sculpin.io/\">Sculpin's authors</a>:",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Entity browser feature freeze will happen in two weeks",
+    "published_date": "19.01.2017",
+    "path": "entity-browser-feature-freeze-will-happen-two-weeks",
+    "tags": [
+      "Drupal",
+      "Media"
+    ],
+    "teaser": "Today I released <a href=\"https://www.drupal.org/project/entity_browser/releases/8.x-1.0-beta4\">Entity browser 8.x-1.0-beta4</a>. Release includes some nice features; specially <a href=\"https://www.drupal.org/node/2822009\">Improved MultiStep selection display</a>, which vastly improves editorial experience.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Join us at the next Drupal Media sprint at the Mountain camp in Davos!",
+    "published_date": "06.01.2017",
+    "path": "join-us-next-drupal-media-sprint-mountain-camp-davos",
+    "tags": [
+      "Drupal",
+      "Media",
+      "Sprint"
+    ],
+    "teaser": "<img src=\"sites/default/files/attached-files/dmc/index.jpg\" alt=\"Drupal Mountain camp\" />",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Results of the Drupal 8 media sprint",
+    "published_date": "02.01.2017",
+    "path": "results-drupal-8-media-sprint",
+    "tags": [
+      "Media",
+      "Drupal",
+      "Drupal 8",
+      "Sprint"
+    ],
+    "teaser": "December media team met in Berlin and sprinted on Drupal core media improvements for a week. In this post I summarize the results.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Drupal 8.2.0 and composer wonderland",
+    "published_date": "17.10.2016",
+    "path": "drupal-820-and-composer-wonderland",
+    "tags": [
+      "Drupal",
+      "Docker",
+      "Composer"
+    ],
+    "teaser": "Over the weekend I took some time to update this site to the latest and greatest Drupal. Update itself was pretty straightforward and it went without any problems (great work Drupal community!).",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Drupal dev environment on Docker",
+    "published_date": "06.10.2016",
+    "path": "drupal-dev-environment-on-docker",
+    "tags": [
+      "Drupal",
+      "Docker"
+    ],
+    "teaser": "I will update  this post as I evolve my approach and learn better ways of doing things.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Call for Drupal 8 media ecosystem co-maintainers",
+    "published_date": "06.09.2016",
+    "path": "call-for-drupal-8-media-ecosystem-co-maintainers",
+    "tags": [
+      "Drupal",
+      "Media"
+    ],
+    "teaser": "As many of you most likely already know <a href=\"releases-of-various-drupal-8-media-modules/\">we've been working</a> on <a href=\"https://github.com/drupal-media/\">various media-related modules</a> for a while now. Ecosystem as a whole is getting more and more stable and we're seeing great adoption numbers, which proves that we're on the right track.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Releases of various Drupal 8 media modules",
+    "published_date": "02.08.2016",
+    "path": "releases-of-various-drupal-8-media-modules",
+    "tags": [
+      "Drupal",
+      "Media"
+    ],
+    "teaser": "List of all released modules:",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Blog design refreshed",
+    "published_date": "21.07.2016",
+    "path": "blog-design-refreshed",
+    "tags": [
+      "Drupal"
+    ],
+    "teaser": "He finished his part a while ago. I needed to tweak few other things on the back-end too, which took me way too long to do. Today I finally decided to finish this and deployed the changes to the live website.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "We had great and productive time at NYC sprint!",
+    "published_date": "19.07.2016",
+    "path": "we-had-great-and-productive-time-at-nyc-sprint",
+    "tags": [
+      "Drupal",
+      "Media"
+    ],
+    "teaser": null,
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Sam Morenson is thinking about media in Drupal core",
+    "published_date": "15.07.2016",
+    "path": "sam-morenson-thinking-about-media-drupal-core",
+    "tags": [
+      "Drupal",
+      "Media"
+    ],
+    "teaser": "My friend and a long time member of the <a href=\"https://github.com/drupal-media\">Drupal media team</a> has published <a href=\"https://samuelmortenson.wordpress.com/2016/07/15/what-does-media-in-drupal-8-core-look-like/\">a blog post where he thinks about media in Drupal core and possible ways forward</a>.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Presentations about various Drupal 8 media modules",
+    "published_date": "14.07.2016",
+    "path": "presentations-about-various-drupal-8-media-modules",
+    "tags": [
+      "Drupal",
+      "Media"
+    ],
+    "teaser": "In the past few months I gave many talks about the modules that we created as part od <a href=\"https://github.com/drupal-media\">Drupal 8 media initiative</a>.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Drupal 8 Media module at Google Summer of Code 2016",
+    "published_date": "29.06.2016",
+    "path": "drupal-8-media-module-at-google-summer-of-code-2016",
+    "tags": [
+      "Drupal",
+      "Media"
+    ],
+    "teaser": "He also wrote a <a href=\"https://isthegeek.svbtle.com/week-5-gsoc-16-media-library-and-midterm-results\">blog post where he explains more technical details</a>.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "We loved Drupal Developer Days!",
+    "published_date": "28.06.2016",
+    "path": "we-loved-drupal-developer-days",
+    "tags": [
+      "Drupal"
+    ],
+    "teaser": "Italian style dinner at Navigli in Milano. <a href=\"https://twitter.com/hashtag/drupaldevdays?src=hash\">#drupaldevdays</a> <a href=\"https://t.co/CQOpIpmSGg\">pic.twitter.com/CQOpIpmSGg</a>",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Drupal community, please meet Vijay",
+    "published_date": "24.05.2016",
+    "path": "drupal-community-please-meet-vijay",
+    "tags": [
+      "Drupal",
+      "Drupal 8",
+      "Summer of code"
+    ],
+    "teaser": "He wrote <a href=\"https://isthegeek.svbtle.com/gsoc-16-with-drupal\">an introduction blog post</a>. I'd like to invite you to read it, say hi and follow his work as it progresses through the summer.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Drupal&#039;s number 1 is from Switzerland",
+    "published_date": "24.05.2016",
+    "path": "drupal-s-number-1-from-switzerland",
+    "tags": [
+      "Drupal"
+    ],
+    "teaser": "<img src=\"https://upload.wikimedia.org/wikipedia/commons/0/02/Lindt_petits_desserts.jpg\" /><em>Photo by <a href=\"https://www.flickr.com/people/62274271@N00\">Janine</a>, released under <a href=\"https://creativecommons.org/licenses/by/2.0\">CC BY 2.0</a></em>",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Media entity reaches 8.x-1.0!",
+    "published_date": "02.05.2016",
+    "path": "media-entity-reaches-8-x-1-0",
+    "tags": [
+      "Drupal",
+      "Drupal 8",
+      "Media"
+    ],
+    "teaser": "More than two years ago I gave <a href=\"https://www.youtube.com/watch?v=4giCe2GNnLQ\">a session about the future of media at DrupalCon Prague</a>. The outcome of that session was <a href=\"https://groups.drupal.org/node/327768\">a planning sprint</a> that happened two days after it. One of the ideas that was born on that sprint was <a href=\"https://drupal.org/project/media_entity\">Media entity</a>, storage layer for media-related information built with simplicity and support for remotely hosted media in mind.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Goodbye Examiner, hello MD Systems",
+    "published_date": "25.04.2016",
+    "path": "goodbye-examiner-hello-md-systems",
+    "tags": [
+      "Drupal"
+    ],
+    "teaser": "Approximately 3 and a half years ago I was finishing my job at <a href=\"https://www.delo.si/\">Delo</a>. I gave my notice in two months before, but I still had two more months to go. Yes, my notice period was 4 months (<em>please learn from my mistake and never agree on something like that</em>)! I was planning to take a break, travel Asia for few months, spend more time with my family and life to be easy and relaxing for some time. As you will see things didn't really work out that way...",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Image effects module for Drupal 8",
+    "published_date": "24.02.2016",
+    "path": "image-effects-module-for-drupal-8",
+    "tags": [
+      "Drupal",
+      "Media"
+    ],
+    "teaser": "<a href=\"https://drupal.org/project/image_effects\">Image effects</a> is a new module for Drupal 8 as  it didn't exist in previous versions. It's purpose is to bring most of contributed image effects under one roof. This makes a lot of sense since it prevents fragmentation and makes effects easier to find.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Entity browser got configuration UI",
+    "published_date": "19.02.2016",
+    "path": "entity-browser-got-configuration-ui",
+    "tags": [
+      "Drupal",
+      "Media"
+    ],
+    "teaser": null,
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Time to submit Summer of code proposals!",
+    "published_date": "15.02.2016",
+    "path": "time-to-submit-summer-of-code-proposals",
+    "tags": [
+      "Drupal",
+      "Media",
+      "Summer of code"
+    ],
+    "teaser": "<a href=\"https://summerofcode.withgoogle.com/\">Google Summer of Code</a> is a global program focused on bringing more student developers into open source software development. Students work with an open source organization on a 3 month programming project during their break from school.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "A lot of exciting Drupal 8 media news!",
+    "published_date": "10.02.2016",
+    "path": "a-lot-of-exciting-drupal-8-media-news",
+    "tags": [
+      "Drupal",
+      "Media"
+    ],
+    "teaser": "After <a href=\"zurich-drupal-8-media-sprint-was-a-success/\">media sprint in Zurich</a>, which happened in December, we didn't sleep. Together with the <a href=\"https://www.md-systems.ch/\">team at MD Systems</a> we actively worked on parts of media ecosystem. Would you like to know what we achieved?",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "janezurevc.name runs on Drupal 8!",
+    "published_date": "08.02.2016",
+    "path": "janezurevc-name-runs-on-drupal-8",
+    "tags": [
+      "Drupal"
+    ],
+    "teaser": "Curious how it went? Read on...",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Zurich Drupal 8 media sprint was a success!",
+    "published_date": "04.01.2016",
+    "path": "zurich-drupal-8-media-sprint-was-a-success",
+    "tags": [
+      "Drupal",
+      "Drupal 8",
+      "Media",
+      "Sprint"
+    ],
+    "teaser": "<img src=\"https://pbs.twimg.com/media/CVOhXenWcAAAXsg.jpg\" title=\"Photo by Stefanie Gupta\" alt=\"Media sprint attendees\" /><br />\nPhoto by <a href=\"https://twitter.com/StefanieGupta\">Stefanie Gupta</a>",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "When will media be ready for Drupal 8?",
+    "published_date": "09.11.2015",
+    "path": "when-will-media-be-ready-for-drupal-8",
+    "tags": [
+      "Drupal",
+      "Drupal 8",
+      "Media"
+    ],
+    "teaser": "<a title=\"Core media team at NYC Camp 2014\" href=\"https://groups.drupal.org/files/_GEN1706.jpg\" class=\"colorbox-load\"><img title=\"Core media team at NYC Camp 2014\" alt=\"Core media team at NYC Camp 2014\" src=\"https://groups.drupal.org/files/_GEN1706.jpg\"></a><br />\n<span><em>Core media team at NYC Camp 2014.</em></span>",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "1st Drupal 8 media virtual sprint was a success!",
+    "published_date": "03.10.2015",
+    "path": "1st-drupal-8-media-virtual-sprint-was-success",
+    "tags": [
+      "Drupal",
+      "Drupal 8",
+      "Media"
+    ],
+    "teaser": "On Friday, 2nd Oct 2015, we organized the first virtual media sprint. Four sprinters showed up and worked on D8 media issues.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Drupal 8 from my media perspective - update #3",
+    "published_date": "25.11.2014",
+    "path": "drupal-8-my-media-perspective-update-3",
+    "tags": [],
+    "teaser": "It's been a while since my last post and with BADCamp behind us and some very nice improvements it seems a good timing for another update.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Drupal 8 from my media perspective -  update #2",
+    "published_date": "10.10.2014",
+    "path": "drupal-8-my-media-perspective-update-2",
+    "tags": [
+      "Drupal",
+      "Drupal 8",
+      "Media"
+    ],
+    "teaser": "It's been a while since my last post and with DrupalCon Amsterdam behind us it seems a good timing for another update.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Drupal 8 from my media perspective -  update #1",
+    "published_date": "06.08.2014",
+    "path": "drupal-8-my-media-perspective-update-1",
+    "tags": [
+      "Drupal",
+      "Media"
+    ],
+    "teaser": "Media team is very active. Purpose of this post is to provide the progress update to the rest of the community that might not be aware of everything that is going on in this field. I am planning to publish this posts on a regular basis. We'll see how it goes :).",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Progress of Entity embed module in GSoC 2014",
+    "published_date": "05.08.2014",
+    "path": "progress-entity-embed-module-gsoc-2014",
+    "tags": [
+      "Drupal",
+      "Summer of code"
+    ],
+    "teaser": null,
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Progress of Disqus project in GSoC 2014",
+    "published_date": "30.07.2014",
+    "path": "progress-disqus-project-gsoc-2014",
+    "tags": [
+      "Drupal",
+      "Summer of code"
+    ],
+    "teaser": null,
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Drupal community, please meet Chandan Singh",
+    "published_date": "20.05.2014",
+    "path": "drupal-community-please-meet-chandan-singh",
+    "tags": [
+      "Drupal",
+      "Summer of code"
+    ],
+    "teaser": "<a href=\"https://drupal.org/user/2828287\">Chandan</a> is one of the <a href=\"https://drupal.org/\">Drupal's</a> students that were accepted into <a href=\"https://en.wikipedia.org/wiki/Google_SoC\">Google Summer of code</a> program this year. <a href=\"https://groups.drupal.org/node/423758\">He wrote an introduction post</a> to say hi and explain what he's working on.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Drupal community, please meet Jayesh Solanki",
+    "published_date": "20.05.2014",
+    "path": "drupal-community-please-meet-jayesh-solanki",
+    "tags": [
+      "Drupal",
+      "Summer of code"
+    ],
+    "teaser": "<a href=\"https://drupal.org/user/2832795\">Jayesh</a> is one of the <a href=\"https://drupal.org/\">Drupal's</a> students that were accepted into <a href=\"https://en.wikipedia.org/wiki/Google_SoC\">Google Summer of code</a> program this year. <a href=\"https://groups.drupal.org/node/423263\">He wrote an introduction post</a> to say hi and explain what he's working on.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "DrupalCamp Alpe-Adria - ticket prices go up in only 4 days!",
+    "published_date": "21.04.2014",
+    "path": "drupalcamp-alpe-adria-ticket-prices-go-only-4-days",
+    "tags": [
+      "Drupal",
+      "DrupalCamp",
+      "DrupalCamp Alpe-Adria"
+    ],
+    "teaser": "<a href=\"https://2014.drupalalpeadria.org/\">DrupalCamp Alpe-Adria</a> will be one of the most scenic Drupal events this spring in Europe. It will take place in a magnificent <a href=\"https://en.wikipedia.org/wiki/Portorož\">costal town Portorož</a>, which is conveniently located in the northern part of <a href=\"https://en.wikipedia.org/wiki/Adriatic_Sea\">Adriatic sea</a>.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "You should come to DC Alpe-Adria (really!)",
+    "published_date": "11.04.2014",
+    "path": "you-should-come-dc-alpe-adria-really",
+    "tags": [
+      "Drupal",
+      "DrupalCamp Alpe-Adria"
+    ],
+    "teaser": null,
+    "published_on_frontpage": true
+  },
+  {
+    "title": "HHVM and Drupal (i.e. Drupal drinks some RedBull)",
+    "published_date": "30.12.2013",
+    "path": "hhvm-and-drupal-ie-drupal-drinks-some-redbull",
+    "tags": [
+      "Drupal",
+      "HHVM",
+      "PHP",
+      "Facebook"
+    ],
+    "teaser": "I've been following <a href=\"https://en.wikipedia.org/wiki/HipHop_for_PHP\">HHVM (HipHop Virtual machine)</a> for some time now. Project got a bit more of my attention about a year ago, after session at <a href=\"https://en.wikipedia.org/wiki/FOSDEM\">FOSDEM</a> 2013 by <a href=\"https://github.com/sgolemon\">Sara Golemon</a>. PHP has been criticized for quite a lot of it's characteristics, performance definitely being one of those. HHVM seemed to be very promising about fixing it and that's why it got my attention in the first place.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Creating Hello World Module for Drupal 8 (Code-In project)",
+    "published_date": "22.12.2013",
+    "path": "creating-hello-world-module-drupal-8-code-project",
+    "tags": [
+      "Drupal",
+      "Code-in"
+    ],
+    "teaser": null,
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Drupal 8 media battle-plan - open discussion",
+    "published_date": "06.12.2013",
+    "path": "drupal-8-media-battle-plan-open-discussion",
+    "tags": [
+      "Drupal",
+      "Media"
+    ],
+    "teaser": "There is a discussion about media in Drupal 8 going on at g.d.o. See <a href=\"https://groups.drupal.org/node/384813\">https://groups.drupal.org/node/384813</a> and get involved!",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Drupal 8 media sprint @ DC Vienna",
+    "published_date": "28.11.2013",
+    "path": "drupal-8-media-sprint-dc-vienna-0",
+    "tags": [
+      "Drupal",
+      "Media"
+    ],
+    "teaser": null,
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Google Code-In and Drupal",
+    "published_date": "15.10.2013",
+    "path": "google-code-and-drupal",
+    "tags": [
+      "Drupal",
+      "Code-in"
+    ],
+    "teaser": null,
+    "published_on_frontpage": true
+  },
+  {
+    "title": "drupal_bootstrap(DRUPAL_GR8_MEDIA);",
+    "published_date": "03.10.2013",
+    "path": "drupal-bootstrap-drupal-gr8-media",
+    "tags": [
+      "Drupal",
+      "Media",
+      "Drupal 8"
+    ],
+    "teaser": "We had a c<a href=\"https://prague2013.drupal.org/session/let’s-fix-file-and-media-handling-once-and-all\">ore conversation about media</a> at <a href=\"https://prague2013.drupal.org/\">DrupalCon Prague</a>. It's conclusion was that we should organize a sprint where we would discuss media handling in Drupal 8. <a href=\"https://groups.drupal.org/node/327768\">Sprint actually took place on Friday</a>, the official sprint day at DrupalCon. It was completely non-coding sprint as we could better describe it as a meeting.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Why do we complain about Drupal media solutions? (AKA LFFAMHOAFA pt. 2)",
+    "published_date": "12.09.2013",
+    "path": "why-do-we-complain-about-drupal-media-solutions-aka-lffamhoafa-pt-2",
+    "tags": [
+      "DrupalCon",
+      "Drupal",
+      "Media"
+    ],
+    "teaser": "<em>This is second post in a series of blog posts related to my <a href=\"https://prague2013.drupal.org/\">DrupalCon Prague</a> session called \"<a href=\"https://prague2013.drupal.org/session/let’s-fix-file-and-media-handling-once-and-all\">Let's fix file and media handling once and for all</a>\". In the first article I invited community<a href=\"lets-fix-file-and-media-handling-once-and-all-pt-1/\"> to complete a survey</a>.</em>",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Let&#039;s fix file and media handling once and for all - pt. 1",
+    "published_date": "01.09.2013",
+    "path": "lets-fix-file-and-media-handling-once-and-all-pt-1",
+    "tags": [
+      "Drupal"
+    ],
+    "teaser": "<em>This is first post in a series of blog posts related to my <a href=\"https://prague2013.drupal.org/\">DrupalCon Prague</a> session called \"<a href=\"https://prague2013.drupal.org/session/let’s-fix-file-and-media-handling-once-and-all\">Let's fix file and media handling once and for all</a>\". In the second article <a href=\"why-do-we-complain-about-drupal-media-solutions-aka-lffamhoafa-pt-2/\">I presented survey results</a>.</em>",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Debug drush requests in PHPStrom",
+    "published_date": "14.08.2013",
+    "path": "debug-drush-requests-phpstrom",
+    "tags": [
+      "Drupal",
+      "Drush",
+      "Xdebug"
+    ],
+    "teaser": "Today I needed to debug <a href=\"https://drupal.org/project/drush\">Drush</a> request. Since I've been using <a href=\"https://www.jetbrains.com/phpstorm/\">PHPStorm</a> for last few weeks I wanted to use it for that. After a bit of research I found this way to achieve what I needed:",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "None but ourselves can free our minds...",
+    "published_date": "19.07.2013",
+    "path": "none-ourselves-can-free-our-minds",
+    "tags": [],
+    "teaser": null,
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Download DrupalCon session recordings for offline viewing",
+    "published_date": "27.05.2013",
+    "path": "download-drupalcon-session-recordings-offline-viewing",
+    "tags": [
+      "Drupal",
+      "YouTube download",
+      "Bash"
+    ],
+    "teaser": "After great <a href=\"https://portland2013.drupal.org/\">DrupalCon Portland</a> I had to fly home. And it was a VERY long (10h+) transatlantic flight, so I decided to download some videos on my laptop and watch them during my flight. I could use a service like <a href=\"https://www.keepvid.com/\">keepvid.com</a>, but since I selected 20+ videos I needed something smarter.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "One love",
+    "published_date": "03.05.2013",
+    "path": "one-love",
+    "tags": [],
+    "teaser": null,
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Help Vincenzo Rubano!",
+    "published_date": "15.04.2013",
+    "path": "help-vincenzo-rubano",
+    "tags": [
+      "Drupal"
+    ],
+    "teaser": null,
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Get your ticket for DC Alpe-Adria!",
+    "published_date": "27.03.2013",
+    "path": "get-your-ticket-dc-alpe-adria",
+    "tags": [
+      "DrupalCamp",
+      "DrupalCamp Alpe-Adria",
+      "Drupal"
+    ],
+    "teaser": "<a href=\"https://www.drupalalpeadria.org/\">DC Alpe-Adria (DCAA)</a> is first bigger event organized by <a href=\"https://groups.drupal.org/slovenia\">Slovenian Drupal community</a> and will be the biggest Drupal event in this part of Europe in spring 2013. It will take place in hear of the Europe, Ljubljana, ob 13th and 14th of April. <a href=\"https://drupalalpeadria.org/\" title=\"DrupalCamp Alpe-Adria\"><img alt=\"DCAA banner 160x600\" src=\"https://www.drupalalpeadria.org/sites/www.drupalalpeadria.org/files/imce/dcaa-big.jpg\" /></a>",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Multi-file uploads in Drupal 8?",
+    "published_date": "03.02.2013",
+    "path": "multi-file-uploads-drupal-8",
+    "tags": [
+      "Drupal",
+      "Programming"
+    ],
+    "teaser": null,
+    "published_on_frontpage": true
+  },
+  {
+    "title": "DC Alpe-Adria is out!",
+    "published_date": "28.01.2013",
+    "path": "dc-alpe-adria-out",
+    "tags": [
+      "Drupal",
+      "DrupalCamp Alpe-Adria"
+    ],
+    "teaser": "Slovenian Drupal community is preparing the first biggest Drupal event in <a href=\"https://en.wikipedia.org/wiki/Slovenia\">Slovenia</a>. <a href=\"https://www.drupalalpeadria.org/\">Drupal Camp Alpe-Adria (DCAA)</a> is a Central European Drupal event that will gather Drupal users, developers, supporters and fans from Alpe-Adria region countries and of course everyone else that is willing to come.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "The world is mine!",
+    "published_date": "28.01.2013",
+    "path": "world-mine",
+    "tags": [
+      "photography"
+    ],
+    "teaser": "<a href=\"https://www.flickr.com/photos/slashrsm/8422802253\"><img alt=\"Goodlife\" src=\"https://farm9.staticflickr.com/8368/8422802253_aff2641ce4_z.jpg\" title=\"The world is mine!\" /></a>",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Goodlife",
+    "published_date": "30.12.2012",
+    "path": "goodlife",
+    "tags": [
+      "photography"
+    ],
+    "teaser": "I've taken this picture in a bar in Taormina, Sicily. We were at the vacation with my family and we stopped in this gorgeous bar for a drink and to enjoy a view from their terrace.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Google Code-in != Drupal",
+    "published_date": "23.11.2012",
+    "path": "google-code-drupal",
+    "tags": [
+      "Drupal"
+    ],
+    "teaser": "<a href=\"https://code.google.com/soc/\">Google Summer of code</a> is very well know in our community, but it is not the only Google's program for open source projects. Another interesting project is <a href=\"https://code.google.com/opensource/gci/2012/\">Code-in</a>, which is focused on pre-university students aged between 13 an 17 years. It's goal is to promote open source between young people and to encourage them to participate. Code-in is a great opportunity for projects like Drupal to attract new enthusiasts that have potential to become good developers in the future.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Drupal&#039;s Plupload integration - file_validate()",
+    "published_date": "19.11.2012",
+    "path": "drupals-plupload-integration-filevalidate",
+    "tags": [
+      "Drupal",
+      "Programming",
+      "Plupload"
+    ],
+    "teaser": "<a href=\"https://drupal.org/user/78090\">Kevin Hankens</a> posted <a href=\"https://drupal.org/node/1814744\">an issue</a> in <a href=\"https://drupal.org/project/plupload\">Plupload's integration module</a> a while ago. He complained about the way how module invokes <em>file_validate()</em> at uploads. After a bit of research I agreed with him.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Google Code-in 2012-2013 is here!",
+    "published_date": "16.10.2012",
+    "path": "google-code-2012-2013-here",
+    "tags": [
+      "Drupal",
+      "Code-in"
+    ],
+    "teaser": "Organization application time-frame opens next week. Want to help Drupal beeing part of it? Check <a href=\"https://groups.drupal.org/node/261983\">https://groups.drupal.org/node/261983</a>.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Linux Journal&#039;s Drupal special edition",
+    "published_date": "08.10.2012",
+    "path": "linux-journals-drupal-special-edition",
+    "tags": [
+      "Drupal",
+      "Linux Journal"
+    ],
+    "teaser": "One of them is my article about cache in Drupal, where I describe how it works and how to use it. I also compare performance of different cache backends and describe some techniques that will help you to make your website run faster.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Setting default printer for lpr in Linux",
+    "published_date": "08.10.2012",
+    "path": "setting-default-printer-lpr-linux",
+    "tags": [
+      "Linux",
+      "Hints"
+    ],
+    "teaser": "<code>PRINTER=Samsung_ML-1710; export PRINTER </code>",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Photographer",
+    "published_date": "31.08.2012",
+    "path": "photographer",
+    "tags": [
+      "photography"
+    ],
+    "teaser": "<a href=\"https://www.flickr.com/photos/slashrsm/7892950276\" title=\"Photographer\"><img alt=\"Photographer\" src=\"https://farm9.staticflickr.com/8316/7892950276_a1e1748bb7_z.jpg\" /></a>",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Materialization Plugin for Views (GSoC 2012)",
+    "published_date": "20.08.2012",
+    "path": "materialization-plugin-views-gsoc-2012",
+    "tags": [
+      "Drupal",
+      "Summer of code 2012",
+      "Views"
+    ],
+    "teaser": null,
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Relation Migrate integration and *reference upgrade path",
+    "published_date": "06.08.2012",
+    "path": "relation-migrate-integration-and-reference-upgrade-path",
+    "tags": [
+      "Drupal",
+      "Relation",
+      "Programming",
+      "references"
+    ],
+    "teaser": "There was<a href=\"https://drupal.org/node/1606404#comment-6305944\"> my patch</a> <a href=\"https://drupalcode.org/project/relation.git/commit/79571cc\">committed</a> to <a href=\"https://drupal.org/project/relation\">Relation module</a> (which is great - if you have not tried it yet definitely do) today, that adds <a href=\"https://drupal.org/project/migrate\">Migrate</a> support to Relation and uses it to provide upgrade path from Term/<a href=\"https://drupal.org/project/references\">User/Node</a>/<a href=\"https://drupal.org/project/entityreference\">Entity</a> reference fields to Relation.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Mastering Drupal cache - video",
+    "published_date": "31.07.2012",
+    "path": "mastering-drupal-cache-video",
+    "tags": [
+      "Drupal",
+      "DrupalDevDays",
+      "Session"
+    ],
+    "teaser": null,
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Strange behaviour (race condition) during node_save()",
+    "published_date": "10.07.2012",
+    "path": "strange-behaviour-race-condition-during-nodesave",
+    "tags": [
+      "Programming",
+      "Drupal"
+    ],
+    "teaser": "We have a <a href=\"https://www.slovenskenovice.si/\">bigger media website</a> on <a href=\"https://drupal.org/\">Drupal</a> 7 with an editorial team of ~20 members. Lately they started to complain about<strong> strange behavior when updating content on site</strong>. They said, that <strong>changes were not saved at all</strong>. If they opened a node form immediately after saving it Drupal served old (outdated) content. I first suspected Varnish, but it turned out that Varnish worked OK. Later I realized that the <strong>problem obviously lies in field cache</strong>.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Goodbye Pulseaudio, welcome ALSA",
+    "published_date": "22.06.2012",
+    "path": "goodbye-pulseaudio-welcome-alsa",
+    "tags": [
+      "Ubuntu",
+      "Linux"
+    ],
+    "teaser": "Last time I had really big problems with sound on my HP laptop (running Ubuntu 12.04 and Intel audio card). It was almost impossible to use skype/hangouts/google chat. After a bit of research I realized that the problem appears because of Pulseaudio crashes. I followed <a href=\"https://howto.blbosti.com/2010/04/ubuntu-make-alsa-default-instead-of-pulseaudio/\">this tutorial</a>, removed Pulse and switched to ALSA. Sound was now working OK, but audio hotkeys were not functioning. Apparently the solution from tutorial did not work.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Community momentum",
+    "published_date": "27.05.2012",
+    "path": "community-momentum",
+    "tags": [
+      "Drupal",
+      "Drupal Balkan summit"
+    ],
+    "teaser": "There was a <a href=\"https://sarajevo2012.drupalbalkansummit.org/\">Drupal Balkan summit</a> taking place in Sarajevo, Bosnia and Hercegovina, yesterday. The last session, given by <a href=\"https://drupal.org/user/50100\">perke</a>, was about awesome things that are happening in Drupal 8. When he presented a <a href=\"https://www.angrydonuts.com/help-fund-views-in-core\">Views in Core initiative</a> something absolutely awesome happened. People started to collect money to give a common contribution and I transferred $150 to initiative's Chip-in there at the session.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Fishing boat",
+    "published_date": "14.05.2012",
+    "path": "fishing-boat",
+    "tags": [
+      "photography"
+    ],
+    "teaser": "<a href=\"https://www.flickr.com/photos/slashrsm/7190042010/\"><img src=\"https://farm8.staticflickr.com/7082/7190042010_2105ab06af_z.jpg\" /></a>",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Happy Cook",
+    "published_date": "12.05.2012",
+    "path": "happy-cook",
+    "tags": [
+      "photography"
+    ],
+    "teaser": "Taken in Piran, Slovenija.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "JavaScript patterns",
+    "published_date": "02.05.2012",
+    "path": "javascript-patterns",
+    "tags": [
+      "Programming",
+      "links"
+    ],
+    "teaser": "<a href=\"https://shichuan.github.com/javascript-patterns/\">https://shichuan.github.com/javascript-patterns/</a>",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Patching directly from web",
+    "published_date": "18.01.2012",
+    "path": "patching-directly-web",
+    "tags": [
+      "Linux",
+      "Programming"
+    ],
+    "teaser": "<code>wget -qO- https://example.com/path/to/patch/file.patch | patch </code>",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Zrenjanin, Serbia",
+    "published_date": "29.12.2011",
+    "path": "zrenjanin-serbia",
+    "tags": [
+      "photography"
+    ],
+    "teaser": null,
+    "published_on_frontpage": true
+  },
+  {
+    "title": "How to get client&#039;s IP number to Drupal when using Varnish",
+    "published_date": "07.12.2011",
+    "path": "how-get-clients-ip-number-drupal-when-using-varnish",
+    "tags": [
+      "Drupal",
+      "web",
+      "Varnish"
+    ],
+    "teaser": "There are a lot of places, where you need client's IP address in <a href=\"https://drupal.org/\">Drupal</a> (or any other CMS/web app of course). The problem arises, when you use a <a href=\"https://en.wikipedia.org/wiki/Reverse_proxy\">reverse proxy server</a> (like <a href=\"https://varnish-cache.org/\">Varnish</a>), since every request to web server will be done by the latter. We will have every single visitor of our website coming from a single IP (reverse proxy), as a result.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "slovenskenovice.si - biggest Slovenian Drupal site",
+    "published_date": "05.12.2011",
+    "path": "slovenskenovicesi-biggest-slovenian-drupal-site",
+    "tags": [
+      "Drupal",
+      "web",
+      "Programming",
+      "Delo",
+      "Slovenske Novice"
+    ],
+    "teaser": "<a href=\"https://www.slovenskenovice.si/\">Slovenske novice</a> are Slovenian national daily newspaper with largest circulation on national level. Last week we lunched redesign of it's web variant, which is a news portal with about 200.000 unique visitors and 4.5 million impressions per month. This numbers wil definetely become larger soon, as they have monthly growth between 10 and 15%.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Survey about satisfaction with Scrum",
+    "published_date": "18.11.2011",
+    "path": "survey-about-satisfaction-scrum",
+    "tags": [
+      "Scrum",
+      "Programming",
+      "web",
+      "Drupal"
+    ],
+    "teaser": "I am currently working on my bachelor thesis at Faculty of Computer and Information Science in Ljubljana. The topic of my thesis is implementation of Scrum methodology in a webdev department of the biggest national daily newspaper company, <a href=\"https://www.delo.si/\">Delo</a>.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "DrupalCon Denver 2011 - Media derivatives: take control over your files",
+    "published_date": "07.11.2011",
+    "path": "drupalcon-denver-2011-media-derivatives-take-control-over-your-files",
+    "tags": [
+      "Drupal",
+      "Programming",
+      "DrupalCon",
+      "Derivates API",
+      "Media",
+      "Summer of code 2011"
+    ],
+    "teaser": "<a href=\"https://drupal.org/project/media_derivatives\">Derivatives API</a> is a Drupal project I developed during this year's Summer of Code. It is a framework, that tries to implement a simple, reliable and powerfull framework for asset derivation in Drupal. It can cover a lot of different use cases. We are in the times of emerging new technologies of HTML5, mobile publishing, responsive web, ... I believe that Derivatives API has it's piece in a puzzle of support of this new technologies on Drupal.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Moonlight",
+    "published_date": "13.10.2011",
+    "path": "moonlight",
+    "tags": [
+      "photography"
+    ],
+    "teaser": "<img src=\"https://farm7.static.flickr.com/6155/6240285480_eea62ce82e_z.jpg\" title=\"Moonlight\" />",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Verona by night...",
+    "published_date": "10.10.2011",
+    "path": "verona-night",
+    "tags": [
+      "photography",
+      "DrupalCamp"
+    ],
+    "teaser": "<a href=\"https://www.flickr.com/photos/slashrsm/6223515903/\" title=\"Verona by Night\"><img alt=\"Verona by Night\" src=\"https://farm7.staticflickr.com/6239/6223515903_96d036fc91_z.jpg\" /></a>",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Slides for my session at DrupalCamp Verona",
+    "published_date": "24.09.2011",
+    "path": "slides-my-session-drupalcamp-verona",
+    "tags": [
+      "DrupalCamp",
+      "Verona 2011"
+    ],
+    "teaser": "<a href=\"https://bit.ly/derivativesVerona\">Go</a> for it! :)",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "How to add custom contextual links to views?",
+    "published_date": "20.09.2011",
+    "path": "how-add-custom-contextual-links-views",
+    "tags": [
+      "Drupal",
+      "Programming"
+    ],
+    "teaser": "Today I had a task to add nodequeue manipulation contextual links to some view. First I found <a href=\"https://deglos.com/comment/63\">this blog post</a>, which explains, how to make desired menu items contextual links ready. As Marcus states in his post, I first needed to alter nodequeue menu items:",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "5 day challenge (i&#039;m in!:)",
+    "published_date": "17.09.2011",
+    "path": "5-day-challenge-im",
+    "tags": [
+      "Drupal",
+      "Media",
+      "Derivates API",
+      "Programming",
+      "Open source",
+      "5 day challenge"
+    ],
+    "teaser": "Since I immediately loved this idea, I decided to join. Here is my plan for <a href=\"https://twitter.com/#!/search/realtime/d5dchallenge\">#d5dChallenge</a>:",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "BoF about Media Derivatives API on DrupalCon Lonon",
+    "published_date": "22.08.2011",
+    "path": "bof-about-media-derivatives-api-drupalcon-lonon",
+    "tags": [
+      "Drupal",
+      "Media",
+      "Derivates API",
+      "Summer of code 2011",
+      "DrupalCon London 2011"
+    ],
+    "teaser": null,
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Screencast: Derivatives API intro (GSoC 2011)",
+    "published_date": "02.08.2011",
+    "path": "screencast-derivatives-api-intro-gsoc-2011",
+    "tags": [
+      "Drupal",
+      "Media",
+      "Summer of code 2011",
+      "Programming",
+      "Derivates API"
+    ],
+    "teaser": "You will also see how different plugins work and get an idea what should be possible to do with them.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Screencast: HTML5 &lt;video&gt; support with multiple files using Media Derivatives API",
+    "published_date": "02.08.2011",
+    "path": "screencast-html5-video-support-multiple-files-using-media-derivatives-api",
+    "tags": [
+      "Drupal",
+      "Summer of code 2011",
+      "Media",
+      "Derivates API",
+      "Programming"
+    ],
+    "teaser": "In this screencast I show how to easily support HTML5 &lt;video&gt; tag on all major browsers using two derivatives of source video, created by Derivatives API. This is a sample feature. It's purpuse is to show how Media Derivatives API works and should not be used in production envirnonment.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Scheduled actions - screencast",
+    "published_date": "24.07.2011",
+    "path": "scheduled-actions-screencast",
+    "tags": [
+      "Drupal",
+      "Scheduled actions",
+      "Workflow"
+    ],
+    "teaser": "Scheduled actions is a simple module for Drupal 7, that allows you to create advanced actions, that would schedule another action and to schedule actions for a given node at it's edit form. In this screencast I explain the basic features of the module.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Derivatives API: midterm status update",
+    "published_date": "11.07.2011",
+    "path": "derivatives-api-midterm-status-update",
+    "tags": [
+      "Drupal",
+      "Summer of code 2011",
+      "Derivates API",
+      "Open source",
+      "Programming",
+      "Media"
+    ],
+    "teaser": "This year's <a href=\"https://code.google.com/soc/\">Summer of code</a> has come to it's midterm evaluation, and this could also be a great opportunity to write some words <a href=\"https://groups.drupal.org/node/145074\">about my project</a>. As I've written before, I work on Derivatives API for <a href=\"https://drupal.org/project/media\">Media</a> ecosystem in <a href=\"https://drupal.org/\">Drupal</a> 7.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Derivates API: Feature list",
+    "published_date": "30.05.2011",
+    "path": "derivates-api-feature-list",
+    "tags": [
+      "Summer of code 2011",
+      "Drupal",
+      "Open source",
+      "Media",
+      "Derivates API"
+    ],
+    "teaser": "I did a lot of research, talking to community people and thinking about my GSoC project. More detailed features list has been created as a result of that. I encourage you to check it out and propose some improvements and comments to it.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Drupal Coder review ignore file",
+    "published_date": "20.05.2011",
+    "path": "drupal-coder-review-ignore-file",
+    "tags": [
+      "Drupal",
+      "Programming",
+      "Coder",
+      "Coding standards"
+    ],
+    "teaser": "Few days ago I found <em>core.coder_review_ignores.txt</em> file in <a href=\"https://drupal.org/project/coder\">Coder review's</a> folder. It was quite clear, that can be used to ignore false positive errors, but I was not sure how. Thanks to <a href=\"https://drupal.org/user/240748\">solotandem</a> I now know how to used it. If you want to add your custom ignores, you first have to implement <em>hook_coder_review_ignore()</em>.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Slideshow: Drupal 7 v praksi (Practical Drupal 7)",
+    "published_date": "18.05.2011",
+    "path": "slideshow-drupal-7-v-praksi-practical-drupal-7",
+    "tags": [
+      "Drupal",
+      "web",
+      "wwwh",
+      "kiberpipa"
+    ],
+    "teaser": null,
+    "published_on_frontpage": true
+  },
+  {
+    "title": "How to install Trac, Agilo for Scrum and Git browser on Ubuntu 11.04",
+    "published_date": "14.05.2011",
+    "path": "how-install-trac-agilo-scrum-and-git-browser-ubuntu-1104",
+    "tags": [
+      "Linux",
+      "Ubuntu",
+      "Trac",
+      "Agilo",
+      "Open source",
+      "Command line"
+    ],
+    "teaser": "<a href=\"https://www.agile42.com/cms/pages/agilo/\">Agilo for Scrum</a> is a project management tool for <a href=\"https://en.wikipedia.org/wiki/Scrum_(development)\">Scrum</a>. <a href=\"https://www.agile42.com/cms/pages/agilo/\">Agilo</a> is <a href=\"https://en.wikipedia.org/wiki/Open_source\">open source software</a>, but you can also buy Pro extension. It is a web application, based on <a href=\"https://trac.edgewall.org/\">Trac</a>, which is a great lightweight, flexible and extensible ticketing software.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Summer of code!",
+    "published_date": "13.05.2011",
+    "path": "summer-code",
+    "tags": [
+      "Drupal",
+      "Media",
+      "Summer of code 2011"
+    ],
+    "teaser": "I've been accepted to <a href=\"https://code.google.com/soc/\" target=\"_blank\">Google's Summer of code</a> programme this year. I'll be working for <a href=\"https://www.drupal.org/\" target=\"_blank\">Drupal</a>. Drupal is a great, powerfull and flexible <a href=\"https://en.wikipedia.org/wiki/Content_management_system\" target=\"_blank\">CMS</a>, written in <a href=\"https://www.php.net/\">PHP</a>.",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Download entire web page using wget",
+    "published_date": "12.05.2011",
+    "path": "download-entire-web-page-using-wget",
+    "tags": [
+      "Linux",
+      "Command line",
+      "wget",
+      "GNU"
+    ],
+    "teaser": null,
+    "published_on_frontpage": true
+  },
+  {
+    "title": "History of programming languages and statistics",
+    "published_date": "12.05.2011",
+    "path": "history-programming-languages-and-statistics",
+    "tags": [
+      "Programming",
+      "History",
+      "Statistics"
+    ],
+    "teaser": "<a href=\"sites/default/files/Programming/index.gif\">Original image.</a>",
+    "published_on_frontpage": true
+  },
+  {
+    "title": "Mass resize of PDF files",
+    "published_date": "12.05.2011",
+    "path": "mass-resize-pdf-files",
+    "tags": [
+      "Linux",
+      "Bash",
+      "Ghostscript",
+      "PDF resize"
+    ],
+    "teaser": null,
+    "published_on_frontpage": true
+  },
+  {
+    "title": "The surprising truth about what motivates us",
+    "published_date": "12.05.2011",
+    "path": "surprising-truth-about-what-motivates-us",
+    "tags": [
+      "Work",
+      "Motivation"
+    ],
+    "teaser": null,
+    "published_on_frontpage": true
+  },
+  {
+    "title": "About",
+    "published_date": null,
+    "path": "about",
+    "tags": [],
+    "teaser": null,
+    "published_on_frontpage": false
+  },
+  {
+    "title": "Janez Urevc",
+    "published_date": null,
+    "path": "contact",
+    "tags": [],
+    "teaser": null,
+    "published_on_frontpage": false
+  },
+  {
+    "title": "Janez Urevc",
+    "published_date": null,
+    "path": "e-mail",
+    "tags": [],
+    "teaser": null,
+    "published_on_frontpage": false
+  },
+  {
+    "title": "Get in touch",
+    "published_date": null,
+    "path": "get-in-touch",
+    "tags": [],
+    "teaser": null,
+    "published_on_frontpage": false
+  }
+]
