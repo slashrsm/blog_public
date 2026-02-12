@@ -1,336 +1,496 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" prefix="content: https://purl.org/rss/1.0/modules/content/  dc: https://purl.org/dc/terms/  foaf: https://xmlns.com/foaf/0.1/  og: https://ogp.me/ns#  rdfs: https://www.w3.org/2000/01/rdf-schema#  schema: https://schema.org/  sioc: https://rdfs.org/sioc/ns#  sioct: https://rdfs.org/sioc/types#  skos: https://www.w3.org/2004/02/skos/core#  xsd: https://www.w3.org/2001/XMLSchema# ">
-  <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<head>
-    <meta charset="utf-8" />
-<meta name="description" content="Janez shares how AI tools helped him make his first Home Assistant contribution, lowering the barrier to open-source development." />
-<meta name="Generator" content="Drupal 9 (https://www.drupal.org)" />
-<meta name="MobileOptimized" content="width" />
-<meta name="HandheldFriendly" content="true" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="icon" href="../themes/custom/janezurevc_name/favicon/index.ico" type="image/vnd.microsoft.icon" />
-<link rel="canonical" href="https://www.tag1.com/blog/how-ai-helped-make-home-assistant-contribution/" />
-<link rel="shortlink" href="how-ai-tools-helped-make-home-assistant-contribution/" />
-
-    <title>How AI Tools Helped Me Make My First Home Assistant Contribution | Janez Urevc</title>
-    <link rel="stylesheet" media="all" href="../core/modules/system/css/components/align.module/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="../core/modules/system/css/components/fieldgroup.module/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="../core/modules/system/css/components/container-inline.module/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="../core/modules/system/css/components/clearfix.module/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="../core/modules/system/css/components/details.module/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="../core/modules/system/css/components/hidden.module/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="../core/modules/system/css/components/item-list.module/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="../core/modules/system/css/components/js.module/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="../core/modules/system/css/components/nowrap.module/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="../core/modules/system/css/components/position-container.module/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="../core/modules/system/css/components/progress.module/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="../core/modules/system/css/components/reset-appearance.module/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="../core/modules/system/css/components/resize.module/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="../core/modules/system/css/components/sticky-header.module/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="../core/modules/system/css/components/system-status-counter/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="../core/modules/system/css/components/system-status-report-counters/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="../core/modules/system/css/components/system-status-report-general-info/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="../core/modules/system/css/components/tablesort.module/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="../core/modules/system/css/components/tree-child.module/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.css" integrity="sha256-0XAFLBbK7DgQ8t7mRWU5BF2OMm9tjtfH945Z7TTeNIo=" crossorigin="anonymous" />
-<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.css" integrity="sha512-j4mdyNbQqqp+6Q/HtootpbGoc2ZX0C/ktbXnauPFEz7A457PB6le79qasOBVcrSrOBtGAm0aVU2SOKFzBl6RhA==" crossorigin="anonymous" />
-<link rel="stylesheet" media="all" href="../themes/custom/bootstrap_clean_blog/css/clean-blog/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="../themes/custom/bootstrap_clean_blog/css/theme/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-<link rel="stylesheet" media="all" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
-<link rel="stylesheet" media="all" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
-<link rel="stylesheet" media="all" href="../themes/custom/janezurevc_name/theme/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/androidstudio.min.css" />
-
-
-  </head>
-  <body class="path-node node--type-article">
-    <a href="#main-content" class="visually-hidden focusable skip-link">
-      Skip to main content
-    </a>
-
-      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
-    <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header page-scroll">
-      <button type="button" class="navbar-toggle" data-toggle="collapse"
-              data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+<html dir="ltr" lang="en" prefix="content: https://purl.org/rss/1.0/modules/content/  dc: https://purl.org/dc/terms/  foaf: https://xmlns.com/foaf/0.1/  og:
+https://ogp.me/ns#  rdfs: https://www.w3.org/2000/01/rdf-schema#  schema: https://schema.org/  sioc: https://rdfs.org/sioc/ns#  sioct:
+https://rdfs.org/sioc/types#  skos: https://www.w3.org/2004/02/skos/core#  xsd: https://www.w3.org/2001/XMLSchema# ">
+ <!-- Added by HTTrack -->
+ <meta content="text/html;charset=utf-8" http-equiv="content-type"/>
+ <!-- /Added by HTTrack -->
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="Janez shares how AI tools helped him make his first Home Assistant contribution, lowering the barrier to open-source development."
+name="description"/>
+  <meta content="Drupal 9 (https://www.drupal.org)" name="Generator"/>
+  <meta content="width" name="MobileOptimized"/>
+  <meta content="true" name="HandheldFriendly"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="../themes/custom/janezurevc_name/favicon/index.ico" rel="icon" type="image/vnd.microsoft.icon"/>
+  <link href="https://www.tag1.com/blog/how-ai-helped-make-home-assistant-contribution/" rel="canonical"/>
+  <link href="how-ai-tools-helped-make-home-assistant-contribution/" rel="shortlink"/>
+  <title>
+   How AI Tools Helped Me Make My First Home Assistant Contribution | Janez Urevc
+  </title>
+  <link href="../core/modules/system/css/components/align.module/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="../core/modules/system/css/components/fieldgroup.module/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="../core/modules/system/css/components/container-inline.module/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="../core/modules/system/css/components/clearfix.module/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="../core/modules/system/css/components/details.module/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="../core/modules/system/css/components/hidden.module/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="../core/modules/system/css/components/item-list.module/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="../core/modules/system/css/components/js.module/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="../core/modules/system/css/components/nowrap.module/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="../core/modules/system/css/components/position-container.module/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="../core/modules/system/css/components/progress.module/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="../core/modules/system/css/components/reset-appearance.module/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="../core/modules/system/css/components/resize.module/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="../core/modules/system/css/components/sticky-header.module/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="../core/modules/system/css/components/system-status-counter/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="../core/modules/system/css/components/system-status-report-counters/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="../core/modules/system/css/components/system-status-report-general-info/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="../core/modules/system/css/components/tablesort.module/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="../core/modules/system/css/components/tree-child.module/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.css"
+integrity="sha256-0XAFLBbK7DgQ8t7mRWU5BF2OMm9tjtfH945Z7TTeNIo=" media="all" rel="stylesheet"/>
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.css"
+integrity="sha512-j4mdyNbQqqp+6Q/HtootpbGoc2ZX0C/ktbXnauPFEz7A457PB6le79qasOBVcrSrOBtGAm0aVU2SOKFzBl6RhA==" media="all" rel="stylesheet"/>
+  <link href="../themes/custom/bootstrap_clean_blog/css/clean-blog/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="../themes/custom/bootstrap_clean_blog/css/theme/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="all" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" media="all" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" media="all"
+rel="stylesheet"/>
+  <link href="../themes/custom/janezurevc_name/theme/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/androidstudio.min.css" media="all" rel="stylesheet"/>
+ </head>
+ <body class="path-node node--type-article">
+  <a class="visually-hidden focusable skip-link" href="#main-content">
+   Skip to main content
+  </a>
+  <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="">
+   <nav class="navbar navbar-default">
+    <div class="container-fluid">
+     <!-- Brand and toggle get grouped for better mobile display -->
+     <div class="navbar-header page-scroll">
+      <button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button">
+       <span class="sr-only">
+        Toggle navigation
+       </span>
+       <span class="icon-bar">
+       </span>
+       <span class="icon-bar">
+       </span>
+       <span class="icon-bar">
+       </span>
       </button>
-              <a class="navbar-brand" href="/" title="Home">Janez Urevc</a>
-          </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
-            <h2 class="sr-only" id="block-mainnavigation-menu">Main navigation</h2>
-
-
-              <ul class="nav navbar-nav navbar-right">
-                  <li>
-          <a href="/about.html" data-drupal-link-system-path="node/2">About</a>
-                  </li>
-              <li>
-          <a href="/get-in-touch.html" data-drupal-link-system-path="node/116">Get in touch</a>
-                  </li>
-          </ul>
-
-
-
-  </nav>
-
+      <a class="navbar-brand" href="/" title="Home">
+       Janez Urevc
+      </a>
+     </div>
+     <!-- Collect the nav links, forms, and other content for toggling -->
+     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <nav aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation" role="navigation">
+       <h2 class="sr-only" id="block-mainnavigation-menu">
+        Main navigation
+       </h2>
+       <ul class="nav navbar-nav navbar-right">
+        <li>
+         <a data-drupal-link-system-path="node/2" href="/about.html">
+          About
+         </a>
+        </li>
+        <li>
+         <a data-drupal-link-system-path="node/116" href="/get-in-touch.html">
+          Get in touch
+         </a>
+        </li>
+       </ul>
+      </nav>
+     </div>
+     <!-- /.navbar-collapse -->
     </div>
-    <!-- /.navbar-collapse -->
-  </div>
-</nav>
-
-<!-- Page Header -->
-<!-- Set your background image for this header on the line below. -->
-<header class="intro-header" style="background-image: url('../themes/custom/janezurevc_name/images/default_bg/index.jpg')">
-  <div class="container">
-    <div class="row">
-              <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-          <div class="post-heading">
-            <h1>How AI Tools Helped Me Make My First Home Assistant Contribution</h1>
-          </div>
-        </div>
-          </div>
-  </div>
-</header>
-
-<!-- Post Content -->
-<article>
-  <div class="container">
-    <div class="row">
+   </nav>
+   <!-- Page Header -->
+   <!-- Set your background image for this header on the line below. -->
+   <header class="intro-header" style="background-image: url('../themes/custom/janezurevc_name/images/default_bg/index.jpg')">
+    <div class="container">
+     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-
-
-                          <a id="main-content"></a>
-            <div class="region region-content">
-    <div data-drupal-messages-fallback class="hidden"></div>
-  <article role="article" about="/how-ai-tools-helped-make-home-assistant-contribution">
-
-
-
-
-      <div class="post-meta submitted">
-      <article typeof="schema:Person" about="/users/slashrsm">
-  </article>
-
-      <div class="post-date">
-
-<span>Wed, 12.11.2025</span>
-
-
+       <div class="post-heading">
+        <h1>
+         How AI Tools Helped Me Make My First Home Assistant Contribution
+        </h1>
+       </div>
       </div>
-      <!--<div class="comments-counter"><a href="/how-ai-tools-helped-make-home-assistant-contribution#disqus_thread" data-disqus-identifier="tag1-home-assistant" hreflang="en">Comments</a></div>-->
+     </div>
     </div>
-
-  <div class="content">
-
-            <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"><p><em>This post was originally published on <a href="https://www.tag1.com/blog/how-ai-helped-make-home-assistant-contribution/">Tag1.com</a>.</em></p>
-
-<p>As software developers, we've all been there: you're using an open-source project, you notice a missing feature or improvement, but contributing feels daunting because you're unfamiliar with the codebase. The learning curve can be steep enough that many of us simply move on rather than contribute. But what if AI could lower that barrier?</p>
-
-<p>As a happy Home Assistant user who has been tinkering with various smart home aspects, I had the opportunity to test this hypothesis when I decided to add a feature to Home Assistant's Tesla Wall Connector integration. I contribute to open-source projects regularly, but I had never contributed to Home Assistant before and wasn't familiar with its codebase. This experience taught me something valuable: AI tools can dramatically reduce the friction of contributing to unfamiliar codebases, making open-source contributions more accessible than ever.</p>
-
-<h2>The Missing Feature in My Smart Home Setup</h2>
-
-<p>Home Assistant's Tesla Wall Connector integration allows me to track the charging of my electric vehicle (EV). The integration reports voltage and current for each active phase (which could be one, two, or three phases depending on your setup), but it doesn't report the total active power drawn from the grid.</p>
-
-<p>While voltage and current data are technically sufficient, they require calculation to understand what's actually happening. I wanted a single power reading that would give me immediate insight into my EV's charging status at a glance. It's a small improvement that makes the integration much more user-friendly.</p>
-
-<p>The technical implementation was straightforward: calculate power from the existing voltage and current sensors and display it as a new sensor in the integration.</p>
-
-<figure class="wp-block-image size-large">
-<img src="../sites/default/files/attached-files/home-assistant-tesla-dashboard.png" alt="Home Assistant dashboard showing real-time power usage during active EV charging." />
-<figcaption class="wp-element-caption">Figure 1: Home Assistant dashboard showing real-time power usage during active EV charging.</figcaption>
-</figure>
-
-<p>Simple in theory, but I had never contributed to Home Assistant before and wasn't familiar with its codebase structure or conventions.</p>
-
-<h2>AI as a Codebase Guide</h2>
-
-<p>I decided to use AI tools to help me navigate this unfamiliar territory. Specifically, I used Claude Code (Claude's CLI tool) for implementation and GitHub Copilot for code review. Here's how it went.</p>
-
-<h3>Getting Started Without Prior Knowledge</h3>
-
-<p>After checking out the <a href="https://github.com/home-assistant/core" target="_blank">Home Assistant core repository</a>, I started Claude CLI and used the <code>/init</code> command to help the AI understand the project structure. Then I provided a single, straightforward prompt:</p>
-
-<pre><code>This is a home assistant git checkout. In homeassistant/components/tesla_wall_connector
+   </header>
+   <!-- Post Content -->
+   <article>
+    <div class="container">
+     <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+       <a id="main-content">
+       </a>
+       <div class="region region-content">
+        <div class="hidden" data-drupal-messages-fallback="">
+        </div>
+        <article about="/how-ai-tools-helped-make-home-assistant-contribution" role="article">
+         <div class="post-meta submitted">
+          <article about="/users/slashrsm" typeof="schema:Person">
+          </article>
+          <div class="post-date">
+           <span>
+            Wed, 12.11.2025
+           </span>
+          </div>
+          <!--<div class="comments-counter"><a href="/how-ai-tools-helped-make-home-assistant-contribution#disqus_thread"
+data-disqus-identifier="tag1-home-assistant" hreflang="en">Comments</a></div>-->
+         </div>
+         <div class="content">
+          <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item">
+           <p>
+            <em>
+             This post was originally published on
+             <a href="https://www.tag1.com/blog/how-ai-helped-make-home-assistant-contribution/">
+              Tag1.com
+             </a>
+             .
+            </em>
+           </p>
+           <p>
+            As software developers, we've all been there: you're using an open-source project, you notice a missing feature or improvement, but contributing
+feels daunting because you're unfamiliar with the codebase. The learning curve can be steep enough that many of us simply move on rather than contribute. But
+what if AI could lower that barrier?
+           </p>
+           <p>
+            As a happy Home Assistant user who has been tinkering with various smart home aspects, I had the opportunity to test this hypothesis when I decided
+to add a feature to Home Assistant's Tesla Wall Connector integration. I contribute to open-source projects regularly, but I had never contributed to Home
+Assistant before and wasn't familiar with its codebase. This experience taught me something valuable: AI tools can dramatically reduce the friction of
+contributing to unfamiliar codebases, making open-source contributions more accessible than ever.
+           </p>
+           <h2>
+            The Missing Feature in My Smart Home Setup
+           </h2>
+           <p>
+            Home Assistant's Tesla Wall Connector integration allows me to track the charging of my electric vehicle (EV). The integration reports voltage and
+current for each active phase (which could be one, two, or three phases depending on your setup), but it doesn't report the total active power drawn from the
+grid.
+           </p>
+           <p>
+            While voltage and current data are technically sufficient, they require calculation to understand what's actually happening. I wanted a single
+power reading that would give me immediate insight into my EV's charging status at a glance. It's a small improvement that makes the integration much more
+user-friendly.
+           </p>
+           <p>
+            The technical implementation was straightforward: calculate power from the existing voltage and current sensors and display it as a new sensor in
+the integration.
+           </p>
+           <figure class="wp-block-image size-large">
+            <img alt="Home Assistant dashboard showing real-time power usage during active EV charging."
+src="../sites/default/files/attached-files/home-assistant-tesla-dashboard.png"/>
+            <figcaption class="wp-element-caption">
+             Figure 1: Home Assistant dashboard showing real-time power usage during active EV charging.
+            </figcaption>
+           </figure>
+           <p>
+            Simple in theory, but I had never contributed to Home Assistant before and wasn't familiar with its codebase structure or conventions.
+           </p>
+           <h2>
+            AI as a Codebase Guide
+           </h2>
+           <p>
+            I decided to use AI tools to help me navigate this unfamiliar territory. Specifically, I used Claude Code (Claude's CLI tool) for implementation
+and GitHub Copilot for code review. Here's how it went.
+           </p>
+           <h3>
+            Getting Started Without Prior Knowledge
+           </h3>
+           <p>
+            After checking out the
+            <a href="https://github.com/home-assistant/core" target="_blank">
+             Home Assistant core repository
+            </a>
+            , I started Claude CLI and used the
+            <code>
+             /init
+            </code>
+            command to help the AI understand the project structure. Then I provided a single, straightforward prompt:
+           </p>
+           <pre><code>This is a home assistant git checkout. In homeassistant/components/tesla_wall_connector
 there is code for the Tesla Wall Charger integration. Integration reports voltage and
 current on all phases that are active (could be one, could be 3, ...). I would like to
 add another sensor to it that would display total power drawn from the grid, which can
 be calculated from the voltages and currents that are already provided.</code></pre>
-
-<p>That was enough. Claude implemented the feature, including adding tests that I hadn't even requested. I started a local Home Assistant instance, connected it to my Tesla Wall Connector, and it worked out of the box on the first try.</p>
-
-<h3>Iterating Through Code Reviews</h3>
-
-<p>Of course, getting code to work is only part of the story. It also needs to meet the project's standards and conventions. This is where using multiple AI tools together started to reveal their individual strengths and limitations.</p>
-
-<p>First, I discovered that the AI hadn't completely followed Home Assistant's code formatting standards. I resolved this myself using <code>ruff</code>, Home Assistant's code formatting tool.</p>
-
-<p>Then I opened a pull request: <a href="https://github.com/home-assistant/core/pull/151028" target="_blank">PR #151028</a>. GitHub Copilot provided a helpful review with two specific requests:</p>
-
-<ol>
-<li>Replace a lambda function with a separate function</li>
-<li>Store a repeatedly-accessed value in a variable instead of accessing it multiple times</li>
-</ol>
-
-<p>I returned to Claude and explained the requested changes:</p>
-
-<pre><code>You helped me to implement the feature in the current git branch (adding total active
+           <p>
+            That was enough. Claude implemented the feature, including adding tests that I hadn't even requested. I started a local Home Assistant instance,
+connected it to my Tesla Wall Connector, and it worked out of the box on the first try.
+           </p>
+           <h3>
+            Iterating Through Code Reviews
+           </h3>
+           <p>
+            Of course, getting code to work is only part of the story. It also needs to meet the project's standards and conventions. This is where using
+multiple AI tools together started to reveal their individual strengths and limitations.
+           </p>
+           <p>
+            First, I discovered that the AI hadn't completely followed Home Assistant's code formatting standards. I resolved this myself using
+            <code>
+             ruff
+            </code>
+            , Home Assistant's code formatting tool.
+           </p>
+           <p>
+            Then I opened a pull request:
+            <a href="https://github.com/home-assistant/core/pull/151028" target="_blank">
+             PR #151028
+            </a>
+            . GitHub Copilot provided a helpful review with two specific requests:
+           </p>
+           <ol>
+            <li>
+             Replace a lambda function with a separate function
+            </li>
+            <li>
+             Store a repeatedly-accessed value in a variable instead of accessing it multiple times
+            </li>
+           </ol>
+           <p>
+            I returned to Claude and explained the requested changes:
+           </p>
+           <pre><code>You helped me to implement the feature in the current git branch (adding total active
 power sensor to Tesla wall connector integration). I published the pull request and I
 got two review comments back. One is asking me to not use a lambda function, but to
 create a separate function instead. Another is asking me to store a value in a variable
 instead of accessing it multiple times. Could you help me implement these changes?</code></pre>
-
-<p>I'm not entirely sure whether Claude actually read the review comments or simply analyzed the code, but it correctly figured out what needed to be done.</p>
-
-<p>Copilot provided another review with a minor nit, which I fixed manually.</p>
-
-<p>By this point, I had gone through three iterations of improvements, and no human had reviewed the code yet. The combination of AI tools had helped me rapidly improve the code quality before any maintainer time was required.</p>
-
-<h2>Interesting Observations and Learnings</h2>
-
-<h3>AI Couldn't Run the Tests (But Could Explain How)</h3>
-
-<p>One curious limitation I encountered: Claude struggled to run the tests itself. I suspect it couldn't figure out that it needed to activate the Python virtual environment before attempting to run them. Interestingly, when I asked Claude how to run the tests myself, it correctly instructed me on installing dependencies, activating the virtual environment, and running the tests. I found this a bit funny: the AI could explain the process perfectly but couldn't execute it autonomously. This highlights an important point: AI tools still require a developer who understands software development principles and processes.</p>
-
-<h3>Different AI Models Produce Different Code Styles</h3>
-
-<p>I found it particularly interesting that Copilot preferred code that was slightly different from what Claude had created. This raises an interesting question: would this happen if the same model were used on both ends? Assuming different models were used, this could demonstrate the benefits of using diverse AI models across your workflow. Each model may have learned different patterns and conventions, and their combined perspectives can lead to better code quality.</p>
-
-<h3>AI Lowers the Barrier to Open Source Contribution</h3>
-
-<p>The most significant insight from this experience is how AI tools can dramatically reduce the friction of contributing to unfamiliar codebases. Without Claude's help, I would have needed to:</p>
-
-<ul>
-<li>Study Home Assistant's architecture and patterns</li>
-<li>Understand the integration system</li>
-<li>Learn the testing framework and conventions</li>
-</ul>
-
-<p>Instead, I was able to contribute a working, tested feature in a fraction of the time. The AI handled the "how" of implementation while I focused on the "what", which was defining the feature I wanted and ensuring it met quality standards.</p>
-
-<h2>Practical Takeaways: Getting Started With AI-Assisted Development</h2>
-
-<p>If you're interested in using AI to contribute to open-source projects or accelerate your own development work, here are some practical takeaways from my experience:</p>
-
-<ol>
-<li>
-<p><strong>Start with clear context</strong>: Use tools like <code>/init</code> commands or codebase-understanding features to help AI grasp your project structure.</p>
-</li>
-<li>
-<p><strong>Be specific about what you want</strong>: A clear, detailed prompt about your desired outcome is often enough to get started.</p>
-</li>
-<li>
-<p><strong>Expect to iterate</strong>: AI-generated code will likely need refinement. Use formatting tools, linters, and code review feedback to improve it.</p>
-</li>
-<li>
-<p><strong>Combine multiple AI tools</strong>: Different models excel at different tasks. Don't hesitate to use one tool for implementation and another for review.</p>
-</li>
-<li>
-<p><strong>Maintain developer judgment</strong>: Always understand what the AI is doing and why. You're the one who determines whether the solution meets requirements and quality standards.</p>
-</li>
-<li>
-<p><strong>Embrace the learning process</strong>: Even when AI writes the code, you'll learn about the codebase by reviewing and refining the implementation.</p>
-</li>
-</ol>
-
-<h2>The Future of Open Source Contribution</h2>
-
-<p>This experience gave me confidence that AI tools will significantly change how we approach open-source contribution. The traditional model required deep codebase knowledge before making meaningful contributions. AI tools enable a different model: contributors can jump in sooner, maintainers get higher-quality submissions, and the overall pace of progress improves naturally.</p>
-
-<p>For open-source projects, this changes the equation. Contributors can jump in sooner, maintainers get higher-quality submissions, and the overall pace of progress improves naturally.</p>
-
-<h2>Try It Yourself</h2>
-
-<p>If this experience resonates with you, I encourage you to try AI-assisted contribution to your favorite open-source project. Start small, as I did, with a feature or fix that you personally want. Use AI tools to navigate the unfamiliar codebase, but maintain your judgment about code quality and design.</p>
-
-<p>The barriers to open-source contribution have never been lower. The question is: what will you build?</p>
-</div>
-
-  <div class="field field--name-field-tags field--type-entity-reference field--label-hidden">
-    <div class="field--label">Tags</div>
-          <div class="field--items">
-              <div class="field--item"><span>Home Assistant</span></div>
-          <div class="field--item"><span>Open Source</span></div>
-          <div class="field--item"><span>AI</span></div>
-          <div class="field--item"><span>Python</span></div>
-              </div>
+           <p>
+            I'm not entirely sure whether Claude actually read the review comments or simply analyzed the code, but it correctly figured out what needed to be
+done.
+           </p>
+           <p>
+            Copilot provided another review with a minor nit, which I fixed manually.
+           </p>
+           <p>
+            By this point, I had gone through three iterations of improvements, and no human had reviewed the code yet. The combination of AI tools had helped
+me rapidly improve the code quality before any maintainer time was required.
+           </p>
+           <h2>
+            Interesting Observations and Learnings
+           </h2>
+           <h3>
+            AI Couldn't Run the Tests (But Could Explain How)
+           </h3>
+           <p>
+            One curious limitation I encountered: Claude struggled to run the tests itself. I suspect it couldn't figure out that it needed to activate the
+Python virtual environment before attempting to run them. Interestingly, when I asked Claude how to run the tests myself, it correctly instructed me on
+installing dependencies, activating the virtual environment, and running the tests. I found this a bit funny: the AI could explain the process perfectly but
+couldn't execute it autonomously. This highlights an important point: AI tools still require a developer who understands software development principles and
+processes.
+           </p>
+           <h3>
+            Different AI Models Produce Different Code Styles
+           </h3>
+           <p>
+            I found it particularly interesting that Copilot preferred code that was slightly different from what Claude had created. This raises an
+interesting question: would this happen if the same model were used on both ends? Assuming different models were used, this could demonstrate the benefits of
+using diverse AI models across your workflow. Each model may have learned different patterns and conventions, and their combined perspectives can lead to
+better code quality.
+           </p>
+           <h3>
+            AI Lowers the Barrier to Open Source Contribution
+           </h3>
+           <p>
+            The most significant insight from this experience is how AI tools can dramatically reduce the friction of contributing to unfamiliar codebases.
+Without Claude's help, I would have needed to:
+           </p>
+           <ul>
+            <li>
+             Study Home Assistant's architecture and patterns
+            </li>
+            <li>
+             Understand the integration system
+            </li>
+            <li>
+             Learn the testing framework and conventions
+            </li>
+           </ul>
+           <p>
+            Instead, I was able to contribute a working, tested feature in a fraction of the time. The AI handled the "how" of implementation while I focused
+on the "what", which was defining the feature I wanted and ensuring it met quality standards.
+           </p>
+           <h2>
+            Practical Takeaways: Getting Started With AI-Assisted Development
+           </h2>
+           <p>
+            If you're interested in using AI to contribute to open-source projects or accelerate your own development work, here are some practical takeaways
+from my experience:
+           </p>
+           <ol>
+            <li>
+             <p>
+              <strong>
+               Start with clear context
+              </strong>
+              : Use tools like
+              <code>
+               /init
+              </code>
+              commands or codebase-understanding features to help AI grasp your project structure.
+             </p>
+            </li>
+            <li>
+             <p>
+              <strong>
+               Be specific about what you want
+              </strong>
+              : A clear, detailed prompt about your desired outcome is often enough to get started.
+             </p>
+            </li>
+            <li>
+             <p>
+              <strong>
+               Expect to iterate
+              </strong>
+              : AI-generated code will likely need refinement. Use formatting tools, linters, and code review feedback to improve it.
+             </p>
+            </li>
+            <li>
+             <p>
+              <strong>
+               Combine multiple AI tools
+              </strong>
+              : Different models excel at different tasks. Don't hesitate to use one tool for implementation and another for review.
+             </p>
+            </li>
+            <li>
+             <p>
+              <strong>
+               Maintain developer judgment
+              </strong>
+              : Always understand what the AI is doing and why. You're the one who determines whether the solution meets requirements and quality standards.
+             </p>
+            </li>
+            <li>
+             <p>
+              <strong>
+               Embrace the learning process
+              </strong>
+              : Even when AI writes the code, you'll learn about the codebase by reviewing and refining the implementation.
+             </p>
+            </li>
+           </ol>
+           <h2>
+            The Future of Open Source Contribution
+           </h2>
+           <p>
+            This experience gave me confidence that AI tools will significantly change how we approach open-source contribution. The traditional model required
+deep codebase knowledge before making meaningful contributions. AI tools enable a different model: contributors can jump in sooner, maintainers get
+higher-quality submissions, and the overall pace of progress improves naturally.
+           </p>
+           <p>
+            For open-source projects, this changes the equation. Contributors can jump in sooner, maintainers get higher-quality submissions, and the overall
+pace of progress improves naturally.
+           </p>
+           <h2>
+            Try It Yourself
+           </h2>
+           <p>
+            If this experience resonates with you, I encourage you to try AI-assisted contribution to your favorite open-source project. Start small, as I did,
+with a feature or fix that you personally want. Use AI tools to navigate the unfamiliar codebase, but maintain your judgment about code quality and design.
+           </p>
+           <p>
+            The barriers to open-source contribution have never been lower. The question is: what will you build?
+           </p>
+          </div>
+          <div class="field field--name-field-tags field--type-entity-reference field--label-hidden">
+           <div class="field--label">
+            Tags
+           </div>
+           <div class="field--items">
+            <div class="field--item">
+             <span>
+              Home Assistant
+             </span>
+            </div>
+            <div class="field--item">
+             <span>
+              Open Source
+             </span>
+            </div>
+            <div class="field--item">
+             <span>
+              AI
+             </span>
+            </div>
+            <div class="field--item">
+             <span>
+              Python
+             </span>
+            </div>
+           </div>
+          </div>
+         </div>
+        </article>
+       </div>
       </div>
-
-  </div>
-
-</article>
-
-
-  </div>
-
-              </div>
+     </div>
     </div>
-  </div>
-</article>
-
-<hr>
-
-<!-- Footer -->
-<footer>
-  <div class="container">
-    <div class="row">
+   </article>
+   <hr/>
+   <!-- Footer -->
+   <footer>
+    <div class="container">
+     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                                <ul class="list-inline text-center">
-                      <li>
-              <a target="_blank" href="https://github.com/slashrsm">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa-brands fa-github fa-stack-1x fa-inverse"></i>
-              </span>
-              </a>
-            </li>
-                      <li>
-              <a target="_blank" href="https://x.com/slashrsm">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa-brands fa-x-twitter fa-stack-1x fa-inverse"></i>
-              </span>
-              </a>
-            </li>
-                      <li>
-              <a target="_blank" href="https://si.linkedin.com/in/janezurevc">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa-brands fa-linkedin fa-stack-1x fa-inverse"></i>
-              </span>
-              </a>
-            </li>
-                  </ul>
-
-
+       <ul class="list-inline text-center">
+        <li>
+         <a href="https://github.com/slashrsm" target="_blank">
+          <span class="fa-stack fa-lg">
+           <i class="fa fa-circle fa-stack-2x">
+           </i>
+           <i class="fa-brands fa-github fa-stack-1x fa-inverse">
+           </i>
+          </span>
+         </a>
+        </li>
+        <li>
+         <a href="https://x.com/slashrsm" target="_blank">
+          <span class="fa-stack fa-lg">
+           <i class="fa fa-circle fa-stack-2x">
+           </i>
+           <i class="fa-brands fa-x-twitter fa-stack-1x fa-inverse">
+           </i>
+          </span>
+         </a>
+        </li>
+        <li>
+         <a href="https://si.linkedin.com/in/janezurevc" target="_blank">
+          <span class="fa-stack fa-lg">
+           <i class="fa fa-circle fa-stack-2x">
+           </i>
+           <i class="fa-brands fa-linkedin fa-stack-1x fa-inverse">
+           </i>
+          </span>
+         </a>
+        </li>
+       </ul>
       </div>
+     </div>
     </div>
+   </footer>
   </div>
-</footer>
-
-  </div>
-
-
-    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/tag1-home-assistant","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click","tooltip_enabled":1,"tooltip_animation":1,"tooltip_container":"body","tooltip_delay":"0","tooltip_html":0,"tooltip_placement":"auto left","tooltip_selector":"","tooltip_trigger":"hover"},"disqusComments":"slashrsm","user":{"uid":0,"permissionsHash":"98faaa155a1d3d1c9a77b0c926183091b94fbfa1c641b6b55a329d0db91cf226"}}</script>
-<script src="../sites/default/files/js/js_AqmDmmXtxeaHVu3xcdG2zyaHEnlZalxy9J6xKDJ1uAI/index.js"></script>
-
-<!--[if lte IE 8]>
+  <script data-drupal-selector="drupal-settings-json" type="application/json">
+  
+{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/tag1-home-assistant","currentPathIsAdmin":false,"isFront":false,"currentLanguage"
+"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","mod
+l_focus_input":1,"modal_keyboard":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","
+opover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click","tooltip_
+nabled":1,"tooltip_animation":1,"tooltip_container":"body","tooltip_delay":"0","tooltip_html":0,"tooltip_placement":"auto
+left","tooltip_selector":"","tooltip_trigger":"hover"},"disqusComments":"slashrsm","user":{"uid":0,"permissionsHash":"98faaa155a1d3d1c9a77b0c926183091b94fbfa1c6
+1b6b55a329d0db91cf226"}}
+  </script>
+  <script src="../sites/default/files/js/js_AqmDmmXtxeaHVu3xcdG2zyaHEnlZalxy9J6xKDJ1uAI/index.js">
+  </script>
+  <!--[if lte IE 8]>
 <script src="/sites/default/files/js/js_5RH3jC1tW_hjk-Nh0Q_ZFhpL-scB_L3h1PfGSh7kitQ.js"></script>
 <![endif]-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
-<script src="../sites/default/files/js/js_SBPs4Nz8s8sJ8Fu_02wEGLfwObvZDsPxZOtNkHQNtKc/index.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
-<script src="../sites/default/files/js/js_BpR0uWPRfXSLglxmI-MLiWRwWtbnsxDCDenNoWjaMiQ/index.js"></script>
-
-  </body>
+  <script crossorigin="anonymous" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4="
+src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js">
+  </script>
+  <script src="../sites/default/files/js/js_SBPs4Nz8s8sJ8Fu_02wEGLfwObvZDsPxZOtNkHQNtKc/index.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js">
+  </script>
+  <script src="../sites/default/files/js/js_BpR0uWPRfXSLglxmI-MLiWRwWtbnsxDCDenNoWjaMiQ/index.js">
+  </script>
+ </body>
 </html>
+

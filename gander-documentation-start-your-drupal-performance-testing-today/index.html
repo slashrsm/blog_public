@@ -1,284 +1,469 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" prefix="content: https://purl.org/rss/1.0/modules/content/  dc: https://purl.org/dc/terms/  foaf: https://xmlns.com/foaf/0.1/  og: https://ogp.me/ns#  rdfs: https://www.w3.org/2000/01/rdf-schema#  schema: https://schema.org/  sioc: https://rdfs.org/sioc/ns#  sioct: https://rdfs.org/sioc/types#  skos: https://www.w3.org/2004/02/skos/core#  xsd: https://www.w3.org/2001/XMLSchema# ">
-  <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-<head>
-    <meta charset="utf-8" />
-<meta name="description" content="Comprehensive documentation for Gander, the innovative performance testing framework for Drupal, is now available." />
-<meta name="Generator" content="Drupal 9 (https://www.drupal.org)" />
-<meta name="MobileOptimized" content="width" />
-<meta name="HandheldFriendly" content="true" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="icon" href="../themes/custom/janezurevc_name/favicon/index.ico" type="image/vnd.microsoft.icon" />
-<link rel="canonical" href="https://www.tag1.com/blog/gander-documentation-start-your-drupal-performance-testing-today/" />
-<link rel="shortlink" href="gander-documentation-start-your-drupal-performance-testing-today/" />
-
-    <title>Start Your Drupal Automated Performance Testing Today | Janez Urevc</title>
-    <link rel="stylesheet" media="all" href="../core/modules/system/css/components/align.module/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="../core/modules/system/css/components/fieldgroup.module/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="../core/modules/system/css/components/container-inline.module/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="../core/modules/system/css/components/clearfix.module/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="../core/modules/system/css/components/details.module/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="../core/modules/system/css/components/hidden.module/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="../core/modules/system/css/components/item-list.module/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="../core/modules/system/css/components/js.module/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="../core/modules/system/css/components/nowrap.module/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="../core/modules/system/css/components/position-container.module/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="../core/modules/system/css/components/progress.module/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="../core/modules/system/css/components/reset-appearance.module/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="../core/modules/system/css/components/resize.module/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="../core/modules/system/css/components/sticky-header.module/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="../core/modules/system/css/components/system-status-counter/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="../core/modules/system/css/components/system-status-report-counters/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="../core/modules/system/css/components/system-status-report-general-info/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="../core/modules/system/css/components/tablesort.module/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="../core/modules/system/css/components/tree-child.module/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.css" integrity="sha256-0XAFLBbK7DgQ8t7mRWU5BF2OMm9tjtfH945Z7TTeNIo=" crossorigin="anonymous" />
-<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.css" integrity="sha512-j4mdyNbQqqp+6Q/HtootpbGoc2ZX0C/ktbXnauPFEz7A457PB6le79qasOBVcrSrOBtGAm0aVU2SOKFzBl6RhA==" crossorigin="anonymous" />
-<link rel="stylesheet" media="all" href="../themes/custom/bootstrap_clean_blog/css/clean-blog/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="../themes/custom/bootstrap_clean_blog/css/theme/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-<link rel="stylesheet" media="all" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
-<link rel="stylesheet" media="all" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
-<link rel="stylesheet" media="all" href="../themes/custom/janezurevc_name/theme/index.css?s16r9a" />
-<link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/androidstudio.min.css" />
-
-  </head>
-  <body class="path-node node--type-article">
-    <a href="#main-content" class="visually-hidden focusable skip-link">
-      Skip to main content
-    </a>
-
-      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
-    <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header page-scroll">
-      <button type="button" class="navbar-toggle" data-toggle="collapse"
-              data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+<html dir="ltr" lang="en" prefix="content: https://purl.org/rss/1.0/modules/content/  dc: https://purl.org/dc/terms/  foaf: https://xmlns.com/foaf/0.1/  og:
+https://ogp.me/ns#  rdfs: https://www.w3.org/2000/01/rdf-schema#  schema: https://schema.org/  sioc: https://rdfs.org/sioc/ns#  sioct:
+https://rdfs.org/sioc/types#  skos: https://www.w3.org/2004/02/skos/core#  xsd: https://www.w3.org/2001/XMLSchema# ">
+ <!-- Added by HTTrack -->
+ <meta content="text/html;charset=utf-8" http-equiv="content-type"/>
+ <!-- /Added by HTTrack -->
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="Comprehensive documentation for Gander, the innovative performance testing framework for Drupal, is now available." name="description"/>
+  <meta content="Drupal 9 (https://www.drupal.org)" name="Generator"/>
+  <meta content="width" name="MobileOptimized"/>
+  <meta content="true" name="HandheldFriendly"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="../themes/custom/janezurevc_name/favicon/index.ico" rel="icon" type="image/vnd.microsoft.icon"/>
+  <link href="https://www.tag1.com/blog/gander-documentation-start-your-drupal-performance-testing-today/" rel="canonical"/>
+  <link href="gander-documentation-start-your-drupal-performance-testing-today/" rel="shortlink"/>
+  <title>
+   Start Your Drupal Automated Performance Testing Today | Janez Urevc
+  </title>
+  <link href="../core/modules/system/css/components/align.module/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="../core/modules/system/css/components/fieldgroup.module/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="../core/modules/system/css/components/container-inline.module/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="../core/modules/system/css/components/clearfix.module/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="../core/modules/system/css/components/details.module/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="../core/modules/system/css/components/hidden.module/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="../core/modules/system/css/components/item-list.module/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="../core/modules/system/css/components/js.module/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="../core/modules/system/css/components/nowrap.module/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="../core/modules/system/css/components/position-container.module/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="../core/modules/system/css/components/progress.module/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="../core/modules/system/css/components/reset-appearance.module/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="../core/modules/system/css/components/resize.module/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="../core/modules/system/css/components/sticky-header.module/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="../core/modules/system/css/components/system-status-counter/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="../core/modules/system/css/components/system-status-report-counters/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="../core/modules/system/css/components/system-status-report-general-info/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="../core/modules/system/css/components/tablesort.module/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="../core/modules/system/css/components/tree-child.module/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.css"
+integrity="sha256-0XAFLBbK7DgQ8t7mRWU5BF2OMm9tjtfH945Z7TTeNIo=" media="all" rel="stylesheet"/>
+  <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/@unicorn-fail/drupal-bootstrap-styles@0.0.2/dist/3.4.0/8.x-3.x/drupal-bootstrap.css"
+integrity="sha512-j4mdyNbQqqp+6Q/HtootpbGoc2ZX0C/ktbXnauPFEz7A457PB6le79qasOBVcrSrOBtGAm0aVU2SOKFzBl6RhA==" media="all" rel="stylesheet"/>
+  <link href="../themes/custom/bootstrap_clean_blog/css/clean-blog/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="../themes/custom/bootstrap_clean_blog/css/theme/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="all" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" media="all" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" media="all"
+rel="stylesheet"/>
+  <link href="../themes/custom/janezurevc_name/theme/index.css?s16r9a" media="all" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/androidstudio.min.css" media="all" rel="stylesheet"/>
+ </head>
+ <body class="path-node node--type-article">
+  <a class="visually-hidden focusable skip-link" href="#main-content">
+   Skip to main content
+  </a>
+  <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas="">
+   <nav class="navbar navbar-default">
+    <div class="container-fluid">
+     <!-- Brand and toggle get grouped for better mobile display -->
+     <div class="navbar-header page-scroll">
+      <button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button">
+       <span class="sr-only">
+        Toggle navigation
+       </span>
+       <span class="icon-bar">
+       </span>
+       <span class="icon-bar">
+       </span>
+       <span class="icon-bar">
+       </span>
       </button>
-              <a class="navbar-brand" href="/" title="Home">Janez Urevc</a>
-          </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <nav role="navigation" aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation">
-            <h2 class="sr-only" id="block-mainnavigation-menu">Main navigation</h2>
-
-              <ul class="nav navbar-nav navbar-right">
-                  <li>
-          <a href="/about.html">About</a>
-                  </li>
-              <li>
-          <a href="/get-in-touch.html">Get in touch</a>
-                  </li>
-          </ul>
-
-  </nav>
-
+      <a class="navbar-brand" href="/" title="Home">
+       Janez Urevc
+      </a>
+     </div>
+     <!-- Collect the nav links, forms, and other content for toggling -->
+     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <nav aria-labelledby="block-mainnavigation-menu" id="block-mainnavigation" role="navigation">
+       <h2 class="sr-only" id="block-mainnavigation-menu">
+        Main navigation
+       </h2>
+       <ul class="nav navbar-nav navbar-right">
+        <li>
+         <a href="/about.html">
+          About
+         </a>
+        </li>
+        <li>
+         <a href="/get-in-touch.html">
+          Get in touch
+         </a>
+        </li>
+       </ul>
+      </nav>
+     </div>
+     <!-- /.navbar-collapse -->
     </div>
-    <!-- /.navbar-collapse -->
-  </div>
-</nav>
-
-<!-- Page Header -->
-<!-- Set your background image for this header on the line below. -->
-<header class="intro-header" style="background-image: url('../themes/custom/janezurevc_name/images/default_bg/index.jpg')">
-  <div class="container">
-    <div class="row">
-              <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-          <div class="post-heading">
-            <h1>Start Your Drupal Automated Performance Testing Today</h1>
-            <span class="subheading">Gander Documentation</span>
-          </div>
-        </div>
-          </div>
-  </div>
-</header>
-
-<!-- Post Content -->
-<article>
-  <div class="container">
-    <div class="row">
+   </nav>
+   <!-- Page Header -->
+   <!-- Set your background image for this header on the line below. -->
+   <header class="intro-header" style="background-image: url('../themes/custom/janezurevc_name/images/default_bg/index.jpg')">
+    <div class="container">
+     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-
-                          <a id="main-content"></a>
-            <div class="region region-content">
-    <div data-drupal-messages-fallback class="hidden"></div>
-  <article role="article">
-
-      <div class="post-meta submitted">
-      <article typeof="schema:Person" about="/users/slashrsm">
-  </article>
-
-      <div class="post-date">
-<span>Mon, 25.03.2024</span>
+       <div class="post-heading">
+        <h1>
+         Start Your Drupal Automated Performance Testing Today
+        </h1>
+        <span class="subheading">
+         Gander Documentation
+        </span>
+       </div>
       </div>
+     </div>
     </div>
-
-  <div class="content">
-            <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item"><p><em>This post was originally published on <a href="https://www.tag1.com/blog/gander-documentation-start-your-drupal-performance-testing-today/">Tag1.com</a>.</em></p>
-
-<p>We are thrilled to announce that documentation for <a href="https://www.drupal.org/project/gander">Gander, the innovative performance testing framework</a>, is now available. Designed as a collaboration between the <a href="https://developer.chrome.com/">Google Chrome team</a> and Tag1 Consulting, Gander allows you to run efficient Drupal performance testing on your websites.</p>
-
-<p><strong>When milliseconds matter</strong>, performance –especially with the increase of mobile usage internationally –has a significant and direct impact on website success and, ultimately, business outcomes. Gander revolutionizes performance testing for Drupal websites because it is a proactive framework integrated within Drupal core.</p>
-
-<p><strong>Anyone can start using Gander</strong>. Curious to know more? <a href="https://www.drupal.org/u/catch">Nathaniel Catchpole (aka. Catch)</a>, the architect and lead developer on the project, also renowned for his contributions to Drupal as a core maintainer, gave <a href="https://www.tag1.com/team-talk/gander-performance-testing-framework/">a live demo of Gander</a> in a recent Tag1 Team Talk. It is a great place to start if you are interested in seeing it in action.</p>
-
-<h2>Gander Documentation on Drupal.org</h2>
-
-<p>Ready to test out Gander for yourself? We have <a href="https://www.drupal.org/docs/develop/performance/gander">released comprehensive documentation for Gander on Drupal.org</a>. This documentation guides you through every aspect of this Drupal performance testing framework, from why it is important to how to set it up on your Drupal installation.</p>
-
-<h3>What's included:</h3>
-
-<ul>
-<li><strong>Introduction</strong>: An introduction to Gander, including why you should use it.</li>
-<li><strong>How it can be used</strong>: An explanation of the two ways of using Gander.</li>
-<li><strong>How to contribute</strong>: Gander is open source and it relies on a community of volunteers.</li>
-<li><strong>Quickstart</strong>: Detailed instructions on how to get Gander up and running.</li>
-<li><strong>Performance assertions</strong>: Performance requirements can be inserted into existing PHPUnit tests.</li>
-<li><strong>Monitoring performance metrics</strong>: Gander allows the monitoring of performance metrics across longer periods using visualization tools.</li>
-</ul>
-
-<p>After setting up Gander in your local environment, you can write performance tests for your own projects and incorporate them into your in-house development processes.</p>
-
-<h3>Get Started With Gander's Quickstart Guide</h3>
-
-<p>The best way to get started with Gander is to use the <a href="https://github.com/tag1consulting/ddev-gander">DDEV add-on</a>. It will automatically add all necessary services to your local environment (such as Grafana, OpenTelemetry collector, Grafana Tempo, and Prometheus).</p>
-
-<h4>1. Prerequisites</h4>
-
-<p>To start using the DDEV add-on, ensure that all the prerequisites are met:</p>
-
-<ul>
-<li><a href="https://ddev.readthedocs.io/">DDEV</a> is installed.</li>
-<li>DDEV is <a href="https://ddev.readthedocs.io/en/stable/users/quickstart/">enabled on your Drupal project</a>.</li>
-<li>Ensure you can already run <a href="https://ddev.readthedocs.io/en/stable/users/usage/developer-tools/#testing">functional JavaScript tests in the DDEV environment</a>.</li>
-</ul>
-
-<h4>2. Working Local Environment</h4>
-
-<p>If you already have a working local environment that can run functional tests, skip to the next step. Otherwise, create a suitable local environment by following these steps:</p>
-
-<pre><code>composer create-project drupal/recommended-project gander_project
+   </header>
+   <!-- Post Content -->
+   <article>
+    <div class="container">
+     <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+       <a id="main-content">
+       </a>
+       <div class="region region-content">
+        <div class="hidden" data-drupal-messages-fallback="">
+        </div>
+        <article role="article">
+         <div class="post-meta submitted">
+          <article about="/users/slashrsm" typeof="schema:Person">
+          </article>
+          <div class="post-date">
+           <span>
+            Mon, 25.03.2024
+           </span>
+          </div>
+         </div>
+         <div class="content">
+          <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item">
+           <p>
+            <em>
+             This post was originally published on
+             <a href="https://www.tag1.com/blog/gander-documentation-start-your-drupal-performance-testing-today/">
+              Tag1.com
+             </a>
+             .
+            </em>
+           </p>
+           <p>
+            We are thrilled to announce that documentation for
+            <a href="https://www.drupal.org/project/gander">
+             Gander, the innovative performance testing framework
+            </a>
+            , is now available. Designed as a collaboration between the
+            <a href="https://developer.chrome.com/">
+             Google Chrome team
+            </a>
+            and Tag1 Consulting, Gander allows you to run efficient Drupal performance testing on your websites.
+           </p>
+           <p>
+            <strong>
+             When milliseconds matter
+            </strong>
+            , performance &ndash;especially with the increase of mobile usage internationally &ndash;has a significant and direct impact on website success
+and, ultimately, business outcomes. Gander revolutionizes performance testing for Drupal websites because it is a proactive framework integrated within Drupal
+core.
+           </p>
+           <p>
+            <strong>
+             Anyone can start using Gander
+            </strong>
+            . Curious to know more?
+            <a href="https://www.drupal.org/u/catch">
+             Nathaniel Catchpole (aka. Catch)
+            </a>
+            , the architect and lead developer on the project, also renowned for his contributions to Drupal as a core maintainer, gave
+            <a href="https://www.tag1.com/team-talk/gander-performance-testing-framework/">
+             a live demo of Gander
+            </a>
+            in a recent Tag1 Team Talk. It is a great place to start if you are interested in seeing it in action.
+           </p>
+           <h2>
+            Gander Documentation on Drupal.org
+           </h2>
+           <p>
+            Ready to test out Gander for yourself? We have
+            <a href="https://www.drupal.org/docs/develop/performance/gander">
+             released comprehensive documentation for Gander on Drupal.org
+            </a>
+            . This documentation guides you through every aspect of this Drupal performance testing framework, from why it is important to how to set it up on
+your Drupal installation.
+           </p>
+           <h3>
+            What's included:
+           </h3>
+           <ul>
+            <li>
+             <strong>
+              Introduction
+             </strong>
+             : An introduction to Gander, including why you should use it.
+            </li>
+            <li>
+             <strong>
+              How it can be used
+             </strong>
+             : An explanation of the two ways of using Gander.
+            </li>
+            <li>
+             <strong>
+              How to contribute
+             </strong>
+             : Gander is open source and it relies on a community of volunteers.
+            </li>
+            <li>
+             <strong>
+              Quickstart
+             </strong>
+             : Detailed instructions on how to get Gander up and running.
+            </li>
+            <li>
+             <strong>
+              Performance assertions
+             </strong>
+             : Performance requirements can be inserted into existing PHPUnit tests.
+            </li>
+            <li>
+             <strong>
+              Monitoring performance metrics
+             </strong>
+             : Gander allows the monitoring of performance metrics across longer periods using visualization tools.
+            </li>
+           </ul>
+           <p>
+            After setting up Gander in your local environment, you can write performance tests for your own projects and incorporate them into your in-house
+development processes.
+           </p>
+           <h3>
+            Get Started With Gander's Quickstart Guide
+           </h3>
+           <p>
+            The best way to get started with Gander is to use the
+            <a href="https://github.com/tag1consulting/ddev-gander">
+             DDEV add-on
+            </a>
+            . It will automatically add all necessary services to your local environment (such as Grafana, OpenTelemetry collector, Grafana Tempo, and
+Prometheus).
+           </p>
+           <h4>
+            1. Prerequisites
+           </h4>
+           <p>
+            To start using the DDEV add-on, ensure that all the prerequisites are met:
+           </p>
+           <ul>
+            <li>
+             <a href="https://ddev.readthedocs.io/">
+              DDEV
+             </a>
+             is installed.
+            </li>
+            <li>
+             DDEV is
+             <a href="https://ddev.readthedocs.io/en/stable/users/quickstart/">
+              enabled on your Drupal project
+             </a>
+             .
+            </li>
+            <li>
+             Ensure you can already run
+             <a href="https://ddev.readthedocs.io/en/stable/users/usage/developer-tools/#testing">
+              functional JavaScript tests in the DDEV environment
+             </a>
+             .
+            </li>
+           </ul>
+           <h4>
+            2. Working Local Environment
+           </h4>
+           <p>
+            If you already have a working local environment that can run functional tests, skip to the next step. Otherwise, create a suitable local
+environment by following these steps:
+           </p>
+           <pre><code>composer create-project drupal/recommended-project gander_project
 cd gander_project
 composer require --dev drupal/core-dev
 ddev config
 ddev get ddev/ddev-selenium-standalone-chrome
 </code></pre>
-
-<h4>3. Run Gander Tests</h4>
-
-<p>Now you can start running Gander tests:</p>
-
-<pre><code>ddev get tag1consulting/ddev-gander
+           <h4>
+            3. Run Gander Tests
+           </h4>
+           <p>
+            Now you can start running Gander tests:
+           </p>
+           <pre><code>ddev get tag1consulting/ddev-gander
 ddev restart
 ddev ssh
 cd web/
 </code></pre>
-
-<p>To run a single test:</p>
-
-<pre><code>../vendor/bin/phpunit -c core --filter hot core/profiles/demo_umami/tests/src/FunctionalJavascript/OpenTelemetryNodePagePerformanceTest.php
+           <p>
+            To run a single test:
+           </p>
+           <pre><code>../vendor/bin/phpunit -c core --filter hot
+core/profiles/demo_umami/tests/src/FunctionalJavascript/OpenTelemetryNodePagePerformanceTest.php
 </code></pre>
-
-<p>To run all Gander tests:</p>
-
-<pre><code>../vendor/bin/phpunit -c core --group OpenTelemetry
+           <p>
+            To run all Gander tests:
+           </p>
+           <pre><code>../vendor/bin/phpunit -c core --group OpenTelemetry
 </code></pre>
-
-<p>Check the Grafana dashboard via: <code>http://&lt;project&gt;.ddev.site:3000/</code></p>
-
-<p>You might need to run the test a few times for the data to start appearing on the dashboard.</p>
-
-<p><strong>You can start using Gander today</strong>. Don't wait for your site performance issues to grow into a large problem. The Gander framework, included in Drupal core since 10.2, gives organizations like yours the tools to start regularly monitoring the performance of your projects. The new documentation walks you through how to set up and use Gander for Drupal performance testing.</p>
-
-<h3>Want to learn more? Join us at DrupalCon Portland!</h3>
-
-<p>We are hosting a <a href="https://events.drupal.org/portland2024/session/gander-drupal-core-performance-testing-framework">deep dive into Gander</a> at the upcoming DrupalCon in Portland. We will explain the motivation for and basics of Gander, have a live demo, and show how to use it for Drupal Core development and on your own site. We will also talk about the benefits, how we got here, where we go from here, and ask for your feedback.</p>
-
-<p>Don't miss out! Join us on <strong>Tuesday, May 7, 2024 at 16:10 PDT in Room B117-119</strong>.</p>
-
-<p>We will also present Gander as part of the <a href="https://events.drupal.org/portland2024/session/drupal-project-initiatives-keynote">Drupal Project Initiatives Keynote</a> on Wednesday, May 8, 2024 at 09:00 PDT in Room 201-203 or Ballroom.</p>
-
-<p>Are you as excited as we are? Come to our deep dive at DrupalCon Portland, <a href="https://www.drupal.org/docs/develop/performance/gander">learn more about Gander</a>, or <a href="https://www.tag1.com/contact/">reach out</a> today!</p>
-</div>
-
-  <div class="field field--name-field-tags field--type-entity-reference field--label-hidden">
-    <div class="field--label">Tags</div>
-          <div class="field--items">
-              <div class="field--item"><span>Drupal</span></div>
-          <div class="field--item"><span>Performance</span></div>
-          <div class="field--item"><span>Gander</span></div>
-          <div class="field--item"><span>Testing</span></div>
-              </div>
+           <p>
+            Check the Grafana dashboard via:
+            <code>
+             http://&lt;project&gt;.ddev.site:3000/
+            </code>
+           </p>
+           <p>
+            You might need to run the test a few times for the data to start appearing on the dashboard.
+           </p>
+           <p>
+            <strong>
+             You can start using Gander today
+            </strong>
+            . Don't wait for your site performance issues to grow into a large problem. The Gander framework, included in Drupal core since 10.2, gives
+organizations like yours the tools to start regularly monitoring the performance of your projects. The new documentation walks you through how to set up and
+use Gander for Drupal performance testing.
+           </p>
+           <h3>
+            Want to learn more? Join us at DrupalCon Portland!
+           </h3>
+           <p>
+            We are hosting a
+            <a href="https://events.drupal.org/portland2024/session/gander-drupal-core-performance-testing-framework">
+             deep dive into Gander
+            </a>
+            at the upcoming DrupalCon in Portland. We will explain the motivation for and basics of Gander, have a live demo, and show how to use it for Drupal
+Core development and on your own site. We will also talk about the benefits, how we got here, where we go from here, and ask for your feedback.
+           </p>
+           <p>
+            Don't miss out! Join us on
+            <strong>
+             Tuesday, May 7, 2024 at 16:10 PDT in Room B117-119
+            </strong>
+            .
+           </p>
+           <p>
+            We will also present Gander as part of the
+            <a href="https://events.drupal.org/portland2024/session/drupal-project-initiatives-keynote">
+             Drupal Project Initiatives Keynote
+            </a>
+            on Wednesday, May 8, 2024 at 09:00 PDT in Room 201-203 or Ballroom.
+           </p>
+           <p>
+            Are you as excited as we are? Come to our deep dive at DrupalCon Portland,
+            <a href="https://www.drupal.org/docs/develop/performance/gander">
+             learn more about Gander
+            </a>
+            , or
+            <a href="https://www.tag1.com/contact/">
+             reach out
+            </a>
+            today!
+           </p>
+          </div>
+          <div class="field field--name-field-tags field--type-entity-reference field--label-hidden">
+           <div class="field--label">
+            Tags
+           </div>
+           <div class="field--items">
+            <div class="field--item">
+             <span>
+              Drupal
+             </span>
+            </div>
+            <div class="field--item">
+             <span>
+              Performance
+             </span>
+            </div>
+            <div class="field--item">
+             <span>
+              Gander
+             </span>
+            </div>
+            <div class="field--item">
+             <span>
+              Testing
+             </span>
+            </div>
+           </div>
+          </div>
+         </div>
+        </article>
+       </div>
       </div>
-
-  </div>
-
-</article>
-
-  </div>
-
-              </div>
+     </div>
     </div>
-  </div>
-</article>
-
-<hr>
-
-<!-- Footer -->
-<footer>
-  <div class="container">
-    <div class="row">
+   </article>
+   <hr/>
+   <!-- Footer -->
+   <footer>
+    <div class="container">
+     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                                <ul class="list-inline text-center">
-                      <li>
-              <a target="_blank" href="https://github.com/slashrsm">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa-brands fa-github fa-stack-1x fa-inverse"></i>
-              </span>
-              </a>
-            </li>
-                      <li>
-              <a target="_blank" href="https://x.com/slashrsm">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa-brands fa-x-twitter fa-stack-1x fa-inverse"></i>
-              </span>
-              </a>
-            </li>
-                      <li>
-              <a target="_blank" href="https://si.linkedin.com/in/janezurevc">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa-brands fa-linkedin fa-stack-1x fa-inverse"></i>
-              </span>
-              </a>
-            </li>
-                  </ul>
-
+       <ul class="list-inline text-center">
+        <li>
+         <a href="https://github.com/slashrsm" target="_blank">
+          <span class="fa-stack fa-lg">
+           <i class="fa fa-circle fa-stack-2x">
+           </i>
+           <i class="fa-brands fa-github fa-stack-1x fa-inverse">
+           </i>
+          </span>
+         </a>
+        </li>
+        <li>
+         <a href="https://x.com/slashrsm" target="_blank">
+          <span class="fa-stack fa-lg">
+           <i class="fa fa-circle fa-stack-2x">
+           </i>
+           <i class="fa-brands fa-x-twitter fa-stack-1x fa-inverse">
+           </i>
+          </span>
+         </a>
+        </li>
+        <li>
+         <a href="https://si.linkedin.com/in/janezurevc" target="_blank">
+          <span class="fa-stack fa-lg">
+           <i class="fa fa-circle fa-stack-2x">
+           </i>
+           <i class="fa-brands fa-linkedin fa-stack-1x fa-inverse">
+           </i>
+          </span>
+         </a>
+        </li>
+       </ul>
       </div>
+     </div>
     </div>
+   </footer>
   </div>
-</footer>
-
-  </div>
-
-    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"modal_keyboard":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","popover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click","tooltip_enabled":1,"tooltip_animation":1,"tooltip_container":"body","tooltip_delay":"0","tooltip_html":0,"tooltip_placement":"auto left","tooltip_selector":"","tooltip_trigger":"hover"},"disqusComments":"slashrsm","user":{"uid":0,"permissionsHash":"98faaa155a1d3d1c9a77b0c926183091b94fbfa1c641b6b55a329d0db91cf226"}}</script>
-<script src="../sites/default/files/js/js_AqmDmmXtxeaHVu3xcdG2zyaHEnlZalxy9J6xKDJ1uAI/index.js"></script>
-
-<!--[if lte IE 8]>
+  <script data-drupal-selector="drupal-settings-json" type="application/json">
+  
+{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimit
+r":"\u0003","suppressDeprecationErrors":true,"bootstrap":{"forms_has_error_value_toggle":1,"modal_animation":1,"modal_backdrop":"true","modal_focus_input":1,"mo
+al_keyboard":1,"modal_show":1,"modal_size":"","popover_enabled":1,"popover_animation":1,"popover_auto_close":1,"popover_container":"body","popover_content":"","
+opover_delay":"0","popover_html":0,"popover_placement":"right","popover_selector":"","popover_title":"","popover_trigger":"click","tooltip_enabled":1,"tooltip_a
+imation":1,"tooltip_container":"body","tooltip_delay":"0","tooltip_html":0,"tooltip_placement":"auto
+left","tooltip_selector":"","tooltip_trigger":"hover"},"disqusComments":"slashrsm","user":{"uid":0,"permissionsHash":"98faaa155a1d3d1c9a77b0c926183091b94fbfa1c6
+1b6b55a329d0db91cf226"}}
+  </script>
+  <script src="../sites/default/files/js/js_AqmDmmXtxeaHVu3xcdG2zyaHEnlZalxy9J6xKDJ1uAI/index.js">
+  </script>
+  <!--[if lte IE 8]>
 <script src="/sites/default/files/js/js_5RH3jC1tW_hjk-Nh0Q_ZFhpL-scB_L3h1PfGSh7kitQ.js"></script>
 <![endif]-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script>
-<script src="../sites/default/files/js/js_SBPs4Nz8s8sJ8Fu_02wEGLfwObvZDsPxZOtNkHQNtKc/index.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
-<script src="../sites/default/files/js/js_BpR0uWPRfXSLglxmI-MLiWRwWtbnsxDCDenNoWjaMiQ/index.js"></script>
-
-  </body>
+  <script crossorigin="anonymous" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4="
+src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js">
+  </script>
+  <script src="../sites/default/files/js/js_SBPs4Nz8s8sJ8Fu_02wEGLfwObvZDsPxZOtNkHQNtKc/index.js">
+  </script>
+  <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js">
+  </script>
+  <script src="../sites/default/files/js/js_BpR0uWPRfXSLglxmI-MLiWRwWtbnsxDCDenNoWjaMiQ/index.js">
+  </script>
+ </body>
 </html>
+
