@@ -9,20 +9,9 @@ import os
 from bs4 import BeautifulSoup
 from pathlib import Path
 
-
-def format_html_file(filepath):
-    """Format a single HTML file."""
-    with open(filepath, 'r', encoding='utf-8') as f:
-        content = f.read()
-
-    soup = BeautifulSoup(content, 'html.parser')
-
-    # Pretty print with indent of 2 spaces
-    formatted = soup.prettify(formatter='html')
-
+def ensure_line_length(text, max_line_length=160):
     # Split into lines and ensure no line exceeds 160 characters
-    lines = formatted.split('\n')
-    max_line_length = 160
+    lines = text.split('\n')
     result_lines = []
 
     for line in lines:
@@ -44,6 +33,18 @@ def format_html_file(filepath):
 
     return '\n'.join(result_lines) + '\n'
 
+def format_html_file(filepath):
+    """Format a single HTML file."""
+    with open(filepath, 'r', encoding='utf-8') as f:
+        content = f.read()
+
+    soup = BeautifulSoup(content, 'html.parser')
+
+    # Pretty print with indent of 2 spaces
+    formatted = soup.prettify(formatter='html')
+
+    # return ensure_line_length()
+    return formatted
 
 def find_html_files(root_dir):
     """Find all HTML files in the directory tree."""
