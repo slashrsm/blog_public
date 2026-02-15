@@ -1,8 +1,0 @@
-https://janezurevc.name -O ./ -N %h%p/%n/index%[page].%t -WqQ%v -s0 -%F ""
-File generated automatically on Mon, 13 Nov 2023 16:41:50, do NOT edit
-
-To update a mirror, just launch httrack without any parameters
-The existing cache will be used (and modified)
-To have other options, retype all parameters and launch HTTrack
-To continue an interrupted mirror, just launch httrack without any parameters
-
