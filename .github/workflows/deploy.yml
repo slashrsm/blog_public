@@ -35,15 +35,12 @@ jobs:
           # Copy CNAME if exists
           cp CNAME _site/ 2>/dev/null || true
           
-          # Copy articles_catalog.json
-          cp articles_catalog.json _site/ 2>/dev/null || true
-          
           # Copy all article directories (they contain index.html files)
           for dir in */; do
             if [ -d "$dir" ] && [ -f "${dir}index.html" ]; then
               # Exclude certain directories that shouldn't be deployed
               case "$dir" in
-                venv/|plans/)
+                venv/|plans/|_site/)
                   echo "Skipping $dir"
                   ;;
                 *)
