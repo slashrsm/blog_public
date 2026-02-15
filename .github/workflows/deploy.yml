@@ -52,7 +52,7 @@ jobs:
           
           # List what we're deploying
           echo "Files to be deployed:"
-          find _site -type f | head -20
+          find _site -type f
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
