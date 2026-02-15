@@ -34,6 +34,11 @@ jobs:
           
           # Copy CNAME if exists
           cp CNAME _site/ 2>/dev/null || true
+
+          cp -r core _site/ 2>/dev/null || true
+          cp -r rss _site/ 2>/dev/null || true
+          cp -r sites _site/ 2>/dev/null || true
+          cp -r themes _site/ 2>/dev/null || true
           
           # Copy all article directories (they contain index.html files)
           for dir in */; do
