@@ -61,7 +61,7 @@
       "Gander",
       "Testing"
     ],
-    "teaser": "We are thrilled to announce that documentation for Gander, the innovative performance testing framework, is now available. Designed as a collaboration between the Google Chrome team and Tag1 Consulting, Gander allows you to run efficient Drupal performance testing on your websites.",
+    "teaser": "<p><em>This post was originally published on <a href=\"https://www.tag1.com/blog/gander-documentation-start-your-drupal-performance-testing-today/\">Tag1.com</a>.</em></p><p>We are thrilled to announce that documentation for Gander, the innovative performance testing framework, is now available. Designed as a collaboration between the Google Chrome team and Tag1 Consulting, Gander allows you to run efficient Drupal performance testing on your websites.</p>",
     "published_on_frontpage": true
   },
   {

@@ -21,53 +21,60 @@ def generate_article_html(article):
     """Generate HTML for a single article preview."""
     tags_html = ""
     if article.get('tags'):
-        tags_items = "\n          ".join([
+        tags_items = "\n                ".join([
             f'<div class="field--item"><span>{tag}</span></div>'
             for tag in article['tags']
         ])
         tags_html = f'''
-  <div class="field field--name-field-tags field--type-entity-reference field--label-inline">
-    <div class="field--label">Tags</div>
-          <div class="field--items">
-              {tags_items}
-              </div>
-      </div>'''
+               <div class="field field--name-field-tags field--type-entity-reference field--label-inline">
+                <div class="field--label">
+                 Tags
+                </div>
+                <div class="field--items">
+                 {tags_items}
+                </div>
+               </div>'''
     
     teaser_html = ""
     if article.get('teaser'):
         teaser_html = f'''
-            <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item">{article['teaser']}</div>
-      '''
+               <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item">
+                {article['teaser']}
+               </div>'''
     
-    return f'''    <div class="views-row"><article role="article" about="/{article['path']}" class="post-preview">
-
-  
-      <h2 class="post-title">
-      <a href="{article['path']}/" rel="bookmark">
-<span>{article['title']}</span>
-</a>
-    </h2>
-    
-
-      <div class="post-meta submitted">
-      <article typeof="schema:Person" about="/users/slashrsm">
-  </article>
-
-      <div class="post-date">
-        
-<span>{format_date(article['published_date'])}</span>
-
-        
-      </div>
-      <!--<div class="comments-counter"><a href="/{article['path']}#disqus_thread" data-disqus-identifier="node/XXX" hreflang="en">Comments</a></div>-->
-    </div>
-  
-  <div class="post-subtitle">
-    {teaser_html}{tags_html}<ul class="links inline list-inline"><li class="node-readmore"><a href="{article['path']}/" rel="tag" title="{article['title']}" hreflang="en">Read more<span class="visually-hidden"> about {article['title']}</span></a></li></ul>
-  </div>
-
-</article>
-</div>'''
+    return f'''            <div class="views-row">
+             <article about="/{article['path']}" class="post-preview" role="article">
+              <h2 class="post-title">
+               <a href="{article['path']}/" rel="bookmark">
+                <span>
+                 {article['title']}
+                </span>
+               </a>
+              </h2>
+              <div class="post-meta submitted">
+               <article about="/users/slashrsm" typeof="schema:Person">
+               </article>
+               <div class="post-date">
+                <span>
+                 {format_date(article['published_date'])}
+                </span>
+               </div>
+              </div>
+              <div class="post-subtitle">
+               {teaser_html}{tags_html}
+               <ul class="links inline list-inline">
+                <li class="node-readmore">
+                 <a href="{article['path']}/" hreflang="en" rel="tag" title="{article['title']}">
+                  Read more
+                  <span class="visually-hidden">
+                   about {article['title']}
+                  </span>
+                 </a>
+                </li>
+               </ul>
+              </div>
+             </article>
+            </div>'''
 
 def main():
     # Read catalog
@@ -98,9 +105,9 @@ def main():
         
         articles_html = "\n".join([generate_article_html(article) for article in batch_articles])
         
-        batches_html += f'''          <div class="post-batch" data-batch="{batch_num}"{display_style}>
+        batches_html += f'''           <div class="post-batch" data-batch="{batch_num}"{display_style}>
 {articles_html}
-          </div>
+           </div>
 '''
     
     # Read the current index.html to get the header and footer
@@ -109,8 +116,36 @@ def main():
     
     # Find where batches start and end
     batch_start = current_html.find('<div class="post-batch"')
-    batch_end = current_html.rfind('</div>\n          <div class="post-batch"') + 6  # Include the closing </div>
-    batch_end = current_html.find('</div>\n      </div>\n\n        <div id="load-more-container"', batch_end) + 6
+    
+    # Use regex to find all batch positions and get the last one
+    import re
+    batch_pattern = r'<div class="post-batch" data-batch="(\d+)"[^>]*>'
+    batches = list(re.finditer(batch_pattern, current_html))
+    
+    if not batches:
+        print("ERROR: Could not find batch markers in index.html")
+        return
+    
+    # Get the last batch
+    last_batch = batches[-1]
+    last_batch_num = int(last_batch.group(1))
+    
+    # Find the end of the last batch - look for the closing </div> after the last batch content
+    # The pattern after the last batch is: </div> (closes post-batch) then </div> (closes view-content) then load-more-container
+    # After last batch: </div>\n          </div>\n\n          <div class="text-center" id="load-more-container"
+    # Pattern after last batch: </div> (closes post-batch) then </div> (closes view-content) then load-more-container
+    # Exact pattern: </div>\n          </div>\n          <div class="text-center" id="load-more-container"
+    batch_end = current_html.find('</div>\n          </div>\n          <div class="text-center" id="load-more-container"', last_batch.end())
+    
+    if batch_end == -1:
+        # Try alternate pattern without id
+        batch_end = current_html.find('</div>\n          </div>\n          <div class="text-center"', last_batch.end())
+    
+    if batch_end == -1:
+        print("ERROR: Could not find end of batches in index.html")
+        return
+    
+    batch_end = batch_end + 6  # Include the closing </div>
     
     # Replace the batches section
     new_html = current_html[:batch_start] + batches_html + current_html[batch_end:]
